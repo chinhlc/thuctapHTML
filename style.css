@@ -38,8 +38,7 @@ header nav{
     height:75px;
     margin-bottom: 10px;
 }
-.navbar ul
-{
+.navbar ul{
     margin:0;
     padding:0;
 }
@@ -56,34 +55,6 @@ header nav{
 .navbar form{
     display: inline-block;
     border: 0;
-}
-.header-top
-{
-    background-color: #1F3246;
-    width:1400px;
-    height:34px;
-    margin-bottom: 10px;
-    
-}
-.header-top__link
-{
-    margin-left: 800px;
-    font-family: Helvetica, sans-serif;
-    font-size:15px;
-}
-.link
-{
-    color:#FFFF;
-    margin-left:10px;
-    margin-top: 15px;
-    margin-bottom: 10px;
-}
-.header-mid
-{
-    background-color: #FFFFFF;
-    width:1400px;
-    height:75px;
-    margin-bottom: 10px;
 }
 
 button
@@ -121,10 +92,12 @@ button
 .banner{
     width: 1500px;
     min-height: 500px;
+    margin-bottom: 100px;
 }
 .banner__image
 {
     height: 500px;
+    width: 1500px;
 }
 .banner__text{
     position: relative;
@@ -133,12 +106,33 @@ button
     width: 500px;
     color: #FFFFFF;
 }
-.header-end__text--third
+#card ul li {
+    display: inline-block;
+}
+#card{
+    text-align: center;
+    margin-bottom: 100px;
+    margin-left: 150px;
+}
+.card-body
 {
-    position: absolute;
-    font-size: 19px;
-    top: 370px;
-    left: 100px
+    width: 300px;
+    height: 180px;
+    text-align: center;
+}
+.card-body__text--title, .card-body__link
+{
+    margin-top: 10px;
+    text-align: center;
+    margin-left:-55px;
+
+}
+.card-body__text--p{
+    margin-left: -60px;
+}
+.card-body__img{
+    width: 300px;
+    margin-left: -50px;
 }
 .button--1
 {
@@ -158,26 +152,7 @@ button
     text-align: center;
     margin-left: 150px;
 }
-.card
-{
-    width: 200px;
-    height: 180px;
-    text-align: center;
-}
-.card__body--title
-{
-    margin-top: 5px;
 
-}
-.icon ul li {
-    display: inline-block;
-}
-.icon{
-    text-align: center;
-    margin-bottom: 100px;
-    margin-left: 150px;
-}
- 
 .icon1{
     margin-left: 150px;
     margin-bottom:100px;
