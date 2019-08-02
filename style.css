@@ -8,11 +8,41 @@ body
     margin: auto;
     overflow: hidden;
 }
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {background-color: #f1f1f1}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+header{
+    text-align: right;
+}
 header a{
     text-transform: uppercase;
     font-size:12px;
     text-decoration: none;
     color:#FFFFFF;
+    
 }
 header ul{
     margin: 0;
@@ -21,15 +51,14 @@ header ul{
 }
 header li{
     display:inline;
-    float: left;
     padding: 0 20px 0 20px;
 }
 header nav{
     margin-top: 5px;
     background-color: #1B2C3D;
-    float: left;
-    width: 1500px;
+    width: 100%;
     height: 35px;
+    
 }
 .navbar
 {
@@ -57,28 +86,22 @@ header nav{
     border: 0;
 }
 
-button
-{
-    background-color: #FFFFFF;
-    color: black;
-}
-.custom-select
-{
-    border:0 !important;
-    margin-top:1px !important;
-}
-.button
-{
+.button{
     width: 150px;
-    background-color: #FBB034;
-    border:none;
-    color:white;
-    text-align: center;
-    display: inline-block;
-    margin-top: 4px;
-    margin-bottom: 2px;
-    border-radius: 24%;
-    margin-left:100px;
+    height: 40px;
+    background-color: orange;
+    color: #FFFFFF;
+    border-radius: 20px;
+    border: 0;
+}
+.button--1{
+    background-color: #26A69A ;
+    margin-top: -200px;
+    margin-left: -100px;
+}
+.button--1 a{
+    color: #FFFFFF;
+    
 }
 .nav-link
 {
@@ -110,9 +133,7 @@ button
     display: inline-block;
 }
 #card{
-    text-align: center;
-    margin-bottom: 100px;
-    margin-left: 150px;
+    text-align: left;
 }
 .card-body
 {
@@ -120,20 +141,71 @@ button
     height: 180px;
     text-align: center;
 }
-.card-body__text--title, .card-body__link
+
+.card-body__img{
+    width: 300px;
+    padding-left:-20px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.card-body__text--video
 {
-    margin-top: 10px;
-    text-align: center;
-    margin-left:-55px;
+    width: 500px;
+    height: 100px;
 
 }
 .card-body__text--p{
-    margin-left: -60px;
-    margin-top: 30px;
-}
-.card-body__img{
     width: 300px;
-    margin-left: -50px;
+    font-size: 14px;
+    
+}
+.card--1{
+    margin-left: 250px;
+}
+.card--2{
+    margin-left: 100px;
+
+}
+.card--3{
+    margin-left: 350px;
+}
+.retail, .feature{
+    background-color:none;
+    position: relative;
+    display: flex;
+    margin-bottom: 250px;
+}
+.image{
+    text-align: center;
+    margin-bottom: 50px;
+    position: relative;
+    background-color: none;
+}
+.image--1{
+        text-align: center;
+        width: 300px;
+        height: 350px;
+        margin-left:200px;
+        margin-top: -200px;
+
+}
+.image--2{
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    margin-left: 90px;
+    margin-top: -200px;
+    background-color:none;
+    position: absolute;
+}
+table{
+    width: 500px;
+    margin-top: -200px;
+    margin-left: 150px;
+}
+table caption p{
+    font-size: 34;
+    caption-side: top;
 }
 .button--1
 {
@@ -147,16 +219,14 @@ button
 .text
 {
     text-align: center;
-    margin-left: 150px;
 }
-
-.icon1{
-    margin-left: 150px;
-    margin-bottom:100px;
-}
-.button1{
+.text-video
+{
+    width: 400px;
+    height: 100px;
+    font-size: 12px;
     margin-left: 50px;
-    margin-bottom: 50px;
+    margin-top: -100px;
 }
 
 .footer{
