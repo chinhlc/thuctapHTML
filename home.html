@@ -7,17 +7,16 @@
 </head>
 <body> 
     <header>
-            <nav>
-                <ul>
-                    <li> <a href="#" >Blog</a>  </li>
-                    <li> <a href="#" >POS Hardward</a> </li>
-                    <li> <a href="#" >Partner</a> </li>
-                    <li> <a href="#" >Support</a> </li>
-                    <li> <a href="#" >Contact Us</a> </li>
-                </ul>
-            </nav>
-        <div class="container">
-            
+        <div>
+                <nav>
+                        <ul>
+                            <li> <a href="#" >Blog</a>  </li>
+                            <li> <a href="#" >POS Hardward</a> </li>
+                            <li> <a href="#" >Partner</a> </li>
+                            <li> <a href="#" >Support</a> </li>
+                            <li> <a href="#" >Contact us</a></li>
+                        </ul>
+                    </nav>
         </div>
     </header>
     <!--Navbar-->
@@ -28,25 +27,34 @@
                     <li> <img src="image/logo.png"/></li>
                     <li> <a href="#" >Why Connectpos</a> </li>
                     <li>
-                        <form>
-                            <select>
-                                <option selected> Features</option>
-                            </select>
-                        </form>
+                            <div class="dropdown">
+                                <span>Features</span>
+                                    <div class="dropdown-content">
+                                      <a href="#">Link 1</a>
+                                      <a href="#">Link 2</a>
+                                      <a href="#">Link 3</a>
+                                </div>
+                            </div>
                     </li>   
                     <li>
-                        <form>
-                            <select>
-                                <option selected> Intergration</option>
-                            </select>
-                        </form>
+                            <div class="dropdown">
+                                    <p>Integration</p>
+                                    <div class="dropdown-content">
+                                    <a href="#">Link 1</a>
+                                    <a href="#">Link 2</a>
+                                    <a href="#">Link 3</a>
+                                    </div>
+                                  </div>   
                     </li>  
                     <li>
-                        <form>
-                            <select>
-                                <option selected> Pricing</option>
-                            </select>
-                        </form>
+                            <div class="dropdown">
+                                    <span>pricing</span>
+                                        <div class="dropdown-content">
+                                          <a href="#">Link 1</a>
+                                          <a href="#">Link 2</a>
+                                          <a href="#">Link 3</a>
+                                    </div>
+                            </div>   
                     </li>      
                     <li> <a href="#" >Case studies</a> </li> 
                     <li> <button class="button"> Free trial</button></li>
@@ -65,72 +73,21 @@
             <p>
                 Maximize the full power of the system with the world's leading integrations
             </p>
-            <button class = "button"><a href="#">book a demo</a></button>
+            <button class = "button button--1"><a href="#">book a demo</a></button>
         </div>
     </div>
     <!--contain-->
-        <section class ="retail">
-            <div class = "image">
-                <img class = "image--1" src = "image/thumb_video.png"/>
-                <img class ="image--2" src = "image/icon_play.png"/>
-            </div>
-            <div class = "text-video">
-                <h3 class = "video_text--title"> The future of retail, today</h3>
-                    <p class = "video_text--p">
-                         We are not just a leading POS software provider, ConnectPOS also provides an integrated solution to help you realize your ideal future retail store. Latest technology such as PWA, AI or Facial Technology is leveraged to create a seamless and personalized shopping experience for your customers.
-                    </p>
-                    <a href = "#" ><button class = "button">Read More</button></a>
-            </div>
-        </section>
-        <section class ="feature">
-            <div class = "table">
-                <table>
-                        <caption> Feature-rich and powerful POS system</caption>
-                    <tr>
-                        <td>
-                            <li>
-                                <img src="image/icon_1.png"/>
-                                <p>High-speed, secure & multi store scalable</p>
-                            </li>
-                        </td>
-                        <td>
-                            <li>
-                                <img src="image/icon_2.png"/>
-                                <p>Leverage latest technology such as AI, PWA and Facial Recognition</p>
-                            </li>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <li>
-                                <img src="image/icon_3.png"/>
-                                <p>An all-in-one solution for instore POS</p>
-                            </li>
-                        </td>
-                        <td>
-                            <li>
-                                <img src="image/icon_4.png"/>
-                                    <p>Leading industry integration</p>
-                            </li>
-                        </td>
-                    </tr> 
-                    <tr>
-                            <td>
-                                <li>
-                                    <img src="image/icon_5.png"/>
-                                    <p>An all-in-one solution for instore POS</p>
-                                </li>
-                            </td>
-                            <td>
-                                <li>
-                                    <img src="image/icon_6.png"/>
-                                        <p>Leading industry integration</p>
-                                </li>
-                            </td>
-                        </tr>    
-                </table>
-            </div>
-            </section>
+    <section class = "sec1">
+                    <div class = "image">
+                            <img class = "image--1" src="image/thumb_video.png"/>
+                            <img class = "image--2" src="image/icon_play.png"/>
+                    </div>
+                    <div class = "sec1__card" >
+                            <h3>The future of retail, today</h3>
+                            <p>We are not just a leading POS software provider, ConnectPOS also provides an integrated solution to help you realize your ideal future retail store. Latest technology such as PWA, AI or Facial Technology is leveraged to create a seamless and personalized shopping experience for your customers.</p>
+                            <a href="#"><button class = "button button--1">WHATCH VIDEO</button></a>
+                    </div>       
+    </section>
     <!--footer-->
     <footer class=" footer pt-4">
         <div class="page-footer">
