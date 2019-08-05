@@ -80,7 +80,7 @@ header a{
     width: 150px;
     border: 2px solid #FFFFFF;
     margin-bottom: 100px;
-    
+    background-color: #26A69A;
 }
 /*banner*/
 .banner{
@@ -101,9 +101,10 @@ header a{
 .card-swap{
     margin-left: 450px;
     margin-bottom: 500px;
+    
 }
 .card-swap--4pic{
-    margin-left: 300px;
+    margin-left: 280px;
     margin-bottom: 500px;
 }
 .card-swap--1pic{
@@ -114,13 +115,78 @@ header a{
     display: flex;
 }
 .card{
-    width: 200px;
+    width: 220px;
     height: 100px;
     text-align: center;
     float: left;
 }
+
 .card p{
     font-size: 14px;
+}
+/*home*/
+/*intro*/
+.intro{
+    width: 100%;
+    height: 300px;
+    display: inline-block;
+    margin-bottom: 100px;
+}
+.intro__about{
+    width: 100%;
+    height: 300px;
+    display: inline-block;
+}
+.intro__image{
+    width: 300px;
+    height: 350px;
+    margin-top: -120px;
+    margin-left: 250px;
+}
+.intro__image--right{
+    width: 300px;
+    height: 350px;
+    float: right;
+    margin-top: 20px;
+    margin-right: 200px;
+}
+.intro__description{
+    width: 500px;
+    float: right;
+    margin-right: 150px;
+    font-size: 15px;
+}
+.intro__description--left{
+    width: 500px;
+    font-size: 15px;
+    margin-top: 100px;
+    margin-left: 150px;
+}
+/*table*/
+.table{
+    width: 400px;
+    margin-left: 100px;
+    
+}
+table{
+    width: 400px;
+    height: 500px;
+    text-align: center;
+    margin-left: 80px;
+}
+.solieu__image{
+    float: right;
+    width: 700px;
+    height: 600px;
+    margin-top: -700px;
+}
+/*feature businesstype*/
+.features, .businesstype h3{
+    text-align: center;
+    margin-bottom: 100px;
+}
+.businesstype{
+    margin-top: 50px;
 }
 
 /*footer*/
@@ -138,3 +204,4 @@ footer{
     background-color:#1B2C3D;
     
 }
+
