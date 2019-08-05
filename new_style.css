@@ -82,6 +82,12 @@ header a{
     margin-bottom: 100px;
     background-color: #26A69A;
 }
+.button--small{
+    text-transform: uppercase;
+    color: white;
+    background-color: #28B0A7;
+    border: 0;
+}
 /*banner*/
 .banner{
     width: 100%;
@@ -104,18 +110,22 @@ header a{
     
 }
 .card-swap--4pic{
-    margin-left: 280px;
+    margin-left: 200px;
     margin-bottom: 500px;
 }
 .card-swap--1pic{
     margin-left: 570px;
     margin-bottom: 500px;
 }
+.card-swap--3pic{
+    margin-left: 320px;
+    margin-bottom: 500px;
+}
 .card-swap ul li{
     display: flex;
 }
 .card{
-    width: 220px;
+    width: 250px;
     height: 100px;
     text-align: center;
     float: left;
@@ -123,6 +133,24 @@ header a{
 
 .card p{
     font-size: 14px;
+}
+.card__image{
+    height: 150px;
+}
+.card__description--font{
+    text-align: left;
+}
+.card__description--font{
+    font-size: 10px;
+}
+.icon ul li{
+    display: inline;
+}
+.icon{
+    font-size: 10px;
+    text-align: left;
+    margin-left: -40px;
+    margin-top: 10px;
 }
 /*home*/
 /*intro*/
@@ -181,11 +209,11 @@ table{
     margin-top: -700px;
 }
 /*feature businesstype*/
-.features, .businesstype h3{
+.features, .businesstype, .news h3{
     text-align: center;
     margin-bottom: 100px;
 }
-.businesstype{
+.businesstype, .news{
     margin-top: 50px;
 }
 
