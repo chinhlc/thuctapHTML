@@ -31,7 +31,6 @@ a {
 .margin--t500 {
     margin-top: 500px;
 }
-
 /* header */
 header {
     text-align: right;
@@ -98,7 +97,7 @@ header a {
 }
 .button--green {
     width: 150px;
-    border: 2px solid #FFFFFF;
+    border: 2px solid;
     margin-bottom: 100px;
     background-color: #28B0A7;
 }
@@ -112,10 +111,16 @@ header a {
     width: 100%;
     min-height: 500px;
 }
-
 .banner__image {
     width: 100%;
     height: 450px;
+    z-index: 1;
+}
+.banner__logo{
+    width: 300px;
+    height: 350px;
+    margin-top: -250px;
+    z-index: 2;
 }
 .banner__image--right {
     width: 300px;
@@ -168,8 +173,16 @@ header a {
     margin-top: -120px;
     margin-left: 250px;
 }
-.intro__image--right {
+.intro__image--pos {
     margin-top: 20px;
+    margin-right: 200px;
+}
+.intro__image--pos {
+    margin-top: 20px;
+    margin-right: 200px;
+}
+.intro__image--pos {
+    margin-top: -500px;
     margin-right: 200px;
 }
 .intro__description {
@@ -177,9 +190,13 @@ header a {
     margin-right: 150px;
     font-size: 15px;
 }
-.intro__description--left {
+.intro__description--pos {
     margin-top: 100px;
     margin-left: 150px;
+}
+.intro__description--pos2 {
+    margin-top: 100px;
+    margin-right: 150px;
 }
 /*table*/
 .table {
