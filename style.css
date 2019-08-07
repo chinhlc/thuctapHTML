@@ -16,6 +16,9 @@ a {
 .margin-l50 {
     margin-left: 50px;
 }
+.margin--r50{
+    margin-right: 50px;
+}
 .margin-l100 {
     margin-left: 100px;
 }
@@ -30,6 +33,21 @@ a {
 }
 .margin--t500 {
     margin-top: 500px;
+}
+.margin-t50 {
+    margin-top: 50px;
+}
+.margin--tm200 {
+    margin-top: -200px;
+}
+.margin--tm100{
+    margin-top: -100px;
+}
+.pad--l100px{
+    padding-left: 100px;
+}
+.pad--r100px{
+    padding-right: 100px;
 }
 /* header */
 header {
@@ -47,8 +65,11 @@ header nav {
 }
 header a {
     color:white;
-    padding-left: 25px;
+    padding-right: 30px;
     
+}
+div ul li{
+    display: inline-block;
 }
 /*dropdown*/
 .dropdown {
@@ -119,14 +140,11 @@ header a {
 .banner__logo{
     width: 300px;
     height: 350px;
-    margin-top: -250px;
+    margin-top: -300px;
     z-index: 2;
+    margin-left: 900px;
 }
-.banner__image--right {
-    width: 300px;
-    height: 350px;
-    margin-top: -200px;
-}
+
 
 .banner__description {
     width: 500px;
@@ -136,13 +154,18 @@ header a {
 }
 /*card-swap*/
 .card-swap {
-    margin-left: 450px;
+    margin-left: 400px;
     margin-bottom: 500px;
     
 }
 .card {
     width: 250px;
-    height: 100px;
+    height: 350px;
+    margin-left: 30px;
+    border: 0;
+}
+.card--small{
+    height: 200px;
 }
 
 .card p {
@@ -152,13 +175,13 @@ header a {
     height: 150px;
 }
 .card-swap--4pic {
-    margin-left: 200px;
+    margin-left: 150px;
 }
 .card-swap--1pic {
-    margin-left: 570px;
+    margin-left: 520px;
 }
 .card-swap--3pic{
-    margin-left: 320px;
+    margin-left: 250px;
 }
 /*intro*/
 .intro {
@@ -174,16 +197,17 @@ header a {
     margin-left: 250px;
 }
 .intro__image--pos {
-    margin-top: 20px;
     margin-right: 200px;
+    margin-top:-20px;
 }
-.intro__image--pos {
-    margin-top: 20px;
-    margin-right: 200px;
+.intro__iconplay{
+    width: 50px;
+    height: 50px;
+    margin-left: -170px;
+    margin-top: -100px;
 }
-.intro__image--pos {
-    margin-top: -500px;
-    margin-right: 200px;
+.intro__iconplay--pos{
+    margin-top: -300px;
 }
 .intro__description {
     width: 500px;
@@ -191,12 +215,7 @@ header a {
     font-size: 15px;
 }
 .intro__description--pos {
-    margin-top: 100px;
     margin-left: 150px;
-}
-.intro__description--pos2 {
-    margin-top: 100px;
-    margin-right: 150px;
 }
 /*table*/
 .table {
@@ -238,7 +257,13 @@ table {
     height: 130px;
     padding-left: 20px;
 }
-
+.image--small {
+    width: 80px;
+    height: 80px;
+}
+.image__icon{
+    margin-top: -100px;
+}
 .logo {
     width: 100px;
     height: 50px;
@@ -253,6 +278,24 @@ table {
     text-align: left;
     margin-left: -40px;
     margin-top: 10px;
+}
+/*consumer*/
+.consumertb {
+    margin-left: 300px;
+}
+.cosumertb table {
+    width: 800px;
+    font-size: 14px;
+}
+.consumertb table td {
+    height: 500px;
+}
+.consumer__des {
+    font-size: 13px; 
+}
+/*keytechnology*/
+.keytechnology{
+    background-image: url("image/bg_gray.png")
 }
 /*footer*/
 footer {
