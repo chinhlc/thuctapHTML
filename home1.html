@@ -7,10 +7,10 @@
     </head>
     <body>
         <!--menu-->
-        <header>
+        <header class="top-header">
                 <div>
-                    <nav>
-                        <ul class="menu">
+                    <nav class="top-header__top-menu">
+                        <ul>
                             <li><a href="#">Blog</a></li>
                             <li><a href="#">POS Hardware</a></li>
                             <li><a href="#">Partners</a></li>
@@ -22,98 +22,86 @@
         </header>
         <!--mainmenu-->
     
-        <div class="mainheader">
+        <div class="main-header">
             
-                    <div class="logo">
-                            <a href="#"><img src="image/logo.png"/></a>
+                    <div class="main-header__logo">
+                        <a href="#"><img src="image/logo.png"/></a>
                     </div>
-                    <div class="mainmenu">
-                            <div class="dropdown">
-                                    <p>why connectpos</p>
-                                    <div class="dropdown-content">
-                                            <li><a href="#">Link1</a></li>
-                                            <li><a href="#">Link1</a></li>
-                                            <li><a href="#">Link1</a></li>
-                                            
-                                    </div>
-                            </div>
-                            <div class="dropdown">
-                                    <p>Features</p>
-                                    <div class="dropdown-content">
-                                            <li><a href="#">Link1</a></li>
-                                            <li><a href="#">Link1</a></li>
-                                            <li><a href="#">Link1</a></li>
-                                            
-                                    </div>
-                            </div>
-                            <div class="dropdown">
-                                    <p>Integration</p>
-                                    <div class="dropdown-content">
-                                            <li><a href="#">Link1</a></li>
-                                            <li><a href="#">Link1</a></li>
-                                            <li><a href="#">Link1</a></li>
-
-                                    </div>
-                            </div>
-                            <div class="dropdown">
-                                    <p>Pricing</p>
-                                    <div class="dropdown-content">
-                                            <li><a href="#">Link1</a></li>
-                                            <li><a href="#">Link1</a></li>
-                                            <li><a href="#">Link1</a></li>
-                                        
-                                    </div>
-                            </div>
-                            <div class="dropdown">
-                                    <p>Case studies</p>
-                                    <div class="dropdown-content">
-                                            <li><a href="#">Link1</a></li>
-                                            <li><a href="#">Link1</a></li>
-                                            <li><a href="#">Link1</a></li>
-                                        
-                                    </div>
-                            </div>
+                    <div class="main-header__menu">
+                            <ul>
+                                    <li class="main-header__menu-dropdown">
+                                                <a href="#">why connectpos</a>
+                                                <ul class="main-header__submenu">
+                                                        <li><a href="#">Link1</a></li> 
+                                                        <li><a href="#">Link1</a></li> 
+                                                        <li><a href="#">Link1</a></li>
+                                                        
+                                                </ul>
+                                        </li>
+                                    <li class="main-header__menu-dropdown">
+                                                <a href="#">Features</a>
+                                                <ul class="main-header__submenu">
+                                                        <li><a href="#">Link1</a></li> 
+                                                        <li><a href="#">Link1</a></li> 
+                                                        <li><a href="#">Link1</a></li>
+                                                        
+                                                </ul>
+                                    </li>
+                                    <li class="main-header__menu-dropdown">
+                                                <a href="#">Integration</a>
+                                                <ul class="main-header__submenu">
+                                                        <li><a href="#">Link1</a></li> 
+                                                        <li><a href="#">Link1</a></li> 
+                                                        <li><a href="#">Link1</a></li>
+                                                        
+                                                </ul>
+                                    </li>
+                                    <li class="main-header__menu-dropdown">
+                                                <a href="#">Pricing</a>
+                                                <ul class="main-header__submenu">
+                                                        <li><a href="#">Link1</a></li> 
+                                                        <li><a href="#">Link1</a></li> 
+                                                        <li><a href="#">Link1</a></li>
+                                                        
+                                                </ul>
+                                    </li>
+                                    <li class="main-header__menu-dropdown">
+                                                <a href="#">Case studies</a>
+                                                <ul class="main-header__submenu">
+                                                        <li><a href="#">Link1</a></li> 
+                                                        <li><a href="#">Link1</a></li> 
+                                                        <li><a href="#">Link1</a></li>
+                                                        
+                                                </ul>
+                                    </li>
+                            </ul>
                     </div>
-                    <button class="mainbutton button">free trial</button>
-                            
-                    
+                    <button class="main-header__button button">free trial</button>
                 </div>
         <!--bannerHome-->
-        <div class="bannerhome">
-            <div class="bannerhome__des">
+        <div class="banner-home">
+            <div class="banner-home__descript">
                 <h1>
                     Leading POS Software For Omnichannel Retail
                 </h1>
                 <p>
                     Security, high-speed & multistore scalability. Compatible with multiple platforms as Magento, Shopify.
                 </p>
-                <button class = "button button--green">bool a demo</button>
+                <button class = "banner-home__button button button--green">bool a demo</button>
             </div>
         </div>
-        <!--intro-->
+        <!--Intro-->
         <div class="intro">
-            <div class="image">
-                <img class ="intro_image"src="image/thumb_video.png">
-                <div class="intro__icon">
-                    <img  src="image/icon_play.png">
-                </div>
+            <div class="intro-image">
+                <img class="intro-image__img"src="image/thumb_video.png">
+                <img class="intro-image__icon"src="image/icon_play.png">   
             </div>
-            <div class="intro__des">
+            <div class="intro__descript">
                 <h3>The future of retail, today</h3>
                 <p>We are not just a leading POS software provider, ConnectPOS also provides an integrated solution to help you realize your ideal future retail store. Latest technology such as PWA, AI or Facial Technology is leveraged to create a seamless and personalized shopping experience for your customers.</p>
                 <button class="button button--green">watch video</button>
             </div>
         </div>
-        <div class="intro">
-            <div class="introtable">
-                <div><p>Feature-rich and powerful POS system</p></div>
-                <div class="table">
-                    <ul>
-                        <li>
-                            
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+
+        
 </html>    
