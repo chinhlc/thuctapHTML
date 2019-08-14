@@ -2,17 +2,44 @@
     margin:0;
     padding:0;
 }
+@font-face {
+    font-family: opensans-bold;
+    src: url("font-open-sans/OpenSans-Bold.ttf")
+}
+@font-face {
+    font-family: opensans-light;
+    src: url("font-open-sans/OpenSans-Light.ttf")
+}
+@font-face {
+    font-family: opensans-regular;
+    src: url("font-open-sans/OpenSans-Regular.ttf")
+}
 body{
     width: 100%;
     height: auto;
-    font-family: sans-serif !important;
+    font-family: opensans-regular !important;
     color:#777777 !important;
 }
 .container {
-    max-width: 1200px;
+    max-width: 1200px !important;
+}
+.left5 {
+    margin-left: 5px;
 }
 .top100 {
     margin-top:100px;
+}
+.left80 {
+    margin-left:80px;
+}
+.left160 {
+    margin-left: 160px;
+}
+.left190 {
+    margin-left: 190px;
+}
+.left360 {
+    margin-left: 360px;
 }
 .text-center {
     text-align: center;
@@ -20,24 +47,24 @@ body{
 /* header */
 header {
     text-align: right;
-    
+    margin-left:auto;
+    margin-right:auto;
+    background-color: #1F3246;
 }
 header ul li {
     display: inline;
 }
 header nav {
-    background-color: #1F3246;
     width: 100%;
     padding-top: 12px;
     padding-bottom: 12px;
-    margin-left:auto;
-    margin-right:auto;
     font-size: 13px;
     line-height: 24px;
+    max-width: 1225px;
 }
 header a {
     color:white;
-    padding-right: 30px;
+    margin-left:30px;
 }
 header ul {
     margin:0;
@@ -52,8 +79,9 @@ header a:hover {
     max-width: 1300px;
     margin-left: auto;
     margin-right:auto;
-    font-size: 13px;
+    font-size: 14px;
     
+     
 }
 .main-header a {
     color:#777777 !important;
@@ -83,8 +111,8 @@ header a:hover {
 }
 .main-header__menu ul li {
     position: relative;
-    padding-top:20px;
-    padding-bottom: 20px;
+    padding-top:30px;
+    padding-bottom: 30px;
     
 }
 .main-header__submenu {
@@ -93,7 +121,7 @@ header a:hover {
     background-color: #EEEEEE;
     min-width: 220px;
     z-index: 1;    
-    margin-top:20px !important;
+    margin-top:30px !important;
     font-size: 15px;
     padding-left: 15px;
 
@@ -148,6 +176,7 @@ header a:hover {
     font-size: 14px;
     font-weight: bold;
 }
+
 .button--bgnone {
     width: 150px;
     border: 2px solid;
@@ -163,6 +192,9 @@ header a:hover {
 }
 .button--bggreen {
     background-color: #26A69A;
+}
+.button--large {
+    width:210px;
 }
 /*bannerHome*/
 .banner-home {
@@ -191,8 +223,12 @@ header a:hover {
 
 .banner-home__sub-title {
     font-size: 44px;
-    font-weight: bold;
+    font-family: opensans-bold;
     line-height: 60px;
+    margin-bottom: 24px;
+}
+.banner-home__sub-descript {
+    margin-bottom: 48px;
 }
 .banner__des h1 {
     font-weight: bold;
@@ -234,30 +270,33 @@ footer {
 }
 .intro-video {
     display: inline-block;
-}
-.intro-video__img {
     position: relative;
 }
 .intro-video__icon {
     position: absolute;
-    margin-top: -25%;
-    margin-left: 240px;
+    top:50%;
+    left:50%;
+    margin-top:-36px;
+    margin-left: -29px;
 }
 
 .intro-sub {
     display: inline-block;
     width: 500px;
-    margin-left:50px;
+    margin-left:110px;
     vertical-align: middle;
 }
 .intro-sub__title {
-    font-weight: bold;
+    font-family: opensans-bold; 
     font-size: 34px;
     color: #333333;
+    margin-bottom: 24px;
 }
 .intro-sub__descript {
     color:#777777; 
-    font-size: 15px;
+    font-size: 18px;
+    margin-bottom: 48px;
+    line-height: 32px;
 }
 
 /*feature*/
@@ -269,10 +308,11 @@ footer {
 }
 .features-info {
     width: 550px;
-    max-width: 50%;
+    max-width: 630px;
     display: inline-block;
-    position: absolute;
-    margin-top:250px;
+    position: relative;
+    padding-top: 255px;
+    margin-bottom: 160px;
 }
 .features-info__title {
     width: 550px;
@@ -293,6 +333,13 @@ footer {
     width: 220px;
     height: 168px;
 }
+.pf--large {
+    width: 280px;
+    height: 380px;
+}
+.features-platform__img {
+    width: 250px;
+}
 .features-platform__descript {
     padding-top: 20px;
     font-size: 16px;
@@ -301,10 +348,18 @@ footer {
 }
 .features-image {
     display: inline;
+    margin-left:100%;
+    position: absolute;
+    top:0;
+
+}
+.sub--bold {
+    font-size: 18px;
+    font-family: opensans-bold;
+    margin-top: 24px;
 }
 .img {
-    position: relative !important;
-    margin-left:40%;
+    margin-left:-20%;
 }
 /*features-grid*/
 .features-grid {
@@ -312,4 +367,110 @@ footer {
     margin-left: auto;
     margin-right: auto;
     max-width: 1200px;
+}
+.features-grid__title {
+    width: 630px;
+    line-height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.grid-sub {
+    width: 630px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom: 36px;
+}
+.grid-sub__title {
+    font-family: opensans-bold;
+    font-size: 34px;
+    color: #333333;
+    line-height: 40px;
+}
+.grid-sub__link {
+    font-family: opensans-bold;
+    font-size: 14px;
+    color: #26A69A;
+    text-align: center;
+    line-height: 24px;
+    text-transform: uppercase;
+    margin-top:24px;
+}
+.features-grid__list {
+    margin-left: auto;
+    margin-right: auto;
+}
+.features-platform__title {
+    font-family: opensans-bold;
+    color: #555555;
+    font-size: 22px;
+    text-transform: capitalize;
+    line-height: 24px;
+    margin-bottom: 24px;
+}
+.features-platform__sub {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 24px;
+}
+/*retailer*/
+
+.retailer-info {
+    width: 100%;
+    max-width: 1200px;
+    display: inline-block;
+    position: relative;
+    margin-bottom: 200px;
+}
+.retailer-image {
+    display: inline;
+    position: absolute;
+    top:0;
+    right:100%;
+}
+.retailer-list {
+    margin-left:70px;
+}
+.retailer-list__logo {
+    position: relative;
+    display: inline-block;
+    width: 190px;
+}
+.retailer-list__logo-bg {
+    width: 160px;
+    height: 180px;
+}
+
+.retailer-list__logo-img {
+    position: absolute;
+    left:50%;
+    top:50%;
+    margin-left:-70px;
+    margin-top:-25px;
+
+}
+.retailer-bg {
+    display: inline;
+    position: absolute;
+    right:100%;
+    top:0;
+}
+.retailer-bg__img {
+    margin-left:50%
+}
+.retailer-sub {
+    margin-top: 100px;
+}
+
+.re-img {
+    margin-left:60%;
+}
+.quote {
+    margin-top:0;
+    background-image: url("image/icon_tes.png");
+    background-repeat: no-repeat;
+    background-position: 0 25%;
+    margin-bottom: 100px;
+}
+.quote-sub {
+    margin: 0 110px 0 0 ;
 }
