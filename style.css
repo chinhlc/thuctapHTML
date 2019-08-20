@@ -14,6 +14,65 @@
     font-family: opensans-regular;
     src: url("font-open-sans/OpenSans-Regular.ttf")
 }
+@media screen and (max-width: 320px)
+{
+    .top-header a {
+        display: block;
+        text-align: left;
+    }
+    .banner-home__info-sub p, .button, .button--bg-green {
+        width: 10%;
+    }
+}
+@media screen and (min-width: 321px) and (max-width:480px)
+{ 
+    .banner-home__info-sub p, .button, .button--bg-green {
+        width: 25%;
+    }
+}
+@media screen and (min-width: 480px) and (max-width:600px)
+{
+    .banner-home__info-sub p, .button, .button--bg-green {
+        width: 50%;
+    }
+}
+@media screen and (min-width: 601px) and (max-width:768px)
+{
+    .banner-home__info-sub p, .button, .button--bg-green {
+        width: 75%;
+    }
+    .intro-video__image {
+        width: 50%;
+    }
+}
+@media screen and (min-width: 768px) and (max-width:1023px)
+{
+    .banner-home__info-sub p, .button, .button--bg-green {
+        width: 91.66%;
+    }  
+    .intro-video__image {
+        width: 100%;
+    }
+    .intro-video__icon {
+        margin-left: -70px !important;
+    }
+    .intro-sub {
+        margin-left: -55px !important;
+    }
+    
+}
+@media screen and (min-width: 1024px) and (max-width:1200px) {
+    .intro-video__image {
+        width: 80%;
+    }
+    .intro-video__icon {
+        margin-left: -70px !important;
+    }
+    .intro-sub {
+        margin-left: -55px !important;
+    }
+}
+
 body{
     width: 100%;
     height: auto;
@@ -230,7 +289,7 @@ header a:hover {
     height: 720px;
 
 }
-.banner-home__infor {
+.banner-home__info {
     position: relative;
     color: #ffffff;
     width: 100%;
@@ -239,7 +298,7 @@ header a:hover {
     margin: 0 auto 0 auto;
     display: block;
 }
-.banner-home__infor-sub {
+.banner-home__info-sub {
     width: 630px;
     margin-left:0;
 }
@@ -281,12 +340,15 @@ header a:hover {
     display: inline-block;
     position: relative;
 }
+
 .intro-video__icon {
     position: absolute;
     top:50%;
     left:50%;
     margin-top:-36px;
     margin-left: -29px;
+    width: 58px;
+    height: 72px;
 }
 
 .intro-sub {
