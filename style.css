@@ -24,6 +24,7 @@ body {
     height: auto;
     font-family: opensans-regular, sans-serif !important;
     color:#777777 !important;
+    
 }
 .container {
     max-width: 1200px !important;
@@ -278,6 +279,7 @@ header a:hover {
     background-position: 25% center;
     width: 100%;
     height: 720px;
+    
 
 }
 .banner-home-info {
@@ -304,11 +306,25 @@ header a:hover {
     color: #FFFFFF;
     line-height: 36px;
 }
-@media only screen and (max-width: 667px)
+@media only screen and (max-width: 420px)
 {
-    .banner-home-info {
-        width: 100%;
-
+    .banner-home {
+        
+        height: 600px !important;
+    }
+    .banner-home-info .banner-home__title {
+        font-size: 26px;
+        line-height: 47px;
+    }
+    .banner-home-info .banner-home__descript {
+        font-size: 17px;
+    }
+}
+@media only screen and (max-width: 576px)
+{
+    .banner-home {
+        background-position: 20% bottom;
+        height: 562px;
     }
     .banner-home__title {
         font-size: 35px;
@@ -396,7 +412,7 @@ header a:hover {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    overflow: hidden;
+    overflow: hidden !important;
 }
 .features-info {
     width: 550px;
@@ -412,6 +428,7 @@ header a:hover {
     color: #333333;
     margin-bottom: 48px;
 }
+
 .features-info__option ul {
     margin: 0;
 }
@@ -529,12 +546,26 @@ header a:hover {
     line-height: 24px;
     margin-bottom: 24px;
 }
-@media only screen and (max-width: 320px) {
-    .features-info {
-        width: 100%;
+.platform__icon {
+    width: 50px;
+    height: 50px;
+}
+.platform__image {
+    width: 100%;
+}
+@media only screen and (max-width: 420px) {
+    .platform {
+        width: 100% !important;
     }
     .features-info__title {
         font-size: 25px;
+    }
+    .platform__icon {
+        width: 50px !important;
+        height: 50px !important;
+    }
+    .platform__descript {
+        font-size: 16px !important;
     }
     .title {
         font-size: 25px;
@@ -547,11 +578,26 @@ header a:hover {
         
 }
 @media only screen and (max-width: 576px) {
+    .features-info {
+        width: 100%;
+        padding-top:100px;
+        margin-bottom: 100px;
+    }
+    .features-info__option .platform  {
+        width: 49%;
+    }
+    .features-info__option .platform .platform__icon {
+        width: 30px;
+        height: 30px;
+    }
+    .features-info__option .platform .platform__descript {
+        font-size: 15px;
+    }
     .title {
         width: 100%;
     }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 920px) {
     .platform--large {
         width: 49%;
     }
@@ -582,14 +628,16 @@ header a:hover {
 
 
 .retailer-list__logo {
-    position: relative;
-    display: inline-block;
     background-image: url("image/bg_gray.png");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
+    background-size: 100% 100%;
+    position: relative;
+    display: inline-block; 
     height: 180px;
-    width: 16.67%;
+    width: 160px;
+    margin-right:5px;
+    margin-top:-5px;
 }
 
 .retailer-list__logo-img {
@@ -613,17 +661,17 @@ header a:hover {
     margin-top: 100px;
 }
 .logo-m1 {
-    margin-left: 15.67%;
+    margin-left: 190px;
 }
 .logo-m2 {
-    margin-left: 8.333%;
+    margin-left: 100px;
 }
 .logo-m3 {
-    margin-left: 34%;
+    margin-left: 390px;
 
 }
 .logo-m4 {
-    margin-left: 17%;
+    margin-left: 220px;
 }
 .logo-m5 {
     margin:0;
@@ -631,68 +679,115 @@ header a:hover {
 .logo-m6 {
     margin-left:50%;
 }
+.logo-m-space {
+    margin-right: 30px;
+}
 @media only screen and (max-width:320px)
 {
-    .retailer-image {
-        display: none;
-    }
-    
     .retailer-list__logo {
         
         width: 100% !important;
-        height: 280px;
+        height: 300px !important;
         
     }
-    .logo-m5 , .logo-m4 {
+    .logo-m5 , .logo-m4, .logo-m1, .logo-m3 {
         margin-left: 0 !important;
     }
     
 }
-@media only screen and (max-width: 767px)
-{
-    .retailer-list .retailer-list__logo {
-        
-        width: 32%;
-    }
-    .retailer-list__logo .retailer-list__logo-img {
-        
-        width:60%;
-        margin-left:-30%;
-    }
-    .retailer-list .logo-m1 {
-        margin-left:0;
-    }
-    .retailer-list .logo-m5 {
-        margin-left:16.67%;
-    }
-    .retailer-list .logo-m2 {
-        margin:0;
-    }
-    .retailer-list .logo-m4 {
-        margin-left: 33%;
-    }
-    
-}
-@media only screen and (max-width: 991px)
+@media only screen and (min-width:321px) and (max-width: 576px)
 {
     .retailer-list__logo {
         
-        width: 24%;
+        width: 80% !important;
+        height: 300px !important;
+        
     }
-    .logo-m1 {
+    .logo-m5 , .logo-m4, .logo-m1, .logo-m3 {
+        margin-left: 0 !important;
+    }
+    
+}
+@media only screen and (max-width: 768px)
+{
+    .retailer-list {
+        
+    }
+    .retailer-image {
+        display: none;
+    }
+    .retailer-info {
+        margin-bottom: 50px;
+    }
+    .retailer-sub .retailer-list .retailer-list__logo {
+        
+        width: 25%;
+        height: 200px;
+    }
+    .retailer-sub .retailer-list .logo-m1[name="nescafe"] {
+        margin-left:85px;
+    }
+    .retailer-sub .retailer-list .logo-m2 {
         margin-left:0;
     }
-    .retailer-list__logo-img {
-        
-        width:70%;
-        margin-left:-37%;
+    .retailer-sub .retailer-list .logo-m5 {
+        margin-left:85px;
     }
-    .logo-m3, .logo-m4, .logo-m6 {
+    .retailer-sub .retailer-list .logo-m4 {
+        margin-left:160px;
+    }
+    .retailer-sub .retailer-list .retailer-list__logo[name="baia baia"] {
+        margin-left:0px;
+    }
+    
+    
+}
+
+@media only screen and (max-width: 992px)
+{
+    
+    .retailer-list .retailer-list__logo {
+        width: 20%;
+        height: 210px;
+    }
+    .retailer-list .logo-m1 {
         margin-left: 0;
+    }
+    .retailer-list .logo-m2 {
+        margin-left: 107px;
+    }
+    
+    .retailer-list .logo-m3 {
+        margin-left: 24px;
+    }
+    .retailer-list .logo-m4 {
+        margin-left: 24px;
+    }
+}
+@media only screen and (max-width:1200px) {
+    .retailer-list__logo {
+        background-size: 100% 100%;
+        height: 145px;
+        width: 125px;
+    }
+    .logo-m1 {
+        margin-left: 160px;
+    }
+    .logo-m2 {
+        margin-left: 80px;
+    }
+    .logo-m3 {
+        margin-left: 318px;
+    }
+    .logo-m4 {
+        margin-left: 188px;
     }
     
 }
 /*quote*/
+.quote-video {
+    margin-bottom: 100px;
+}
 @media only screen and (max-width:320px) {
     .intro-video {
         width: 100%;
@@ -710,11 +805,9 @@ header a:hover {
         font-size: 16px;
         line-height: 32px;
     }
-    .quote-video {
-        margin-top: 30px;
-    }
+    
 }
-@media only screen and (min-width:321px) and (max-width:768px) {
+@media only screen and (max-width:768px) {
     .intro-video {
         width: 80%;
         display:block;
@@ -731,6 +824,10 @@ header a:hover {
     .intro-info__descript {
         font-size: 16px;
         line-height: 32px;
+    }
+    .quote-video {
+        margin-top: 50px;
+        margin-bottom: 50px;
     }
 }
 @media only screen and (max-width: 1200px) {
@@ -812,8 +909,30 @@ header a:hover {
     padding: 15px 22px 15px 22px;
 
 }
-@media only screen and (max-width:992px) {
-
+@media onlu screen and (max-width:320px) {
+    .news .platform--mid {
+        width: 100% !important;
+        
+    }
+}
+@media only screen and (max-width:768px) {
+    .news .platform--mid {
+        width: 80%;
+        margin-bottom: 50px;
+        
+    }
+    .news-list {
+        margin-left:auto;
+        margin-right: auto;
+    }
+}
+@media only screen and (max-width:1000px) {
+    .platform--mid {
+        width: 30%;
+    }
+    .bg-3 {
+        background-image: none;
+    }
 }
 /*footer*/
 footer {
@@ -861,7 +980,7 @@ footer {
     display: inline;
 }
 .copyright {
-    background-color:#1B2C3D;
+    background-color:#1F3246;
     width: 100%;
     margin:0;
     
@@ -879,5 +998,23 @@ footer {
 }
 .policy {
     float: right;
+}
+@media only screen and (max-width: 768px) {
+    .row-footer .col-footer {
+        width: 100% !important;
+    } 
+}
+@media only screen and (max-width: 768px) {
+    .col-footer[name="type"] {
+        width: 32%;
+    }   
+    .col-footer[name="us"] {
+        width: 32%;
+    }   
+}
+@media only screen and (max-width: 992px) {
+    .col-footer[name="connectpos"] {
+        width: 65%;
+    }   
 }
 
