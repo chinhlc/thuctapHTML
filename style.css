@@ -867,7 +867,9 @@ header a:hover {
 @media only screen and (max-width:768px) {
     .news .platform--mid {
         width: 80%;
-        margin-bottom: 50px;
+        margin: 0 auto;
+        display: block;
+        padding-bottom: 100px;
         
     }
     .news-list {
