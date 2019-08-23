@@ -553,7 +553,7 @@ header a:hover {
 .platform__image {
     width: 100%;
 }
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 480px) {
     .platform {
         width: 100% !important;
     }
@@ -626,164 +626,110 @@ header a:hover {
     right:80%;
 }
 
-
-.retailer-list__logo {
-    background-image: url("image/bg_gray.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100% 100%;
+.retailer-list {
+    width: 100%;
+    max-width: 1200px;
+    margin:0 auto;
+}
+.list-logo {
+    width: 15.67%;
+    padding-left:15px;
+    padding-right:15px;
     position: relative;
-    display: inline-block; 
-    height: 180px;
-    width: 160px;
-    margin-right:5px;
-    margin-top:-5px;
+    display: inline-block;
 }
-
-.retailer-list__logo-img {
+.list-logo__bg {
+    width: 100%;
+    position: relative;
+}
+.list-logo__icon {
     position: absolute;
-    left:50%;
     top:50%;
-    margin-left:-39%;
-    margin-top: -15%;
-    width:80%;
+    left:50%;
+    width: 125px;
+    margin-left:-60.25px;
+    margin-top:-15px;
 }
-.retailer-bg {
-    display: inline;
-    position: absolute;
-    right:100%;
-    top:0;
-}
-.retailer-bg__img {
-    margin-left:50%
+.list-logo__icon img {
+    width: 100%;
 }
 .retailer-sub {
     margin-top: 100px;
 }
-.logo-m1 {
-    margin-left: 190px;
+.logo-col-1 {
+    margin-left:15.67%;
 }
-.logo-m2 {
-    margin-left: 100px;
+.logo-col-2 {
+    margin-left:7.3333%;
 }
-.logo-m3 {
-    margin-left: 390px;
-
+.logo-col-3 {
+    margin-left: 31.34%;
 }
-.logo-m4 {
-    margin-left: 220px;
+.logo-col-4 {
+    margin-left: 16%;
 }
-.logo-m5 {
-    margin:0;
+.logo-col-6 {
+    margin-left: 47.33%;
 }
-.logo-m6 {
-    margin-left:50%;
-}
-.logo-m-space {
-    margin-right: 30px;
-}
-@media only screen and (max-width:320px)
-{
-    .retailer-list__logo {
-        
+@media only screen and (max-width:480px) {
+    .list-logo {
         width: 100% !important;
-        height: 300px !important;
-        
     }
-    .logo-m5 , .logo-m4, .logo-m1, .logo-m3 {
-        margin-left: 0 !important;
+    .logo-col-4 {
+        margin: 0 !important;
     }
-    
+    .retailer-list .logo-col-2 {
+        margin-top: 50px;
+    }
+    .retailer-list .logo-col-3 {
+        margin-top: 50px;
+    }
 }
-@media only screen and (min-width:321px) and (max-width: 576px)
+@media only screen and (max-width: 576px)
 {
-    .retailer-list__logo {
-        
-        width: 80% !important;
-        height: 300px !important;
-        
-    }
-    .logo-m5 , .logo-m4, .logo-m1, .logo-m3 {
-        margin-left: 0 !important;
-    }
-    
-}
-@media only screen and (max-width: 768px)
-{
-    .retailer-list {
-        
-    }
     .retailer-image {
         display: none;
     }
-    .retailer-info {
+    .retailer-info .retailer-list .list-logo {
+        width: 49%;
         margin-bottom: 50px;
     }
-    .retailer-sub .retailer-list .retailer-list__logo {
-        
-        width: 25%;
-        height: 200px;
+    .retailer-info .retailer-list .logo-col-5 {
+        margin:0;
     }
-    .retailer-sub .retailer-list .logo-m1[name="nescafe"] {
-        margin-left:85px;
+    .retailer-info .retailer-list .logo-col-4 {
+        margin-left:25%;
+        margin-top:-50px;
     }
-    .retailer-sub .retailer-list .logo-m2 {
-        margin-left:0;
+}
+@media only screen and (max-width: 768px)
+{
+    .retailer-list .list-logo {
+        width: 30%;
     }
-    .retailer-sub .retailer-list .logo-m5 {
-        margin-left:85px;
+    .logo-col-2 {
+        margin-left: 0;
     }
-    .retailer-sub .retailer-list .logo-m4 {
-        margin-left:160px;
+    .retailer-list .logo-col-5  {
+        margin-left: 15.33333% ;
     }
-    .retailer-sub .retailer-list .retailer-list__logo[name="baia baia"] {
-        margin-left:0px;
+    .retailer-list .logo-col-4 {
+        margin-left:31%;
     }
     
+    
+}
+@media only screen and (max-width: 992px)
+{
+    .list-logo {
+        width: 24%;
+    }
+    .logo-col-1, .logo-col-3, .logo-col-4, .logo-col-6{
+        margin-left:0;
+    }
     
 }
 
-@media only screen and (max-width: 992px)
-{
-    
-    .retailer-list .retailer-list__logo {
-        width: 20%;
-        height: 210px;
-    }
-    .retailer-list .logo-m1 {
-        margin-left: 0;
-    }
-    .retailer-list .logo-m2 {
-        margin-left: 107px;
-    }
-    
-    .retailer-list .logo-m3 {
-        margin-left: 24px;
-    }
-    .retailer-list .logo-m4 {
-        margin-left: 24px;
-    }
-}
-@media only screen and (max-width:1200px) {
-    .retailer-list__logo {
-        background-size: 100% 100%;
-        height: 145px;
-        width: 125px;
-    }
-    .logo-m1 {
-        margin-left: 160px;
-    }
-    .logo-m2 {
-        margin-left: 80px;
-    }
-    .logo-m3 {
-        margin-left: 318px;
-    }
-    .logo-m4 {
-        margin-left: 188px;
-    }
-    
-}
 /*quote*/
 .quote-video {
     margin-bottom: 100px;
@@ -798,14 +744,17 @@ header a:hover {
         margin: 30px 0px 0px 0px !important;
         display:block;
     }
-    .intro-info__title {
-        font-size: 25px;
+    
+    
+}
+@media only screen and (max-width:480px) {
+    .intro-info .intro-info__title {
+        font-size: 20px;
     }
-    .intro-info__descript {
-        font-size: 16px;
+    .intro-info .intro-info__descript {
+        font-size: 13px;
         line-height: 32px;
     }
-    
 }
 @media only screen and (max-width:768px) {
     .intro-video {
@@ -1017,4 +966,3 @@ footer {
         width: 65%;
     }   
 }
-
