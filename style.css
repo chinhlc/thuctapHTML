@@ -555,7 +555,8 @@ header a:hover {
 }
 @media only screen and (max-width: 480px) {
     .platform {
-        width: 100% !important;
+        width: 80% !important;
+        margin: 0 auto;
     }
     .features-info__title {
         font-size: 25px;
@@ -572,9 +573,7 @@ header a:hover {
         text-align: center;
         background-size: 0 0;
     }
-    .image-grid__list .platform--large {
-        width: 100%;
-    }
+    
         
 }
 @media only screen and (max-width: 576px) {
@@ -596,10 +595,21 @@ header a:hover {
     .title {
         width: 100%;
     }
+    
+    
+}
+@media only screen and (max-width: 768px) {
+    .image-grid__list .platform--larger {
+        width: 60%;
+        margin:0 auto;
+    }
 }
 @media only screen and (max-width: 920px) {
     .platform--large {
         width: 49%;
+    }
+    .platform--larger {
+        width: 33%;
     }
 }
 @media only screen and (max-width:1000px) {
@@ -647,8 +657,11 @@ header a:hover {
     top:50%;
     left:50%;
     width: 125px;
-    margin-left:-60.25px;
-    margin-top:-15px;
+    transform: translate( -50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
 }
 .list-logo__icon img {
     width: 100%;
@@ -678,24 +691,18 @@ header a:hover {
     .logo-col-4 {
         margin: 0 !important;
     }
-    .retailer-list .logo-col-2 {
-        margin-top: 50px;
-    }
-    .retailer-list .logo-col-3 {
-        margin-top: 50px;
-    }
+
+    
 }
 @media only screen and (max-width: 576px)
 {
-    .retailer-image {
-        display: none;
-    }
+    
     .retailer-info .retailer-list .list-logo {
         width: 49%;
-        margin-bottom: 50px;
+        margin-bottom: 10%;
     }
     .retailer-info .retailer-list .logo-col-5 {
-        margin:0;
+        margin-left:0;
     }
     .retailer-info .retailer-list .logo-col-4 {
         margin-left:25%;
@@ -704,6 +711,9 @@ header a:hover {
 }
 @media only screen and (max-width: 768px)
 {
+    .retailer-image {
+        display: none;
+    }
     .retailer-list .list-logo {
         width: 30%;
     }
@@ -721,6 +731,9 @@ header a:hover {
 }
 @media only screen and (max-width: 992px)
 {
+    .retailer-info {
+        margin-bottom: 100px;
+    }
     .list-logo {
         width: 24%;
     }
@@ -795,11 +808,10 @@ header a:hover {
     background-size: 110% 100%;
     overflow: hidden;
     margin-bottom: 168px;
-    max-width: 100% !important;
+    max-width: 100%;
 }
-.bg-4 {
-    background-image: url("image/bg_4.png");
-    background-size: 110% 100%;
+.new {
+    margin-top:192px;
 }
 .news__title {
     font-family: opensans-bold;
@@ -858,14 +870,34 @@ header a:hover {
     padding: 15px 22px 15px 22px;
 
 }
-@media onlu screen and (max-width:320px) {
-    .news .platform--mid {
-        width: 100% !important;
-        
+@media only screen and (max-width:380px) {
+    .platform .news__title {
+        font-size: 15px;
+    }
+    .platform .news__sub {
+        font-size:13px;
+    }
+    .news-category .news-category__sub {
+        font-size: 13px;
     }
 }
+@media only screen and (max-width:480px) {
+    .news__title {
+        font-size: 17px;
+    }
+    .news__sub {
+        font-size:14px;
+    }
+    .news-category__sub {
+        font-size: 14px;
+    }
+}
+
 @media only screen and (max-width:768px) {
-    .news .platform--mid {
+    .bg-3 {
+        margin-bottom: 100px;
+    }
+    .news-list .platform--mid {
         width: 80%;
         margin: 0 auto;
         display: block;
@@ -884,12 +916,14 @@ header a:hover {
     .bg-3 {
         background-image: none;
     }
+    .new {
+        margin-top:0;
+    }
 }
 /*footer*/
 footer {
     background-color: #1F3246;
     width: 100%;
-    
 }
 .row-footer {
     width: 100%;
@@ -900,14 +934,16 @@ footer {
     padding-bottom: 60px;
 }
 .col-footer {
-    width: 370px;
-    max-width: 1200px;
+    width: 33%;
     display: inline-block;
     vertical-align: top;
+    padding-left:15px;
+    padding-right:15px;
 }
 .col-footer--small {
-    width: 190px;
+    width: 15.67%;
 }
+
 .col-footer__title {
     font-size: 17px;
     color: #FFFFFF;
@@ -916,7 +952,7 @@ footer {
 }
 .col-footer__sub {
     
-    font-size: 15px;
+    font-size: 14px;
     color: #BBBBBB;
     line-height: 24px;
 }
@@ -950,21 +986,24 @@ footer {
 .policy {
     float: right;
 }
+
 @media only screen and (max-width: 768px) {
     .row-footer .col-footer {
-        width: 100% !important;
-    } 
-}
-@media only screen and (max-width: 768px) {
-    .col-footer[name="type"] {
-        width: 32%;
-    }   
-    .col-footer[name="us"] {
-        width: 32%;
-    }   
+        width: 80% !important;
+        display: block;
+        margin: 0 auto;
+        padding-bottom: 50px;
+    }
+    
 }
 @media only screen and (max-width: 992px) {
     .col-footer[name="connectpos"] {
-        width: 65%;
+        width: 60%;
     }   
+    .col-footer--small[name="sale"] {
+        width: 35%;
+    }
+    .footer-col-1 {
+        width: 29.67%;
+    }
 }
