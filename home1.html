@@ -6,6 +6,26 @@
             <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">       
             <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+            <script>
+                    $(document).ready(function(){
+                      $(".hidden-main-menu").click(function(){
+                        $(".main-header__content").toggle();
+                      });
+                    });
+                    </script>
+                <script>
+                    $(document).mouseup(function(e) 
+                {
+                    var container = $(".main-header__content");
+
+                    // if the target of the click isn't the container nor a descendant of the container
+                    if (!container.is(e.target) && container.has(e.target).length === 0) 
+                    {
+                        container.hide();
+                    }
+                });
+                </script>
     </head>
     <body>
         <!--menu-->
@@ -37,10 +57,7 @@
                     <a href="#"><img src="image/logo.png"/></a>
                 </div>
                 <div class="hidden-main-menu">
-                    <input type="checkbox" id="chk">
-                    <label for="chk" >
-                        <i class="fa fa-bars "></i>
-                    </label>
+                    <i class="fa fa-bars " onclick="myFunction()"></i>
                 </div>
                     
                 
@@ -358,7 +375,7 @@
         <div class="image-grid">
                 <div class="container">
                         <div class="title text-center">
-                                        <h2 class="">A solution that fits multiple business types</h2>
+                                        <h2 class="title">A solution that fits multiple business types</h2>
                                         <a class="grid-info__link" href="#">View all<img src="image/icon_arrow_b.png"/></a>
                         </div>
                         

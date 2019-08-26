@@ -40,6 +40,9 @@ body {
     margin-right:auto;
     margin-bottom: 48px;
 }
+.title .title {
+    margin-bottom: 0;
+}
 .pad15 {
     padding-left: 15px;
     padding-right:15px;
@@ -217,11 +220,7 @@ header a:hover {
     
 
 }
-#chk {
-    position: absolute;
-    z-index: -1111;
-    visibility: hidden;
-}
+
 .link-box .main-header__des {
     color:#BBBBBB;
     font-size: 16px;
@@ -232,15 +231,28 @@ header a:hover {
 .main-header .icon {
     display: none ;
 }
-
+.show-content {
+    display: block;
+}
 @media screen and (max-width:768px) {
     .main-header .main-header__logo {
         text-align: left;
         width: 50%;
+        padding-bottom: 10px;
     }
     .hidden-main-menu {
         display: block;
         cursor: pointer;
+        transform: translate(0,50%);
+        -moz-transform: translate(0,50%);
+        -webkit-transform: translate(0,50%);
+        -o-transform: translate(0,50%);
+        -ms-transform: translate(0,50%);
+        text-align: center;
+        margin-top:-1%;
+        margin-right:5%;
+        
+
     }
     .main-header__content .main-header__link {
         display: block;
@@ -249,26 +261,23 @@ header a:hover {
     }
     .main-header .main-header__content {
         position: fixed;
-        width: 50%;
+        width: 30%;
         height: 100vh;
         background-color: black;
-        top:120px;
-        right:0%;
-        transition: 0.5s;
+        top:130px;
+        right:0;     
+        transition: 0.9s;
         z-index: 1;
-        
+        display: none;
+        top:0;   
     }
-   
     .main-header .link-item {
         color: #EEEEEE;
         text-align: left;
         padding-left:15px;
         
     }
-    
-    #chk:checked ~  .main-header__content{
-        background-color: #19A79A;
-    }
+
 }
 @media screen and (max-width:992px) {
     .main-header__logo {
@@ -647,7 +656,10 @@ header a:hover {
         text-align: center;
         background-size: 0 0;
     }
-    
+    .platform--large {
+        padding-left:0px;
+        padding-right:0px;
+    }
         
 }
 @media only screen and (max-width: 576px) {
@@ -761,6 +773,8 @@ header a:hover {
 @media only screen and (max-width:480px) {
     .list-logo {
         width: 100% !important;
+        padding-left: 0;
+        padding-right: 0;
     }
     .logo-col-4 {
         margin: 0 !important;
@@ -965,6 +979,10 @@ header a:hover {
     .news-category__sub {
         font-size: 14px;
     }
+    .platform--mid {
+        padding-left:0;
+        padding-right:0;
+    }
 }
 
 @media only screen and (max-width:768px) {
@@ -1070,7 +1088,7 @@ footer {
         width: 80% !important;
         display: block;
         margin: 0 auto;
-        padding-bottom: 50px;
+        padding-bottom: 30px;
     }
     
 }
