@@ -4,6 +4,7 @@
             <meta charset="utf-8">
             <link rel="stylesheet" type="text/css" href="./style.css"/>
             <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">       
             <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     </head>
     <body>
@@ -33,110 +34,108 @@
         <div class="main-header">
             <div class="container">
                 <div class="main-header__logo">
-                    <a href="#">
-                        <img src="image/logo.png"/>
-                    </a>
+                    <a href="#"><img src="image/logo.png"/></a>
                 </div>
-                <div class="main-header__menu">
+                <div class="hidden-main-menu">
+                    <input type="checkbox" id="chk">
+                    <label for="chk" >
+                        <i class="fa fa-bars "></i>
+                    </label>
+                </div>
+                    
+                
+                <nav class="main-header__content">
                     <ul>
-                        <li class="main-header__menu-link">
-                            <a href="#">why connectpos</a>
-                            <img class="left5" src="image/icon_arrow_g.png"/>
-                            <ul class="main-header__submenu">
-                                <li>
-                                    <p class="main-header__menu-title">benefits</p>
-                                    <ul class="main-header__menu-descript">
-                                        <li>
-                                            <a>About us</a>
-                                        </li>
-                                        <li>
-                                            <a>24/7 support</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <p class="main-header__menu-title">your business type</p>
-                                    <ul class="main-header__menu-descript">
-                                        <li>
-                                            <a>Fashion & Accessories</a>
-                                        </li>
-                                        <li>
-                                            <a>Furniture & homeware</a>
-                                        </li>
-                                        <li>
-                                            <a>all business types</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="main-header__menu-link">
-                            <a href="#">Features</a>
-                            <img class="left5" src="image/icon_arrow_g.png"/>
-                            <ul class="main-header__submenu">
-                                <li>
-                                    <p class="main-header__menu-title">overview</p>
-                                    <ul class="main-header__menu-descript">
-                                        <li>
-                                            <a>features overview</a>
-                                        </li>
-                                        <li>
-                                            <a>ominichannel</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <p class="main-header__menu-title">highlight features</p>
-                                    <ul class="main-header__menu-descript">
-                                        <li>
-                                            <a> PWA Consumer APP</a>
-                                        </li>
-                                        <li>
-                                            <a>Customer screen</a>
-                                        </li>
-                                        <li>
-                                            <a>facial recognition</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="main-header__menu-link">
-                            <a href="#">Integration</a>
-                            <img class="left5" src="image/icon_arrow_g.png"/>
-                            <ul class="main-header__submenu">
-                                <ul class="main-header__menu-descript padding-top-30">
-                                    <li >
-                                        <a>Ecommerce Platform</a>
-                                    </li>
-                                    <li>
-                                        <a>Payment</a>
-                                    </li>
-                                    <li>
-                                        <a>Inventory & logistics</a>
-                                    </li>
-                                    <li>
-                                        <a>Loyalty</a>
-                                    </li>
-                                    <li>
-                                        <a>Gift card</a>
-                                    </li>
+                        <li class="main-header__link">
+                            <div class="link-item">
+                                <a>Why ConnectPOS</a>
+                                <img src="image/icon_arrow_g.png">
+                            </div>
+                            <ul class="link-box">
+                                <ul class="main-header__menu-link">
+                                    <li class="main-header__title"><a>benefit</a></li>
+                                    <li class="main-header__des"><a>About Us</a></li>
+                                    <li class="main-header__des"><a>24/7 Support</a></li>
+                                </ul>
+                                <ul class="main-header__menu-link">
+                                    <li class="main-header__title"><a>YOUR BUSINESS TYPES</a></li>
+                                    <li class="main-header__des"><a>Fashion & Accessories</a></li>
+                                    <li class="main-header__des"><a>Furniture & Homeware</a></li>
+                                    <li class="main-header__des"><a>All Business Types</a></li>
                                 </ul>
                             </ul>
                         </li>
-                        <li class="main-header__menu-link">
-                            <a href="#">Pricing</a>
+                        <li class="main-header__link">
+                            <div class="link-item">
+                                <a>Features</a>
+                                <img src="image/icon_arrow_g.png">
+                            </div>
+                        <ul class="link-box">
+                           <ul class="main-header__menu-link">
+                              <li class="main-header__title">
+                                 <a>benefit</a>
+                              </li>
+                              <li class="main-header__des">
+                                 <a>About Us</a>
+                              </li>
+                              <li class="main-header__des">
+                                 <a>24/7 Support</a>
+                              </li>
+                           </ul>
+                           <ul class="main-header__menu-link">
+                              <li class="main-header__title">
+                                 <a>YOUR BUSINESS TYPES</a>
+                              </li>
+                              <li class="main-header__des">
+                                 <a>Fashion & Accessories</a>
+                              </li>
+                              <li class="main-header__des">
+                                 <a>Furniture & Homeware</a>
+                              </li>
+                              <li class="main-header__des">
+                                 <a>All Business Types</a>
+                              </li>
+                           </ul>
+                        </ul>
                         </li>
-                        <li class="main-header__menu-link">
-                            <a href="#">Case studies</a>
+                        <li class="main-header__link">
+                        <div class="link-item">
+                           <a>Integration</a>
+                           <img src="image/icon_arrow_g.png">
+                        </div>
+                        <ul class="link-box">
+                           <ul class="main-header__menu-link">
+                              <li class="main-header__title">
+                                 <a>benefit</a>
+                              </li>
+                              <li class="main-header__des">
+                                 <a>About Us</a>
+                              </li>
+                              <li class="main-header__des">
+                                 <a>24/7 Support</a>
+                              </li>
+                           </ul>
+                        </ul>
                         </li>
-                    </ul>
-                </div>
-                <button class=" button">free trial
-                    <img class ="left5"src="image/icon_arrow_b.png">
-                </button>
+                        <li class="main-header__link">
+                        <div class="link-item">
+                           <a>Pricing</a>
+                        </div>
+                        </li>
+                        <li class="main-header__link">
+                        <div class="link-item">
+                           <a>Case studies</a>
+                        </div>
+                        </li>
+                        <li>
+                            <button class="button">free trial</button>
+                        </li>
+                  </ul>
+                </nav>
+                
+               
             </div>
-        </div>
+         </div>
         <!--bannerHome-->
         <div class="banner-home">
             <div class="container">
@@ -654,6 +653,6 @@
                         </div>
                     </div>
         </footer>
-
+        
     </body>
 </html>    
