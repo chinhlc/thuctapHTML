@@ -7,25 +7,30 @@
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">       
             <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+            <!--show main menu-->
+            <script type="text/javascript">
+                $(document).ready(function() {
+                    $('.hidden-main-menu').click(function() {
+                        $('.main-header__content').toggleClass('show-menu');
+                  });
+                });
+                
+            </script>
             <script>
-                    $(document).ready(function(){
-                      $(".hidden-main-menu").click(function(){
-                        $(".main-header__content").toggle();
-                      });
-                    });
-                    </script>
-                <script>
-                    $(document).mouseup(function(e) 
-                {
+                $(document).mouseup(function (e) {
+
                     var container = $(".main-header__content");
 
-                    // if the target of the click isn't the container nor a descendant of the container
-                    if (!container.is(e.target) && container.has(e.target).length === 0) 
-                    {
-                        container.hide();
+                    if (!container.is(e.target) && container.has(e.target).length == 0){
+
+                        container.css("right" : "-100%");
+                        
                     }
-                });
-                </script>
+                    }); 
+            </script>
+           
+            <!--hide main menu-->
+            
     </head>
     <body>
         <!--menu-->
@@ -61,7 +66,7 @@
                 </div>
                     
                 
-                <nav class="main-header__content">
+                <nav class="main-header__content ">
                     <ul>
                         <li class="main-header__link">
                             <div class="link-item">
@@ -147,6 +152,7 @@
                         <li>
                             <button class="button">free trial</button>
                         </li>
+                        
                   </ul>
                 </nav>
                 
