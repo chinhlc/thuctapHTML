@@ -268,7 +268,7 @@ header a:hover {
         width: 220px;
         height: 100vh;
         background-color: black;
-        top:129px;
+        top:0;
         right:-100%; 
         transition: 0.9s;
         z-index: 1;
@@ -296,7 +296,7 @@ header a:hover {
         position: relative;
         background-color: #2f3542;
         width: 30%;
-        margin-top: 0;
+        margin-top: 0 !important;
         padding-left:0;
         transition: 0.9s;
         
@@ -310,12 +310,12 @@ header a:hover {
     }
     .main-header .link-box .main-header__title, 
     .main-header .link-box .main-header__des {
-        text-align:left;
-        font-family: opensans-regular, sans-serif;
+        
         font-size: 11px;
         padding-left:15px;
         padding-bottom: 15px !important;
     }
+    
 }
 @media screen and (max-width:992px) {
     .main-header__logo {
@@ -335,7 +335,14 @@ header a:hover {
         padding-bottom: 15px;
         padding-top:15px;
     }
-    
+    .main-header__link .link-box {
+        margin-top:29px;
+        text-align: left;
+    }
+    .main-header__link .main-header__title,
+    .main-header__link .main-header__des {
+        text-align: left !important;
+    }
 }
 @media screen and (max-width:1200px) {
     .link-item {
@@ -391,6 +398,7 @@ header a:hover {
     border-radius: 3px;
     display: inline-block;
 }
+/*budget*/
 
 /*bannerHome*/
 
