@@ -136,7 +136,7 @@ header a:hover {
     color:#26A69A;
     text-decoration: none;
 }
-@media only screen and (max-width:320px) {
+@media only screen and (max-width:380px) {
     .top-menu--left a {
         margin-right: 15px;
     }
