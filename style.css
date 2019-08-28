@@ -210,6 +210,7 @@ header a:hover {
 }
 .link-box .main-header__title {
     padding-bottom:15px;
+    transform: 1000s;
 }
 .hidden-main-menu {
     float: right;
@@ -272,10 +273,13 @@ header a:hover {
         right:-100%; 
         transition: 0.9s;
         z-index: 1;
-        ]
+        
     }
     .link-item {
         padding-bottom: 15px;
+    }
+    .link-item img{
+        float: right;
     }
     .main-header__content ul li {
         padding-bottom: 0 !important;
@@ -1104,6 +1108,7 @@ footer {
     font-size: 14px;
     color: #BBBBBB;
     line-height: 24px;
+    
 }
 .col-footer__sub ul  {
     list-style: none;
@@ -1129,6 +1134,8 @@ footer {
     font-size: 13px;
     color: #EEEEEE;
     line-height: 24px;
+    padding-left:15px;
+    padding-right:15px;
     
 }
 .copyright__sub-text {
@@ -1138,6 +1145,12 @@ footer {
 }
 .policy {
     float: right;
+    
+}
+@media screen and (max-width:340px) {
+    .copyright .copyright__sub {
+        font-size: 12px;
+    }
 }
 @media screen and (max-width:480px) {
     .footer  .row-footer .col-footer {
@@ -1147,16 +1160,19 @@ footer {
         margin-right:0;
         width: 90% !important;
     } 
+    .copyright .copyright__sub {
+        padding-left: 0;
+    }
 }
 
-@media screen and (max-width:620px) {
+@media screen and (max-width:650px) {
     .policy {
         float: none;
     }
-    
-    .copyright__sub {
-        padding-top:15px;
+    .row-footer {
+        padding-bottom: 0;
     }
+    
 }
 @media only screen and (max-width: 768px) {
     .row-footer .col-footer[name="connectpos"] {
