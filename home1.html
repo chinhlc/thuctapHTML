@@ -17,6 +17,10 @@
                     $('.hidden-main-menu').click(function() {
                         $('.main-header__content').toggleClass('show-menu');
                   });
+                  $('.main-header__link ').click(function() {
+                      $(this).siblings().removeClass('show-menu');
+                        $(this).toggleClass('show-menu');
+                  });
                   
                 });
                 //hide main menu

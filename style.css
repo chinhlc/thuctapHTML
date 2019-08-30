@@ -214,7 +214,7 @@ header a:hover {
 .link-box ul li a:hover, .link-box li a:hover {
     color:black;
 }
-.main-header__link:hover .link-box {
+.main-header__link.show-menu .link-box {
     display: block;
 }
 .main-header__title {
@@ -344,9 +344,7 @@ header a:hover {
         padding-bottom: 15px !important;
     }
     
-    .main-header__link:hover .link-box {
-        
-    }
+    
 }
 @media screen and (max-width:992px) {
     .main-header__logo {
