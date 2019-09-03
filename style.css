@@ -74,6 +74,9 @@ body {
 .m0-left {
     margin-left: 0 !important;
 }
+.m0 {
+    margin:0;
+}
 .m110-right {
     margin-right:110px;
 }
@@ -151,9 +154,10 @@ header a:hover {
 /* main-header*/
 .main-header {
     width: 100%;
-    max-width: 1200px;
+    background-color: #ffffff;
     margin-left: auto;
     margin-right:auto;
+    box-shadow: 0 3px 5px;
 }
 
 .main-header__logo {
@@ -408,7 +412,6 @@ header a:hover {
 .button--light {
     width: 150px;
     border: 2px solid;
-    margin-bottom: 100px;
     text-transform: uppercase;
     background-color: initial;
 }
@@ -460,18 +463,19 @@ header a:hover {
     font-family: opensans-bold;
     font-size: 52px;
     line-height: 60px;
+    padding-bottom: 24px;
 }
 .slide-content-sub {
-    margin-bottom: 48px;
+    padding-bottom: 48px;
     font-size: 25px;
     line-height: 36px;
 }
-.carousel-indicators {
+.dots {
     top:70%;
     margin-left:auto !important;
     margin-right: auto !important;
 }
-#carouselExampleCaptions .carousel-indicators li{
+#carouselExampleCaptions .dots li{
     border-radius:  50%;
     width: 15px;
     height: 15px;
@@ -498,6 +502,9 @@ header a:hover {
     }
 }
 @media screen and (max-width:992px) {
+    .carousel-item img {
+        margin-left:-30%;
+    }
     .slide-content {
         width: 80%;
     }
@@ -944,6 +951,7 @@ header a:hover {
         width: 80%;
         display:block;
         margin: 0 auto;
+
     }
     .intro-info {
         width: 90%;
