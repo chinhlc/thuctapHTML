@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
             <meta charset="utf-8">
             <link rel="stylesheet" type="text/css" href="./style.css"/>
@@ -9,6 +9,7 @@
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+            
             <script type="text/javascript">
                 //show main menu
                 $(document).ready(function() {
@@ -36,9 +37,9 @@
     </head>
     <body>
         <!--menu-->
-        <header class="top-header">
+        <header class="top-header default-block">
             <div class="container">
-                <nav class="top-header__top-menu">
+                <nav class="top-header__top-menu ">
                     <ul class="top-menu--left">
                         <li>
                             <a href="#">Blog</a>
@@ -58,7 +59,7 @@
         </header>
         <!--mainmenu-->
     
-        <div class="main-header sticky-top">
+        <div class="main-header sticky-top default-block">
             <div class="container">
                 <div class="main-header-box">
                     <div class="main-header__logo">
@@ -144,12 +145,12 @@
                             </li>
                             <li class="main-header__link">
                             <div class="link-item">
-                               <a>Pricing</a>
+                               <a href="#">Pricing</a>
                             </div>
                             </li>
                             <li class="main-header__link">
                             <div class="link-item">
-                               <a>Case studies</a>
+                               <a href="#">Case studies</a>
                             </div>
                             </li>
                             <li class = "main-header-button">
@@ -175,7 +176,7 @@
                     <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
                   </ol>
                   <div class="carousel-inner">
-                    <div class="carousel-item active">
+                    <div class="carousel-item slide-item active">
                       <img src="image/img_banner2.png" class="d-block w-150 " alt="banner-home-1">
                       <div class=" d-md-block slide-content">
                             <h1 class="slide-content-title m0">
@@ -189,7 +190,7 @@
                                 </button>
                       </div>
                     </div>
-                    <div class="carousel-item">
+                    <div class="carousel-item slide-item">
                       <img src="image/img_banner2.png" class="d-block w-150 " alt="banner-home-2">
                       <div class=" d-md-block slide-content">
                             <h1 class="slide-content-title m0">
@@ -203,7 +204,7 @@
                                 </button>
                       </div>
                     </div>
-                    <div class="carousel-item">
+                    <div class="carousel-item slide-item">
                       <img src="image/img_banner2.png" class="d-block w-150 " alt="banner-home-3">
                       <div class=" d-md-block slide-content">
                             <h1 class="slide-content-title m0">
@@ -223,7 +224,7 @@
               </div>
         
         <!--main-->
-        <div class="intro">
+        <div class="intro default-block">
             <!--intro-->
             <div class="container">
                 <div class="intro-video">
@@ -240,7 +241,7 @@
                 </div>
             </div>  
         <!--featurehome-->
-        <div class="features">
+        <div class="features default-block">
             <div class="container">
                 <div class="features-info">
                     <h6 class="features-info__title">Feature-rich and powerful POS system</h6>
@@ -278,7 +279,7 @@
             </div>
         </div>
         <!--listimage-->        
-        <div class="image-grid">
+        <div class="image-grid default-block">
             <div class="container">
                 <h2 class="title text-center">And we go beyond outstanding features</h2>
                 <div class=" image-grid__list text-center">
@@ -315,7 +316,7 @@
             
         </div>
         <!--retailer-->
-        <div class=" retailer">
+        <div class=" retailer default-block">
             <div class="container">
                 <div class="retailer-info">
                     <div class="retailer-image">
@@ -402,32 +403,94 @@
         <!--demo-->
         
         <!--quote-->
-        <div class="intro m0-top">
-            <div class="container">
-                <ul>
-                    <li>
-                            <div class="intro-info m0-left m110-right pos-relative">
-                                <h3 class="intro-info__title">Hear our customer stories</h3>
-                                    <p class="intro-info__descript">Whether in the demo, during the free trial or in practice by Dampfi now, ConnectPOS proves to be stable and reliable, which is ultimately the most important factor</p>
-                                    <div class="intro-author">
-                                            <p class="intro-author__name">Robin, Managing Director</p>
-                                            <p class="intro-author__place">Dampfi</p>
+        <div class="slide-quote default-block">
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                                <div class="intro m0-top default-block">
+                                        <div class="container">
+                                            <ul>
+                                                <li>
+                                                        <div class="intro-info m0-left m110-right pos-relative">
+                                                            <h3 class="intro-info__title">Hear our customer stories</h3>
+                                                                <p class="intro-info__descript">Whether in the demo, during the free trial or in practice by Dampfi now, ConnectPOS proves to be stable and reliable, which is ultimately the most important factor</p>
+                                                                <div class="intro-author">
+                                                                        <p class="intro-author__name">Robin, Managing Director</p>
+                                                                        <p class="intro-author__place">Dampfi</p>
+                                                                    </div>
+                                                                <button class="button button--bg-green button--large">More case studies</button>
+                                                        </div>
+                                                </li>
+                                                <li>
+                                                    <div class="intro-video quote-video">
+                                                                <img class="intro-video__image" src="image/img_story.png">
+                                                                    <a href="#"><img class="intro-video__icon"src="image/icon_play.png"></a>  
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                                            
                                         </div>
-                                    <button class="button button--bg-green button--large">More case studies</button>
-                            </div>
-                    </li>
-                    <li>
-                        <div class="intro-video quote-video">
-                                    <img class="intro-video__image" src="image/img_story.png">
-                                        <a href="#"><img class="intro-video__icon"src="image/icon_play.png"></a>  
+                                    </div>
+                          </div>
+                          <div class="carousel-item">
+                                <div class="intro m0-top default-block">
+                                        <div class="container">
+                                            <ul>
+                                                <li>
+                                                        <div class="intro-info m0-left m110-right pos-relative">
+                                                            <h3 class="intro-info__title">Hear our customer stories</h3>
+                                                                <p class="intro-info__descript">Whether in the demo, during the free trial or in practice by Dampfi now, ConnectPOS proves to be stable and reliable, which is ultimately the most important factor</p>
+                                                                <div class="intro-author">
+                                                                        <p class="intro-author__name">Robin, Managing Director</p>
+                                                                        <p class="intro-author__place">Dampfi</p>
+                                                                    </div>
+                                                                <button class="button button--bg-green button--large">More case studies</button>
+                                                        </div>
+                                                </li>
+                                                <li>
+                                                    <div class="intro-video quote-video">
+                                                                <img class="intro-video__image" src="image/img_story.png">
+                                                                    <a href="#"><img class="intro-video__icon"src="image/icon_play.png"></a>  
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                                            
+                                        </div>
+                                    </div>
+                          </div>
+                          <div class="carousel-item">
+                                <div class="intro m0-top default-block">
+                                        <div class="container">
+                                            <ul>
+                                                <li>
+                                                        <div class="intro-info m0-left m110-right pos-relative">
+                                                            <h3 class="intro-info__title">Hear our customer stories</h3>
+                                                                <p class="intro-info__descript">Whether in the demo, during the free trial or in practice by Dampfi now, ConnectPOS proves to be stable and reliable, which is ultimately the most important factor</p>
+                                                                <div class="intro-author">
+                                                                        <p class="intro-author__name">Robin, Managing Director</p>
+                                                                        <p class="intro-author__place">Dampfi</p>
+                                                                    </div>
+                                                                <button class="button button--bg-green button--large">More case studies</button>
+                                                        </div>
+                                                </li>
+                                                <li>
+                                                    <div class="intro-video quote-video">
+                                                                <img class="intro-video__image" src="image/img_story.png">
+                                                                    <a href="#"><img class="intro-video__icon"src="image/icon_play.png"></a>  
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                                            
+                                        </div>
+                                    </div>
+                          </div>
                         </div>
-                    </li>
-                </ul>
-                                
-            </div>
+                       
+                      </div>
         </div>
+        
         <!--listimage-->        
-        <div class="image-grid">
+        <div class="image-grid default-block">
                 <div class="container">
                         <div class="title text-center">
                                         <h2 class="title">A solution that fits multiple business types</h2>
@@ -470,7 +533,7 @@
                 
         </div>
         <!--partner-->
-        <div class=" retailer">
+        <div class=" retailer default-block">
             <div class="container">
                         <div class="retailer-info">
                             <div class="retailer-image">
@@ -550,7 +613,7 @@
                     </div>
         </div>
         <!--news-->
-        <div class="image-grid bg-3">
+        <div class="image-grid bg-3 default-block">
                 <div class="container">
                     <div class="news">
                             <h2 class="title text-center">What news</h2>
@@ -635,7 +698,7 @@
         <!--footer-->
         <footer class="footer">
             <div class="container">
-                <div class="row-footer">
+                <div class="row-footer default-block">
                     <div class="col-footer" name ="connectpos">
                         <h3 class="col-footer__title">About connectpos</h3>
                         <div class="col-footer__sub" >
@@ -695,8 +758,8 @@
                             <div class="col-footer__img">
                                 <ul>
                                         <li><img src="image/icon_fb.png"> </li>                            
-                                        <li><img src="image/icon_fb.png"></li>
-                                        <li><img src="image/icon_fb.png"></li>
+                                        <li><img src="image/icon_tw.png"></li>
+                                        <li><img src="image/icon_gp.png"></li>
                                 </ul>
                             </div>
                     </div>  
