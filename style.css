@@ -159,6 +159,7 @@ header a:hover {
 .main-header {
     background-color: #ffffff;
     box-shadow: 0 3px 5px;
+    
 }
 
 .main-header__logo {
@@ -309,8 +310,12 @@ header a:hover {
         right:-100%; 
         transition: 0.9s;
         z-index: 11;
+        overflow-y: scroll;
         
     }
+    ::-webkit-scrollbar {
+        display: none;
+      }
     .link-item {
         padding-bottom: 15px;
     }
@@ -477,9 +482,8 @@ header a:hover {
     width:60%;
     color: #ffffff;
     position: absolute;
-    
     top:120px;
-    left:80px;
+    max-width: 700px;
 }
 .slide-content-title {
     font-family: opensans-bold;
@@ -732,6 +736,22 @@ header a:hover {
 }
 .image-grid__list ul {
     margin:0;
+}
+
+.image-card {
+    width: 25%;
+    float: left;
+}
+@media screen and (max-width:568px) {
+    .image-grid .image-card {
+        width: 100%;
+    
+    }
+}
+@media screen and (max-width:992px) {
+    .image-card {
+        width: 50%;
+    }
 }
 .platform__title {
     font-family: opensans-bold;
