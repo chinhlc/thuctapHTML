@@ -839,6 +839,32 @@ header a:hover {
     overflow: hidden !important;
 }
 
+.features__title {
+    font-family: opensans-Bold;
+    font-size: 22px;
+    color: #555555;
+    line-height: 24px;
+}
+
+.features__sub {
+    font-size: 16px;
+    color: #777777;
+    line-height: 24px;
+}
+
+.features__link {
+    font-family: opensans-bold;
+    font-size: 14px;
+    color: #26A69A;
+    line-height: 24px;
+}
+
+.features__link:hover {
+    color: #3498db;
+    text-decoration: none;
+
+}
+
 .features-info {
     width: 550px;
     max-width: 1200px;
@@ -1321,7 +1347,6 @@ header a:hover {
     background-repeat: no-repeat;
     background-size: 110% 100%;
     overflow: hidden;
-    margin-bottom: 168px;
     max-width: 100%;
 }
 
@@ -1745,9 +1770,11 @@ footer {
     max-width: 910px;
     background-position-y: 22%;
 }
+
 .bg-quote {
-	background-position-y: 15%;
+    background-position-y: 15%;
 }
+
 .quote-address {
     font-family: opensans-bold;
     font-size: 18px;
@@ -1755,25 +1782,29 @@ footer {
     line-height: 24px;
     padding-top: 32px;
 }
+
 .quote-author {
-	font-family: OpenSans;
-	font-size: 18px;
-	color: #19A79A;
-	text-align: center;
-	line-height: 24px;
-	padding-top: 32px;
+    font-family: OpenSans;
+    font-size: 18px;
+    color: #19A79A;
+    text-align: center;
+    line-height: 24px;
+    padding-top: 32px;
 }
+
 .quote-author__name {
-	color: #151515;
-	font-family: opensans-bold;
+    color: #151515;
+    font-family: opensans-bold;
 }
+
 @media screen and (max-width:576px) {
     .quote .quote-caption {
         font-size: 15px;
-	}
-	.quote {
-		background: none;
-	}
+    }
+
+    .quote {
+        background: none;
+    }
 }
 
 @media screen and (max-width:768px) {
@@ -1782,7 +1813,8 @@ footer {
     }
 }
 
-.consumer-card::after {
+.consumer-card::after,
+.image-grid::after {
     clear: both;
     display: block;
     content: ".";
@@ -1962,6 +1994,7 @@ footer {
         margin: 0;
     }
 }
+
 /*magento-intro*/
 .magento-intro {
     padding-top: 100px;
