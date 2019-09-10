@@ -1647,7 +1647,7 @@ footer {
 .banner {
     background-image: url("image/bg_banner.png");
     background-repeat: no-repeat;
-    background-position-x: 80%;
+    background-position: 80% bottom;
     background-size: cover;
     width: 100%;
     height: 550px;
@@ -1678,7 +1678,7 @@ footer {
 }
 
 .banner-video {
-    width: 35%;
+    width: 39%;
 
 }
 
@@ -1696,7 +1696,7 @@ footer {
     margin-left: -36px;
 }
 
-@media screen and (max-width:320px) {
+@media screen and (max-width:340px) {
     .banner-content .banner-caption .banner-caption__title {
         font-size: 25px;
     }
