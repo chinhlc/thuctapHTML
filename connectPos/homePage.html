@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./myStyle.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+        //show main menu
+        $(document).ready(function () {
+
+            $('.hidden-menu').click(function () {
+                $('.menu nav').toggleClass('show-menu');
+            });
+            $('.menu-block ').click(function () {
+                $(this).siblings().removeClass('action');
+                $(this).toggleClass('action');
+            });
+
+        });
+        //hide main menu
+        $(document).mouseup(function (e) {
+            var value = $(".menu nav");
+            if (!$('.hidden-menu').is(e.target) && !value.is(e.target) && value.has(e.target).length == 0) {
+                $('.menu nav').removeClass('show-menu');
+            }
+        })
+
+    </script>
+</head>
+
+<body>
+    <!--top menu-->
+    <header class="menu-item default-block text-right">
+        <div class="container">
+            <nav class="menu-item__nav">
+                <ul class="menu-item__nav-content">
+                    <li>
+                        <a href="#">Blog</a>
+                    </li>
+                    <li>
+                        <a href="#">Partners</a>
+                    </li>
+                    <li>
+                        <a href="#">Support</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact Us</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!--main menu-->
+    <div class="menu default-block sticky-top">
+        <div class="container">
+
+            <div class="menu__logo float-left">
+                <a href="./home1.html">
+                    <img src="img/logo.png" />
+                </a>
+            </div>
+            <!--menu cho moblie-->
+            <div class="hidden-menu">
+                <i class="fa fa-bars "></i>
+            </div>
+            <!--menu cho web-->
+            <nav class="float-right">
+                <ul class="sub-menu">
+                    <li class="menu-block">
+                        <div class="menu-block__link text-uppercase">
+                            <a>Why ConnectPOS</a>
+                            <i class="fa fa-caret-down menu-link__icon" aria-hidden="true"></i>
+                        </div>
+                        <ul class="menu-block__box">
+                            <li class="menu-block">
+                                <div class="menu-block__link">
+                                    <ul>
+                                        <li class="menu-block__title text-uppercase">
+                                            <a>benefit</a>
+                                        </li>
+                                        <li class="menu-block__link text-capitalize">
+                                            <a href="#">About Us</a>
+                                        </li>
+                                        <li class="menu-block__link text-capitalize">
+                                            <a href="#">24/7 Support</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="menu-block">
+                                <div class="menu-block__link ">
+                                    <ul>
+                                        <li class="menu-block__title text-uppercase">
+                                            <a>YOUR BUSINESS TYPES</a>
+                                        </li>
+                                        <li class="menu-block__link text-capitalize">
+                                            <a href="#">Fashion & Accessories</a>
+                                        </li>
+                                        <li class="menu-block__link text-capitalize">
+                                            <a href="#">Furniture & Homeware</a>
+                                        </li>
+                                        <li class="menu-block__link text-capitalize">
+                                            <a href="#">All Business Types</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-block">
+                        <div class="menu-block__link text-uppercase">
+                            <a>Features</a>
+                            <i class="fa fa-caret-down menu-link__icon" aria-hidden="true"></i>
+                        </div>
+                        <ul class="menu-block__box">
+                            <li class="menu-block">
+                                <div class="menu-block__link">
+                                    <ul>
+                                        <li class="menu-block__title text-uppercase">
+                                            <a>Overview</a>
+                                        </li>
+                                        <li class="menu-block__link text-capitalize">
+                                            <a href="#">Features Overview</a>
+                                        </li>
+                                        <li class="menu-block__link text-capitalize">
+                                            <a href="#">Ominichannel</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="menu-block">
+                                <div class="menu-block__link ">
+                                    <ul>
+                                        <li class="menu-block__title text-uppercase">
+                                            <a>highlight features</a>
+                                        </li>
+                                        <li class="menu-block__link text-capitalize">
+                                            <a href="#">PWA Consumer App</a>
+                                        </li>
+                                        <li class="menu-block__link text-capitalize">
+                                            <a href="#">Customer Screen</a>
+                                        </li>
+                                        <li class="menu-block__link text-capitalize">
+                                            <a href="#">Facial Recognition</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-block">
+                        <div class="menu-block__link text-uppercase">
+                            <a>Integration</a>
+                            <i class="fa fa-caret-down menu-link__icon" aria-hidden="true"></i>
+                        </div>
+                        <ul class="menu-block__box">
+                            <li class="menu-block">
+                                <div class="menu-block__link">
+                                    <ul>
+                                        <li class="menu-block__link text-capitalize">
+                                            <a href="#">Ecommerce platform</a>
+                                        </li>
+                                        <li class="menu-block__link text-capitalize">
+                                            <a href="#">Payment</a>
+                                        </li>
+                                        <li class="menu-block__link text-capitalize">
+                                            <a href="#">Inventory & Logistics</a>
+                                        </li>
+                                        <li class="menu-block__link text-capitalize">
+                                            <a href="#">Loyalty</a>
+                                        </li>
+                                        <li class="menu-block__link text-capitalize">
+                                            <a href="#">Gift cards</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="menu-block">
+                        <div class="menu-block__link text-uppercase">
+                            <a>Pricing</a>
+                        </div>
+
+                    </li>
+                    <li class="menu-block">
+                        <div class="menu-block__link text-uppercase">
+                            <a>Case studies</a>
+                        </div>
+                    </li>
+                    <li class="menu__button">
+                        <button class="button">free trial</button>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+
+    </div>
+    <!--bannerHome-->
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators dots-item">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active slide-item">
+                <img class="d-block w-150" src="img/img_banner2.png" alt="First slide">
+                <div class="container">
+                    <div class="banner-caption">
+                        <h2 class="banner-caption__title">
+                            Leading POS Software For Omnichannel Retail
+                        </h2>
+                        <p class="banner-caption__description">
+                            Security, high-speed & multistore scalability. Compatible with multiple platforms as
+                            Magento, Shopify.
+                        </p>
+                        <button class="button button--light">
+                            book a demo
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item slide-item">
+                <img class="d-block w-150" src="img/img_banner2.png" alt="Second slide">
+                <div class="container">
+                    <div class="banner-caption">
+                        <h2 class="banner-caption__title">
+                            Leading POS Software For Omnichannel Retail
+                        </h2>
+                        <p class="banner-caption__description">
+                            Security, high-speed & multistore scalability. Compatible with multiple platforms as
+                            Magento, Shopify.
+                        </p>
+                        <button class="button button--light">
+                            book a demo
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item slide-item">
+                <img class="d-block w-150" src="img/img_banner2.png" alt="Third slide">
+                <div class="container">
+                    <div class="banner-caption">
+                        <h2 class="banner-caption__title">
+                            Leading POS Software For Omnichannel Retail
+                        </h2>
+                        <p class="banner-caption__description">
+                            Security, high-speed & multistore scalability. Compatible with multiple platforms as
+                            Magento, Shopify.
+                        </p>
+                        <button class="button button--light">
+                            book a demo
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--video intro-->
+    <div class="video-item default-block">
+        <div class="container">
+            <div class="video-item__img float-left position-relative pad15">
+                <img src="img/thumb_video.png">
+                <a href="#">
+                    <img class="video-item__icon position-absolute" src="img/icon_play.png">
+                </a>
+            </div>
+            <div class="video-item__caption">
+                <h2 class="item-title">
+                    The future of retail, today
+                </h2>
+                <p class="item-description">
+                    We are not just a leading POS software provider, ConnectPOS also
+                    provides an integrated solution to help you realize your ideal future retail store. Latest
+                    technology such as PWA, AI or Facial Technology is leveraged to create a seamless and personalized
+                    shopping experience for your customers.
+                </p>
+                <button class="button button--bg-green">watch video</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

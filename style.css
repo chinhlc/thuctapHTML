@@ -530,7 +530,7 @@ header a:hover {
     .main-header__link.action .link-box {
         display: block;
     }
-
+    
 }
 
 @media screen and (max-width:992px) {
@@ -816,7 +816,7 @@ header a:hover {
     font-size: 34px;
     color: #333333;
     padding-bottom: 12px;
-    margin:0;
+    margin: 0;
 }
 
 .intro-info__descript {
@@ -824,14 +824,14 @@ header a:hover {
     font-size: 18px;
     padding-bottom: 24px;
     line-height: 30px;
-    margin:0;
+    margin: 0;
 }
 
 .intro-author {
     font-size: 16px;
     color: #19A79A;
     line-height: 24px;
-    
+
 }
 
 .intro-author__place {
@@ -1705,7 +1705,7 @@ footer {
 }
 
 @media screen and (max-width:380px) {
-    
+
     .banner-content .banner-caption .banner-caption__title {
         font-size: 25px;
         line-height: 30px;
@@ -1738,7 +1738,7 @@ footer {
 }
 
 @media screen and (max-width:992px) {
-    
+
     .banner-content .banner-video {
         display: none;
     }
@@ -1747,7 +1747,7 @@ footer {
         width: 90%;
         max-width: 1200px;
         top: 50px;
-        padding:0;
+        padding: 0;
     }
 
 }
@@ -1828,8 +1828,7 @@ footer {
 
 .consumer-card::after,
 .image-grid::after,
-.magento-intro::after
- {
+.magento-intro::after {
     clear: both;
     content: ".";
     display: block;
@@ -1944,9 +1943,7 @@ footer {
     padding-top: 30px;
 }
 
-.card-content {
-    
-}
+.card-content {}
 
 .pwa-block__img {
     width: 258px;
@@ -2012,75 +2009,87 @@ footer {
 /*magento-intro*/
 .magento-intro {
     padding-top: 100px;
-    
+
 }
 
-.magento-intro__img
-{
+.magento-intro__img {
     width: 50%;
 }
 
 .magento-intro__img>img {
     width: 100%;
 }
+
 .magento-intro__des {
     width: 50%;
     margin: 0;
 }
+
 @media screen and (max-width:380px) {
     .magento-intro .magento-intro__des>.intro-info__title {
         font-size: 20px;
     }
+
     .magento-intro .magento-intro__des>.intro-info__descript {
         font-size: 13px;
     }
 }
+
 @media screen and (max-width:480px) {
     .magento-intro .magento-intro__img {
         width: 100%;
     }
+
     .magento-intro__des>.intro-info__title {
         font-size: 25px;
     }
+
     .magento-intro__des>.intro-info__descript {
         font-size: 15px;
         line-height: 25px;
     }
-    
+
 }
+
 @media screen and (max-width:992px) {
     .magento-intro__img {
         width: 80%;
         margin: 0 auto;
         float: none;
     }
+
     .magento-intro__des {
-        padding-top:50px;
+        padding-top: 50px;
         width: 100%;
     }
-    
+
 }
+
 .magento-card-content .card-des__title {
     padding-top: 24px;
 }
+
 /*magento card image list*/
 @media screen and (max-width:480px) {
     .magento-card .magento-card-content .card-des__title {
         font-size: 15px;
     }
 }
+
 @media screen and (max-width:576px) {
     .magento-card {
         width: 100%;
         margin-bottom: 50px;
     }
 }
+
 @media screen and (max-width:768px) {
     .magento-card:last-child {
         float: none;
         margin: 0 auto;
     }
 }
+
 @media screen and (max-width:992px) {
     .magento-card-content .card-des__title {
         font-size: 18px;
