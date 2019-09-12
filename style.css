@@ -530,7 +530,7 @@ header a:hover {
     .main-header__link.action .link-box {
         display: block;
     }
-    
+
 }
 
 @media screen and (max-width:992px) {
@@ -1827,12 +1827,11 @@ footer {
 }
 
 .consumer-card::after,
-.image-grid::after,
-.magento-intro::after {
+.image-grid::after {
     clear: both;
     content: ".";
     display: block;
-    width: 0;
+    width: 0 !important;
     height: 0 !important;
     padding-bottom: 100px;
 
@@ -2093,5 +2092,203 @@ footer {
 @media screen and (max-width:992px) {
     .magento-card-content .card-des__title {
         font-size: 18px;
+    }
+}
+
+/*magento merchants*/
+.square-block {
+    width: 16%;
+    margin: 0 auto;
+}
+
+.magento-row {
+    max-width: 1200px;
+    padding-top: 30px;
+}
+
+.square-block__text {
+    font-family: opensans-bold;
+    font-size: 22px;
+    color: #ffffff;
+    top: 50%;
+    margin-top: -11px;
+    margin-left: -15px;
+    line-height: 24px;
+}
+
+.magento-icon {
+    font-size: 40px;
+    transform: translate(0, 60px);
+    -o-transform: translate(0, 60px);
+    -ms-transform: translate(0, 60px);
+    -webkit-transform: translate(0, 60px);
+
+}
+
+.square-block__description {
+
+    font-size: 16px;
+    color: #555555;
+    margin: 0;
+    margin-top: 24px;
+    line-height: 24px;
+}
+
+@media screen and (max-width:992px) {
+    .magento-icon {
+        display: none;
+
+    }
+
+    .square-block {
+        width: 33.33%;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+
+    .square-block[name="square4"],
+    .square-block[name="square5"] {
+        float: none !important;
+        text-align: center;
+        display: inline-block;
+        padding-top: 30px;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .square-block__description {
+        font-size: 13px;
+        padding: 0 15px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .square-block {
+        width: 100%;
+        padding-top: 30px;
+    }
+}
+
+/*new css*/
+/*clear fix*/
+.clear-fix::after {
+
+    content: ".";
+    width: 0 !important;
+    height: 0 !important;
+    display: block;
+    clear: both;
+    visibility: hidden;
+}
+
+/*item cho nhung noi dung gom 1 anh 1 text*/
+.item-intro-img {
+    width: 40%;
+}
+
+.item-intro__title {
+    font-family: opensans-bold;
+    font-size: 34px;
+    color: #333333;
+    line-height: 40px;
+}
+
+.item-intro-content {}
+
+.item-intro__description {
+
+    font-size: 18px;
+    color: #777777;
+    line-height: 32px;
+}
+
+.item-intro__position {
+    font-family: opensans-bold;
+    font-size: 16px;
+    color: #333333;
+    line-height: 24px;
+}
+
+.item-intro__name {
+    line-height: 24px;
+    font-size: 16px;
+}
+
+.item-intro-content {
+    width: 50%;
+    vertical-align: middle;
+    margin-left: 8%;
+}
+
+.pt-100 {
+    padding-top: 100px;
+}
+.pb-100 {
+    padding-bottom: 100px;
+}
+.pt-48 {
+    padding-top:48px;
+}
+.pt-24 {
+    padding-top: 24px;
+}
+.pt-12 {
+    padding-top: 12px;
+}
+.mt-24 {
+    margin-top:24px;
+}
+.item-intro-rate {
+    color: #fff200;
+}
+
+.item-intro-rate__number {
+    font-size: 15px;
+    color: #333333;
+    line-height: 24px;
+    padding-left: 10px;
+}
+.w-250 {
+    width: 250px;
+}
+.w-650 {
+    width: 650px;
+}
+@media screen and (max-width:768px) {
+    .item-intro-img {
+        width: 100%;
+        padding-bottom: 50px;
+    }
+    .item-intro-content {
+        width: 100%;
+        margin:0;
+    }
+}
+@media screen and (max-width:576px) {
+    .item-intro__title {
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .item-intro__description {
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .item-intro__position,
+    .item-intro__name {
+    
+        font-size: 13px;
+   
+        line-height: 20px;
+    }
+}
+@media screen and (max-width:480px) {
+    .item-intro__title {
+        font-size: 20px;
+    }
+    .item-intro__description {
+        font-size: 13px;
+
     }
 }
