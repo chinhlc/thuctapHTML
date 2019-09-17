@@ -13,11 +13,14 @@
 </head>
 
 <body>
-    <!--menu-->
-    <header class="top-header default-block text-right">
+    <!--scrollup button-->
+    <div class="scrollup default-block">
+        <i class="fa fa-angle-up button-scroll__icon"></i>
+    </div>
+    <header class=" w-100 m-auto text-right top-header">
         <div class="container">
-            <nav class="top-header__top-menu ">
-                <ul class="top-menu--right">
+            <nav class="top-header__menu ">
+                <ul class="text-right">
                     <li>
                         <a href="#">Blog</a>
                     </li>
@@ -36,10 +39,10 @@
     </header>
     <!--mainmenu-->
 
-    <div class=" sticky-top default-block main-header">
+    <div class=" sticky-top w-100 m-auto main-header">
         <div class="container">
-            <div class="main-header-box">
-                <div class="main-header__logo">
+            <div class="main-header-box pad15 clearfix pos-relative">
+                <div class="main-header__logo f-left">
                     <a href="./home1.html">
                         <img src="image/logo.png" />
                     </a>
@@ -47,14 +50,14 @@
                 <div class="hidden-main-menu">
                     <i class="fa fa-bars "></i>
                 </div>
-                <nav class="main-header__content ">
+                <nav class="main-header__content f-right">
                     <ul>
-                        <li class="main-header__link">
-                            <div class="link-item">
+                        <li class="main-header__sub-menu">
+                            <div class="sub-menu__title">
                                 <a>Why ConnectPOS</a>
                                 <img src="image/icon_arrow_g.png">
                             </div>
-                            <ul class="link-box">
+                            <ul class="sub-menu__box">
                                 <div class="main-header__menu-link">
                                     <ul>
                                         <li class="main-header__title"><a>benefit</a></li>
@@ -86,14 +89,14 @@
                                 </div>
                             </ul>
                         </li>
-                        <li class="main-header__link">
-                            <div class="link-item">
+                        <li class="main-header__sub-menu">
+                            <div class="sub-menu__title">
                                 <a>Features</a>
                                 <img src="image/icon_arrow_g.png">
                             </div>
-                            <ul class="link-box">
+                            <ul class="sub-menu__box">
                                 <div class="main-header__menu-link">
-                                    <ul class="link-box-content">
+                                    <ul class="sub-menu__box-content">
                                         <li class="main-header__title">
                                             <a>Overview</a>
                                         </li>
@@ -107,7 +110,7 @@
 
                                 </div>
                                 <div class="main-header__menu-link">
-                                    <ul class="link-box-content">
+                                    <ul class="sub-menu__boxcontent">
                                         <li class="main-header__title">
                                             <a>highlight features</a>
                                         </li>
@@ -125,14 +128,14 @@
                                 </div>
                             </ul>
                         </li>
-                        <li class="main-header__link">
-                            <div class="link-item">
+                        <li class="main-header__sub-menu">
+                            <div class="sub-menu__title">
                                 <a>Integration</a>
                                 <img src="image/icon_arrow_g.png">
                             </div>
-                            <ul class="link-box">
+                            <ul class="sub-menu__box">
                                 <div class="main-header__menu-link">
-                                    <ul class="link-box-content">
+                                    <ul class="sub-menu__box-content">
                                         <li class="main-header__title">
                                             <a>benefit</a>
                                         </li>
@@ -147,13 +150,13 @@
                                 </div>
                             </ul>
                         </li>
-                        <li class="main-header__link">
-                            <div class="link-item">
+                        <li class="main-header__sub-menu">
+                            <div class="sub-menu__title">
                                 <a href="#">Pricing</a>
                             </div>
                         </li>
-                        <li class="main-header__link">
-                            <div class="link-item">
+                        <li class="main-header__sub-menu">
+                            <div class="sub-menu__title">
                                 <a href="#">Case studies</a>
                             </div>
                         </li>
@@ -171,10 +174,10 @@
             <div class="banner-content pos-absolute ">
                 <div class="banner-caption f-left pos-relative pad15">
                     <h2 class="banner-caption__title">
-                            ConnectPOS for Shopify
+                        ConnectPOS for Shopify
                     </h2>
                     <P class="banner-caption__sub">
-                            Our S-connect connector helps you to integrate with the world's largest Ecommerce platform
+                        Our S-connect connector helps you to integrate with the world's largest Ecommerce platform
 
                     </P>
                     <p class="banner-caption__sub">Power your retail business with ConnectPOS and Shopify.</p>
@@ -191,134 +194,155 @@
 
         </div>
     </div>
-    <div class="pwa-intro default-block magento-intro clear-fix">
+    <!--list icon-->
+    <div class="bg-deflaut w-100 m-auto pt-100 text-center">
         <div class="container">
-            <h2 class="title text-center">
-                Why Shopify retailers choose ConnectPOS
-            </h2>
-            <div class="image-grid default-block">
-                <div class="text-center pad15 pwa-item magento-item">
-                    <div class="card-image-block pos-relative m-auto">
-                        <img class="card-img" src="image/bg_logo.png" />
-                        <img class="card-icon pos-absolute" src="image/icon_3.png" />
+            <div class="w-100 m-lr-auto text-center">
+                <h2 class="item-intro__title w-650 m-lr-auto">Why Shopify retailers choose ConnectPOS</h2>
+            </div>
+
+            <div class="w-100 m-auto clearfix pt-100 pwa-list-card">
+                <div class="text-center card-w33 f-left pad15 pb-15 pwa-card">
+                    <div class="w-100 bg-white h-260">
+                        <div class="card__square-block pos-relative m-auto">
+                            <img class="w-100" src="image/bg_logo.png" />
+                            <img class="card-icon pos-absolute" src="image/icon_3.png" />
+                        </div>
+                        <div class=" w-100 pt-30">
+                            <p class="card-caption__sub">
+                                Reduce sale-workforce at physical stores
+                            </p>
+                        </div>
                     </div>
-                    <div class=" w-100 card-des">
-                        <p class="card-caption__sub">
-                            Magento's strong enterprise solution partner
-                        </p>
+                </div>
+                <div class="text-center card-w33 f-left pad15 pb-15 pwa-card">
+                    <div class="w-100 bg-white h-260">
+                        <div class="card__square-block pos-relative m-auto">
+                            <img class="w-100" src="image/bg_logo.png" />
+                            <img class="card-icon pos-absolute" src="image/icon_3.png" />
+                        </div>
+                        <div class=" w-100 pt-30">
+                            <p class="card-caption__sub">
+                                Solve the mobile conversion dilemma and deliver highly personalized experiences cross
+                                channels
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center card-w33 f-left pad15 pb-15 pwa-card">
+                    <div class="w-100 bg-white h-260">
+                        <div class="card__square-block pos-relative m-auto">
+                            <img class="w-100" src="image/bg_logo.png" />
+                            <img class="card-icon pos-absolute" src="image/icon_3.png" />
+                        </div>
+                        <div class="w-100 pt-30">
+                            <p class="card-caption__sub">
+                                Increase sales and customer satisfaction by selling out-of-stock products
+                            </p>
+                        </div>
                     </div>
 
-                </div>
-                <div class="text-center pad15 pwa-item">
-                    <div class="card-image-block pos-relative m-auto">
-                        <img class="card-img" src="image/bg_logo.png" />
-                        <img class="card-icon pos-absolute" src="image/icon_3.png" />
-                    </div>
-                    <div class=" w-100 card-des">
-                        <p class="card-caption__sub">
-                            Work with M1 (1.8 and above) and M2 (2.2 and above)
-                        </p>
-                    </div>
 
                 </div>
-                <div class="text-center pad15 pwa-item">
-                    <div class="card-image-block pos-relative m-auto">
-                        <img class="card-img" src="image/bg_logo.png" />
-                        <img class="card-icon pos-absolute" src="image/icon_3.png" />
-                    </div>
-                    <div class="w-100 card-des">
-                        <p class="card-caption__sub">
-                            Support multi store management
-                        </p>
-                    </div>
-
-                </div>
-                <div class="text-center pad15 pwa-item">
-                    <div class="card-image-block pos-relative m-auto">
-                        <img class="card-img" src="image/bg_logo.png" />
-                        <img class="card-icon pos-absolute" src="image/icon_3.png" />
-                    </div>
-                    <div class="w-100 card-des">
-                        <p class="card-caption__sub">
-                            Support all types of Magento products, prices, promotions & taxes
-                        </p>
+                <div class="text-center card-w33 f-left pad15 pt-15 pwa-card">
+                    <div class="w-100 bg-white h-260">
+                        <div class="card__square-block pos-relative m-auto">
+                            <img class="w-100" src="image/bg_logo.png" />
+                            <img class="card-icon pos-absolute" src="image/icon_3.png" />
+                        </div>
+                        <div class="w-100 pt-30">
+                            <p class="card-caption__sub">
+                                Shorten in-store checkout process
+                            </p>
+                        </div>
                     </div>
 
-                </div>
-                <div class="text-center pad15 pwa-item">
-                    <div class="card-image-block pos-relative m-auto">
-                        <img class="card-img" src="image/bg_logo.png" />
-                        <img class="card-icon pos-absolute" src="image/icon_3.png" />
-                    </div>
-                    <div class="w-100 card-des">
-                        <p class="card-caption__sub">
-                            Proven to boost sales and ROI
-                        </p>
-                    </div>
 
                 </div>
-                <div class="text-center pad15 pwa-item">
-                    <div class="card-image-block pos-relative m-auto">
-                        <img class="card-img" src="image/bg_logo.png" />
-                        <img class="card-icon pos-absolute" src="image/icon_3.png" />
+                <div class="text-center card-w33 f-left pad15 pt-15 pwa-card">
+                    <div class="w-100 bg-white h-260">
+                        <div class="card__square-block pos-relative m-auto">
+                            <img class="w-100" src="image/bg_logo.png" />
+                            <img class="card-icon pos-absolute" src="image/icon_3.png" />
+                        </div>
+                        <div class="w-100 pt-30">
+                            <p class="card-caption__sub">
+                                Collect data about in-store behaviors
+                            </p>
+                        </div>
                     </div>
-                    <div class="w-100 card-des">
-                        <p class="card-caption__sub">
-                            Expert support from our Magento experts
-                        </p>
+
+
+                </div>
+                <div class="text-center card-w33 f-left pad15 pt-15 pwa-card">
+                    <div class="w-100 bg-white h-260">
+                        <div class="card__square-block pos-relative m-auto">
+                            <img class="w-100" src="image/bg_logo.png" />
+                            <img class="card-icon pos-absolute" src="image/icon_3.png" />
+                        </div>
+                        <div class="w-100 pt-30">
+                            <p class="card-caption__sub">
+                                Manage all sales data in a single place
+                            </p>
+                        </div>
                     </div>
+
 
                 </div>
             </div>
-
+            <div class="w-100 m-lr-auto text-center mt-48">
+                <button class="button">free try</button>
+            </div>
         </div>
     </div>
-    
-    <div class="default-block">
-            <div class="container">
-            <div class="item-intro__title pt-100 text-center w-650 m-auto pb-100">
-                <p>Why Shopify retailers choose ConnectPOS</p>
-            </div>
-                <div class="image-card--100 consumer-card clear-fix">
-    
-                    <img class="card-img50 pad15 f-left" src="image/icon.png">
-                    <div class="card-caption pad15 f-right">
-                        <h3 class="card-caption__title">
-                            Easily access by QR code
-                        </h3>
-                        <p class="card-caption__sub">
-                            Your customers can just walk into stores, scan a QR code, then they can access an app-like
-                            interface that enables them to surf the full range of products. No app installation required!
-                        </p>
-    
-                    </div>
-                </div>
-                <div class="image-card--100 consumer-card clear-fix">
-                    <img class="card-img50 pad15 f-right" src="image/icon.png">
-                    <div class="card-caption pad15 f-left">
-                        <h3 class="card-caption__title">
-                            Scan bar code for product information
-                        </h3>
-                        <p class="card-caption__sub">
-                            By scanning the bar code, customers can immediately get the product detail information including
-                            price, quantity in stock or product variations, and also easily put chosen items into their
-                            shopping cart.
-                        </p>
-    
-                    </div>
-    
-    
-                </div>
-                
-            </div>
-    
-        </div>
-    <!--magento marchants-->
-    <div class="default-block clear-fix">
+    <!--shopify information-->
+    <div class="w-100 m-auto pwa-list-item pt-100">
         <div class="container">
-            <div class="default-block text-center">
-                <h2 class="intro-info__title">Empowering Shopify merchants</h2>
-                <p class="intro-info__descript">Grow your retail business with data-driven tools</p>
+            <div class="w-100 clearfix pwa-item">
+                <div class="pwa-item__img w-50 f-left pad15">
+                    <img class="w-100" src="image/icon.png">
+                </div>
+
+                <div class="pwa-item__content w-50 pad15 f-right">
+                    <h3 class="item-intro__small-title m0">
+                        Easily access by QR code
+                    </h3>
+                    <p class="item-intro__description m0 pt-12">
+                        Your customers can just walk into stores, scan a QR code, then they can access an app-like
+                        interface that enables them to surf the full range of products. No app installation required!
+                    </p>
+
+                </div>
+            </div>
+            <div class="w-100 pt-100 clearfix pwa-item">
+                <div class="pwa-item__img w-50 f-right pad15">
+                    <img class="w-100" src="image/icon.png">
+                </div>
+                <div class="w-50 pad15 f-left pwa-item__content">
+                    <h3 class="item-intro__small-title m0">
+                        Scan bar code for product information
+                    </h3>
+                    <p class="item-intro__description m0 pt-12">
+                        By scanning the bar code, customers can immediately get the product detail information including
+                        price, quantity in stock or product variations, and also easily put chosen items into their
+                        shopping cart.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+    <!--magento marchants-->
+    <div class="w-100 m-auto clearfix pt-100">
+        <div class="container">
+
+            <div class="w-100 m-lr-auto text-center ">
+                <h2 class="item-intro__title w-650 m-lr-auto">Empowering Magento merchants</h2>
+                <p class="item-intro__description">Grow your retail business with data-driven tools</p>
             </div>
             <div class="text-center magento-row">
                 <div class="card-content square-block float-left" name="square1">
@@ -399,44 +423,43 @@
             </div>
         </div>
     </div>
-    
-    <div class="pwa-power default-block">
+
+    <div class="w-100 m-auto pb-100 pt-100 clearfix">
             <div class="container">
-                <div class="text-center default-block">
-                    <h2 class="title w-800">
-                        Power your store with the best POS combined with PWA Consumer App
-                    </h2>
-                    <button class="button button--bg-green">book a demo</button>
+    
+                <div class="w-100 m-lr-auto text-center ">
+                    <h2 class="item-intro__title w-850 m-lr-auto">PWA - The key technology for future merchant success</h2>
+                    <button class="button button--bg-green mt-48">book a demo</button>
                 </div>
-                <div class="pwa-block pad15">
-                    <img class="card-img" src="image/img_payment.png">
+                <div class="card-w33 f-left pad15">
+                    <img class="w-100" src="image/img_payment.png">
                     <div class=" text-center">
-                        <h3 class="card-des__title">
+                        <h3 class="card-caption__title">
                             Features Overview
                         </h3>
-                        <a class="card-des__link" href="#">
+                        <a class="card-caption__link" href="#">
                             Learn More
                         </a>
                     </div>
                 </div>
-                <div class="pwa-block pad15">
-                    <img class="card-img" src="image/img_payment.png">
+                <div class="card-w33 f-left pad15">
+                    <img class="w-100" src="image/img_payment.png">
                     <div class=" text-center">
-                        <h3 class="card-des__title">
+                        <h3 class="card-caption__title">
                             Features Overview
                         </h3>
-                        <a class="card-des__link" href="#">
+                        <a class="card-caption__link" href="#">
                             Learn More
                         </a>
                     </div>
                 </div>
-                <div class="pwa-block pad15">
-                    <img class="card-img" src="image/img_payment.png">
+                <div class="card-w33 f-left pad15">
+                    <img class="w-100" src="image/img_payment.png">
                     <div class=" text-center">
-                        <h3 class="card-des__title">
+                        <h3 class="card-caption__title">
                             Features Overview
                         </h3>
-                        <a class="card-des__link" href="#">
+                        <a class="card-caption__link" href="#">
                             Learn More
                         </a>
                     </div>
@@ -547,16 +570,28 @@
 
     <script type="text/javascript">
         //show main menu
+        $('.scrollup').hide();
         $(document).ready(function () {
 
             $('.hidden-main-menu').click(function () {
                 $('.main-header__content').toggleClass('show-menu');
             });
-            $('.main-header__link ').click(function () {
+            $('.main-header__sub-menu ').click(function () {
                 $(this).siblings().removeClass('action');
                 $(this).toggleClass('action');
             });
-
+            $('.scrollup').click(function () {
+                $('body,html').animate({
+                    scrollTop: 0
+                }, 1000)
+            });
+            $(window).scroll(function () {
+                if ($(this).scrollTop() >= 100) {        // If page is scrolled more than 50px
+                    $('.scrollup').fadeIn(200);    // Fade in the arrow
+                } else {
+                    $('.scrollup').fadeOut(200);   // Else fade out the arrow
+                }
+            });
         });
         //hide main menu
         $(document).mouseup(function (e) {
