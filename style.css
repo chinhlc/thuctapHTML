@@ -62,11 +62,11 @@ ul li {
 }
 
 /*float*/
-.f-left {
+.float-left {
     float: left;
 }
 
-.f-right {
+.float-right {
     float: right;
 }
 
@@ -193,15 +193,15 @@ ul li {
 }
 
 /*card*/
-.card-w33 {
+.card-list--w33 {
     width: 33.33%;
 }
 
-.card-w25 {
+.card-list--w25 {
     width: 25%;
 }
 
-.card-w50 {
+.card-list--w50 {
     width: 49%;
     vertical-align: top;
 }
@@ -235,17 +235,17 @@ ul li {
 }
 
 @media screen and (max-width:992px) {
-    .card-w25 {
+    .card-list--w25 {
         width: 50%;
         padding-bottom: 24px;
     }
 
-    .card-w25 .card-caption__small-title {
+    .card-list--w25 .card-caption__small-title {
         font-size: 18px;
 
     }
 
-    .card-w33 .card-caption__title {
+    .card-list--w33 .card-caption__title {
         font-size: 20px;
     }
 }
@@ -256,32 +256,32 @@ ul li {
         padding-top: 0 !important;
     }
 
-    .card-w33 {
+    .card-list--w33 {
         width: 100%;
     }
 }
 
 @media screen and (max-width:576px) {
-    .card-w25 .card-caption__small-title {
+    .card-list--w25 .card-caption__small-title {
         font-size: 15px;
 
     }
 
-    .card-w33 .card-caption__title {
+    .card-list--w33 .card-caption__title {
         font-size: 18px;
     }
 
-    .card-w33 .card-caption__sub {
+    .card-list--w33 .card-caption__sub {
         font-size: 13px;
     }
 }
 
 @media screen and (max-width:480px) {
-    .card-w25 {
+    .card-list--w25 {
         width: 100%;
     }
 
-    .card-w50 {
+    .card-list--w50 {
         width: 100%;
         padding-top: 24px;
     }
@@ -296,9 +296,11 @@ ul li {
 }
 
 /* top-header */
-.top-header {
+.bg-midnight {
     background-color: #1F3246;
 }
+
+.top-header {}
 
 .top-header ul {
     margin: 0;
@@ -817,29 +819,29 @@ footer {
     display: block;
 }
 
-.main-header__title {
+.sub-menu__box-title {
     font-family: opensans-bold;
     color: #BBBBBB;
     text-transform: uppercase;
 }
 
-.sub-menu__box .main-header__title {
+.sub-menu__box .sub-menu__box-title {
     padding-bottom: 15px;
     transform: 1000s;
 }
 
-.hidden-main-menu {
+.main-menu__hidden {
     float: right;
     font-size: 30px;
     cursor: pointer;
     display: none;
 }
 
-.hidden-main-menu:hover {
+.main-menu__hidden:hover {
     color: #2c3e50;
 }
 
-.sub-menu__box .main-header__des {
+.sub-menu__box .sub-menu__box-des {
     color: #BBBBBB;
     font-size: 16px;
     padding-top: 0;
@@ -847,7 +849,7 @@ footer {
     line-height: 24px;
 }
 
-.main-header__des a {
+.sub-menu__box-des a {
     color: #BBBBBB;
 }
 
@@ -863,7 +865,7 @@ footer {
     text-align: center;
 }
 
-.main-header__content .main-header-button {
+.main-header__content .main-header__button {
     padding: 0;
 }
 
@@ -904,15 +906,15 @@ footer {
         text-align: left;
     }
 
-    .main-header__sub-menu .main-header__title,
-    .main-header__sub-menu .main-header__des {
+    .main-header__sub-menu .sub-menu__box-title,
+    .main-header__sub-menu .sub-menu__box-des {
         text-align: left !important;
     }
 
 }
 
 @media screen and (max-width:768px) {
-    .main-header-button {
+    .main-header__button {
         margin-top: 48px;
     }
 
@@ -923,7 +925,7 @@ footer {
         transform: none;
     }
 
-    .hidden-main-menu {
+    .main-menu__hidden {
         display: block;
         cursor: pointer;
         position: absolute;
@@ -1009,8 +1011,8 @@ footer {
         padding-bottom: 0;
     }
 
-    .main-header .sub-menu__box .main-header__title,
-    .main-header .sub-menu__box .main-header__des {
+    .main-header .sub-menu__box .sub-menu__box-title,
+    .main-header .sub-menu__box .sub-menu__box-des {
 
         font-size: 11px;
         padding-left: 15px;
@@ -1025,8 +1027,8 @@ footer {
         display: block;
     }
 
-    .sub-menu__box .main-header__title,
-    .sub-menu__box .main-header__des {
+    .sub-menu__box .sub-menu__box-title,
+    .sub-menu__box .sub-menu__box-des {
         padding-top: 15px;
     }
 
@@ -1441,24 +1443,29 @@ footer {
         width: 40%;
     }
 }
+
 @media screen and (max-width:768px) {
     .banner-caption__title {
         font-size: 45px;
     }
+
     .banner-caption__sub {
         font-size: 18px;
     }
 }
+
 @media screen and (max-width:576px) {
     .banner-caption__title {
         font-size: 35px;
         line-height: 35px;
     }
+
     .banner-caption__sub {
         font-size: 15px;
         line-height: 25px;
     }
 }
+
 /*quote*/
 .quote {
     padding-top: 94px;
@@ -1679,7 +1686,7 @@ footer {
         font-size: 25px;
     }
 
-    .magento-list-card .card-w33 {
+    .magento-list-card .card-list--w33 {
         padding-bottom: 30px;
     }
 

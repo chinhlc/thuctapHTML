@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Home Page</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+
+</head>
+
+<body>
+    <!--scrollup button-->
+    <div class="m-auto scrollup">
+        <i class="fa fa-angle-up button-scroll__icon"></i>
+    </div>
+    <!--topmenu -->
+    <header class=" w-100 m-auto text-right top-header bg-midnight">
+        <div class="container">
+            <nav class="top-header__menu ">
+                <ul class="text-right">
+                    <li>
+                        <a href="#">Blog</a>
+                    </li>
+                    <li>
+                        <a href="#">Partners</a>
+                    </li>
+                    <li>
+                        <a href="#">Support</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact Us</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+        //show main menu
+        $('.scrollup').hide();
+        $(document).ready(function () {
+
+            $('.main-menu__hidden').click(function () {
+                $('.main-header__content').toggleClass('show-menu');
+            });
+            $('.main-header__sub-menu ').click(function () {
+                $(this).siblings().removeClass('action');
+                $(this).toggleClass('action');
+            });
+            $('.scrollup').click(function () {
+                $('body,html').animate({
+                    scrollTop: 0
+                }, 1000)
+            });
+            $(window).scroll(function () {
+                if ($(this).scrollTop() >= 100) {        // If page is scrolled more than 50px
+                    $('.scrollup').fadeIn(200);    // Fade in the arrow
+                } else {
+                    $('.scrollup').fadeOut(200);   // Else fade out the arrow
+                }
+            });
+        });
+        //hide main menu
+        $(document).mouseup(function (e) {
+            var value = $(".main-header__content");
+            if (!$('.main-menu__hidden').is(e.target) && !value.is(e.target) && value.has(e.target).length == 0) {
+                $('.main-header__content').removeClass('show-menu');
+            }
+        })
+
+    </script>
+</body>
+
+</html>
