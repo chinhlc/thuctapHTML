@@ -18,30 +18,35 @@
     <div class="m-auto scrollup">
         <i class="fa fa-angle-up button-scroll__icon"></i>
     </div>
-    <!--menu -->
+    <!--topmenu -->
     <header class=" w-100 m-auto text-right top-header bg-midnight">
         <div class="container">
-            <nav class="top-header__menu ">
-                <ul class="text-right">
-                    <li>
-                        <a href="#">Blog</a>
-                    </li>
-                    <li>
-                        <a href="#">Partners</a>
-                    </li>
-                    <li>
-                        <a href="#">Support</a>
-                    </li>
-                    <li>
-                        <a href="#">Contact Us</a>
-                    </li>
-                </ul>
-            </nav>
+            <div class="row">
+                <div class="col">
+                    <nav class="top-header__menu ">
+                        <ul class="text-right">
+                            <li>
+                                <a href="#">Blog</a>
+                            </li>
+                            <li>
+                                <a href="#">Partners</a>
+                            </li>
+                            <li>
+                                <a href="#">Support</a>
+                            </li>
+                            <li>
+                                <a href="#">Contact Us</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
         </div>
     </header>
     <!--mainmenu-->
 
-    <div class=" sticky-top w-100 m-auto main-header">
+    <div class=" sticky-top w-100 ml-auto mr-auto main-header">
         <div class="container">
             <div class="main-header__box pad15 clearfix pos-relative">
                 <div class="main-header__logo float-left">
@@ -60,7 +65,7 @@
                                 <img src="image/icon_arrow_g.png">
                             </div>
                             <ul class="sub-menu__box">
-                                <div class="main-header__menu-link">
+                                <li class="main-header__sub-menu">
                                     <ul>
                                         <li class="sub-menu__box-title"><a>benefit</a></li>
 
@@ -71,8 +76,8 @@
                                             <a href="#">24/7 Support</a>
                                         </li>
                                     </ul>
-                                </div>
-                                <div class="main-header__menu-link">
+                                </li>
+                                <li class="main-header__sub-menu">
                                     <ul>
                                         <li class="sub-menu__box-title">
                                             <a>YOUR BUSINESS TYPES</a>
@@ -88,7 +93,7 @@
                                         </li>
                                     </ul>
 
-                                </div>
+                                </li>
                             </ul>
                         </li>
                         <li class="main-header__sub-menu">
@@ -97,7 +102,7 @@
                                 <img src="image/icon_arrow_g.png">
                             </div>
                             <ul class="sub-menu__box">
-                                <div class="main-header__menu-link">
+                                <li class="main-header__sub-menu">
                                     <ul class="sub-menu__box-content">
                                         <li class="sub-menu__box-title">
                                             <a>Overview</a>
@@ -110,8 +115,8 @@
                                         </li>
                                     </ul>
 
-                                </div>
-                                <div class="main-header__menu-link">
+                                </li>
+                                <li class="main-header__sub-menu">
                                     <ul class="sub-menu__boxcontent">
                                         <li class="sub-menu__box-title">
                                             <a>highlight features</a>
@@ -127,7 +132,7 @@
                                         </li>
                                     </ul>
 
-                                </div>
+                                </li>
                             </ul>
                         </li>
                         <li class="main-header__sub-menu">
@@ -136,7 +141,7 @@
                                 <img src="image/icon_arrow_g.png">
                             </div>
                             <ul class="sub-menu__box">
-                                <div class="main-header__menu-link">
+                                <li class="main-header__sub-menu">
                                     <ul class="sub-menu__box-content">
                                         <li class="sub-menu__box-title">
                                             <a>benefit</a>
@@ -149,7 +154,7 @@
                                         </li>
                                     </ul>
 
-                                </div>
+                                </li>
                             </ul>
                         </li>
                         <li class="main-header__sub-menu">
@@ -186,7 +191,7 @@
                             <h2 class="slide-content-title m0">
                                 Leading POS Software For Omnichannel Retail
                             </h2>
-                            <p class="slide-content-sub m0">
+                            <p class="slide-content-descript m0">
                                 Security, high-speed & multistore scalability. Compatible with multiple platforms as
                                 Magento, Shopify.
                             </p>
@@ -203,7 +208,7 @@
                             <h2 class="slide-content-title m0">
                                 Leading POS Software For Omnichannel Retail
                             </h2>
-                            <p class="slide-content-sub m0">
+                            <p class="slide-content-descript m0">
                                 Security, high-speed & multistore scalability. Compatible with multiple platforms as
                                 Magento, Shopify.
                             </p>
@@ -220,7 +225,7 @@
                             <h2 class="slide-content-title m0">
                                 Leading POS Software For Omnichannel Retail
                             </h2>
-                            <p class="slide-content-sub m0">
+                            <p class="slide-content-descript m0">
                                 Security, high-speed & multistore scalability. Compatible with multiple platforms as
                                 Magento, Shopify.
                             </p>
@@ -234,25 +239,29 @@
         </div>
     </div>
 
-    <!--main-->
-    <div class="w-100 m-lr-auto home-intro">
-        <!--intro-->
+    <!--home intro-->
+    <div class="w-100 ml-auto mr-auto home-intro">
         <div class="container">
-            <div class="item-intro-img d-inline-block pad15 pos-relative">
-                <img class="w-100" src="image/thumb_video.png">
-                <a href="#">
-                    <img class=" item-intro-img__icon" src="image/icon_play.png">
-                </a>
+            <div class="row align-items-center">
+                <div class="col-lg-5 col-md-5 pos-relative item-intro-img">
+                    <img class="w-100" src="image/thumb_video.png">
+                    <a href="#">
+                        <img class=" item-intro-img__icon" src="image/icon_play.png">
+                    </a>
+                </div>
+                <div class="col-lg-6 col-md-7 ml-8 pos-relative ">
+                    <h3 class="item-intro__title m0 ">The future of retail, today</h3>
+                    <p class="item-intro__description m0 pt-12 ">We are not just a leading POS software provider,
+                        ConnectPOS
+                        also
+                        provides an integrated solution to help you realize your ideal future retail store. Latest
+                        technology such as PWA, AI or Facial Technology is leveraged to create a seamless and
+                        personalized
+                        shopping experience for your customers.</p>
+                    <button class=" button button--bg-green mt-48">watch video</button>
+                </div>
             </div>
-            <div class="item-intro-content d-inline-block pad15 pos-relative">
-                <h3 class="item-intro__title m0">The future of retail, today</h3>
-                <p class="item-intro__description m0 pt-12">We are not just a leading POS software provider, ConnectPOS
-                    also
-                    provides an integrated solution to help you realize your ideal future retail store. Latest
-                    technology such as PWA, AI or Facial Technology is leveraged to create a seamless and personalized
-                    shopping experience for your customers.</p>
-                <button class=" button button--bg-green mt-48">watch video</button>
-            </div>
+
         </div>
     </div>
     <!--featurehome-->
@@ -299,16 +308,13 @@
         </div>
     </div>
     <!--listimage-->
-    <div class="w-100 m-lr-auto text-center">
+    <div class="w-100 ml-auto mr-auto text-center galaxy-img">
         <div class="container">
-            <div class="w-100 m-lr-auto ">
-                <h2 class="item-intro__title w-650 m-lr-auto">And we go beyond outstanding features</h2>
-            </div>
-
-            <div class=" w-100 m-lr-auto grid-image clearfix">
-                <div class="card-list--w25 float-left pad15">
+            <h2 class="item-intro__title w-650 ml-auto mr-auto">And we go beyond outstanding features</h2>
+            <div class="row align-items-stretch">
+                <div class="col-lg-3 col-md-6 col-sm-6 list-card">
                     <img class="w-100" src="image/img_payment.png">
-                    <div class="card-caption w-100">
+                    <div class="list-card__caption w-100">
                         <h3 class="card-caption__title m0">Payments</h3>
                         <p class="card-caption__sub m0 pt-12 pb-12">Support various payment methods, from cash to cards.
                             Create custom
@@ -316,9 +322,9 @@
                         <a class="card-caption__link m0 " href="#"> Learn More</a>
                     </div>
                 </div>
-                <div class="card-list--w25 float-left pad15">
+                <div class="col-lg-3 col-md-6 col-sm-6 list-card">
                     <img class="w-100" src="image/img_payment.png">
-                    <div class="card-caption w-100">
+                    <div class="list-card__caption w-100">
                         <h3 class="card-caption__title m0">Payments</h3>
                         <p class="card-caption__sub m0 pt-12 pb-12">Support various payment methods, from cash to cards.
                             Create custom
@@ -326,9 +332,9 @@
                         <a class="card-caption__link m0" href="#"> Learn More</a>
                     </div>
                 </div>
-                <div class="card-list--w25 float-left pad15">
+                <div class="col-lg-3 col-md-6 col-sm-6 list-card">
                     <img class="w-100" src="image/img_payment.png">
-                    <div class="card-caption w-100">
+                    <div class="list-card__caption w-100">
                         <h3 class="card-caption__title m0">Payments</h3>
                         <p class="card-caption__sub m0 pt-12 pb-12">Support various payment methods, from cash to cards.
                             Create custom
@@ -336,9 +342,9 @@
                         <a class="card-caption__link m0" href="#"> Learn More</a>
                     </div>
                 </div>
-                <div class="card-list--w25 float-left pad15">
+                <div class="col-lg-3 col-md-6 col-sm-6 list-card">
                     <img class="w-100" src="image/img_payment.png">
-                    <div class="card-caption w-100">
+                    <div class="list-card__caption w-100">
                         <h3 class="card-caption__title m0">Payments</h3>
                         <p class="card-caption__sub m0 pt-12 pb-12">Support various payment methods, from cash to cards.
                             Create custom
@@ -437,14 +443,14 @@
         </div>
     </div>
     <!--quote-->
-    <div class="slide-quote default-block">
+    <div class="slide-quote w-100 ml-auto mr-auto">
         <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <div class="w-100 m-lr-auto quote-home">
+                    <div class="w-100 ml-auto mr-auto ">
                         <div class="container">
-                            <ul>
-                                <li class="item-intro-content d-inline-block pad15 ml-0 pos-relative">
+                            <ul class="row align-items-center">
+                                <li class="col-lg-6 col-md-7 pos-relative ">
 
                                     <h3 class="item-intro__title m0">Hear our customer stories</h3>
                                     <p class="item-intro__description m0 pt-12">Whether in the demo, during the free
@@ -459,7 +465,38 @@
                                         studies</button>
 
                                 </li>
-                                <li class="item-intro-img d-inline-block pad15 pos-relative">
+                                <li class="col-lg-5 col-md-5 pos-relative item-intro-img">
+
+                                    <img class="w-100" src="image/img_story.png">
+                                    <a href="#"><img class="item-intro-img__icon" src="image/icon_play.png"></a>
+
+                                </li>
+                            </ul>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="w-100 ml-auto mr-auto ">
+                        <div class="container">
+                            <ul class="row align-items-center">
+                                <li class="col-lg-6 col-md-7 pos-relative">
+
+                                    <h3 class="item-intro__title m0">Hear our customer stories</h3>
+                                    <p class="item-intro__description m0 pt-12">Whether in the demo, during the free
+                                        trial or in
+                                        practice by Dampfi now, ConnectPOS proves to be stable and reliable, which
+                                        is ultimately the most important factor</p>
+
+                                    <p class="item-intro__name m0 pt-24">Robin, Managing Director</p>
+                                    <p class="item-intro__position m0 pt-12">Dampfi</p>
+
+                                    <button class="button button--bg-green button--large mt-48">More case
+                                        studies</button>
+
+                                </li>
+                                <li class="col-lg-5 col-md-5 pos-relative item-intro-img">
 
                                     <img class="w-100" src="image/img_story.png">
                                     <a href="#"><img class="item-intro-img__icon" src="image/icon_play.png"></a>
@@ -470,10 +507,10 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <div class="w-100 m-lr-auto quote-home">
+                    <div class="w-100 ml-auto mr-auto ">
                         <div class="container">
-                            <ul>
-                                <li class="item-intro-content d-inline-block pad15 ml-0 pos-relative">
+                            <ul class="row align-items-center">
+                                <li class="col-lg-6 col-md-7 pos-relative">
 
                                     <h3 class="item-intro__title m0">Hear our customer stories</h3>
                                     <p class="item-intro__description m0 pt-12">Whether in the demo, during the free
@@ -488,40 +525,10 @@
                                         studies</button>
 
                                 </li>
-                                <li class="item-intro-img d-inline-block pad15 pos-relative">
+                                <li class="col-lg-5 col-md-5 pos-relative item-intro-img">
 
                                     <img class="w-100" src="image/img_story.png">
                                     <a href="#"><img class="item-intro-img__icon" src="image/icon_play.png"></a>
-
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="w-100 m-lr-auto quote-home">
-                        <div class="container">
-                            <ul>
-                                <li class="item-intro-content d-inline-block pad15 ml-0 pos-relative">
-
-                                    <h3 class="item-intro__title m0">Hear our customer stories</h3>
-                                    <p class="item-intro__description m0 pt-12">Whether in the demo, during the free
-                                        trial or in
-                                        practice by Dampfi now, ConnectPOS proves to be stable and reliable, which
-                                        is ultimately the most important factor</p>
-
-                                    <p class="item-intro__name m0 pt-24">Robin, Managing Director</p>
-                                    <p class="item-intro__position m0 pt-12">Dampfi</p>
-
-                                    <button class="button button--bg-green button--large mt-48">More case
-                                        studies</button>
-
-                                </li>
-                                <li class="item-intro-img d-inline-block pad15 pos-relative">
-
-                                    <img class="w-100" src="image/img_story.png">
-                                    <a href="#"><img class="item-intro-img__icon" src="image/icon_play.png"></a>
-
                                 </li>
                             </ul>
                         </div>
@@ -532,28 +539,26 @@
     </div>
 
     <!--listimage-->
-    <div class="w-100 m-lr-auto text-center pt-100">
+    <div class="w-100 ml-auto mr-auto text-center galaxy-img pt-100">
         <div class="container">
-            <div class="w-100 m-lr-auto ">
-                <h2 class="item-intro__title w-650 m-lr-auto pb-12">A solution that fits multiple business types</h2>
-                <a class="item-intro__link w-650 m-lr-auto " href="#">View all<img src="image/icon_arrow_b.png" /></a>
-            </div>
-            <div class=" w-100 m-lr-auto grid-image clearfix pt-50">
-                <div class="card-list--w25 float-left pad15">
+            <h2 class="item-intro__title w-650 ml-auto mr-auto pb-12">A solution that fits multiple business types</h2>
+            <a class="item-intro__link w-650 ml-auto mr-auto" href="#">View all<img src="image/icon_arrow_b.png" /></a>
+            <div class=" row align-items-stretch pt-50">
+                <div class="col-lg-3 col-md-6 col-sm-6 list-card">
                     <img class="w-100" src="image/img_fashion.png">
-                    <p class="card-caption__title card-caption__small-title m0">Fashion & Accessories</p>
+                    <p class="card-caption__title card-caption__title--small m0 pt-12 pb-12">Fashion & Accessories</p>
                 </div>
-                <div class="card-list--w25 float-left pad15">
+                <div class="col-lg-3 col-md-6 col-sm-6 list-card">
                     <img class="w-100" src="image/img_footwear.png">
-                    <p class="card-caption__title card-caption__small-title m0">Footwear</p>
+                    <p class="card-caption__title card-caption__title--small m0 pt-12 pb-12">Footwear</p>
                 </div>
-                <div class="card-list--w25 float-left pad15">
+                <div class="col-lg-3 col-md-6 col-sm-6 list-card">
                     <img class="w-100" src="image/img_furniture.png">
-                    <p class="card-caption__title card-caption__small-title m0">Furniture & Homeware</p>
+                    <p class="card-caption__title card-caption__title--small m0 pt-12 pb-12">Furniture & Homeware</p>
                 </div>
-                <div class="card-list--w25 float-left pad15">
+                <div class="col-lg-3 col-md-6 col-sm-6 list-card">
                     <img class="w-100" src="image/img_sport.png">
-                    <p class="card-caption__title card-caption__small-title m0">Sports & Outdoors</p>
+                    <p class="card-caption__title card-caption__title--small m0 pt-12 pb-12">Sports & Outdoors</p>
                 </div>
             </div>
 
@@ -642,13 +647,11 @@
         </div>
     </div>
     <!--news-->
-    <div class="home-news w-100 m-lr-auto pt-200">
+    <div class=" home-news bg-top w-100 ml-auto mr-auto pt-200 galaxy-img pb-100">
         <div class="container">
-
             <h2 class="item-intro__title  m-lr-auto pb-12 text-center">What news</h2>
-
-            <div class="w-100 m-lr-auto grid-image clearfix pt-50">
-                <div class="card-list--w33 float-left pos-relative pad15" name="news-1">
+            <div class="row align-items-stretch pt-50">
+                <div class="col-lg-4 col-md-4 pos-relative" name="news-1">
                     <img class="w-100" src="image/img_blog1.png">
                     <div class="news-date">
                         <p class="news-date__sub">
@@ -671,7 +674,7 @@
                     <p class="card-caption__sub">NASA urges space fans to check out the bright gas giant and its moons
                         as the planet nears oppositio.</p>
                 </div>
-                <div class="card-list--w33 float-left pos-relative pad15" name="news-1">
+                <div class="col-lg-4 col-md-4 pos-relative" name="news-1">
                     <img class="w-100" src="image/img_blog1.png">
                     <div class="news-date">
                         <p class="news-date__sub">
@@ -694,7 +697,7 @@
                     <p class="card-caption__sub">NASA urges space fans to check out the bright gas giant and its moons
                         as the planet nears oppositio.</p>
                 </div>
-                <div class="card-list--w33 float-left pos-relative pad15" name="news-1">
+                <div class="col-lg-4 col-md-4 pos-relative" name="news-1">
                     <img class="w-100" src="image/img_blog1.png">
                     <div class="news-date">
                         <p class="news-date__sub">
