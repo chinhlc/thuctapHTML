@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Home Page</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+
+</head>
+
+<body>
+    <!--scrollup button-->
+    <div class="m-auto scrollup">
+        <i class="fa fa-angle-up button-scroll__icon"></i>
+    </div>
+    <!--retailer-->
+    <div class=" w-100 ml-auto mr-auto">
+        <div class="container">
+            <div class="list-square">
+                <div class="list-square__bg">
+                    <img src="image/img_retailers.png">
+                </div>
+
+                <div class="list-square__content pt-100">
+                    <div class="w-100 m-lr-auto text-center">
+                        <h2 class="item-intro__title w-650 m-lr-auto">We have powered 1000+ retailers worldwide</h2>
+                    </div>
+                    <div class="row align-items-stretch pt-100">
+                        <div class="col-lg-2 bg-square">
+
+                        </div>
+                    </div>
+                    <div class="w-100 m-lr-auto pt-100 list-square__img">
+                        <!--row1-->
+                        <div class="square-logo ">
+                            <img class="square-logo__bg" src="image/bg_logo.png">
+                            <div class="square-logo__icon">
+                                <img src="image/logo1/baia baia.png" />
+                            </div>
+                        </div>
+                        <div class="square-logo ">
+                            <img class="square-logo__bg" src="image/bg_logo.png">
+                            <div class="square-logo__icon">
+                                <img src="image/logo1/anovo.png" />
+                            </div>
+                        </div>
+                        <div class="square-logo ml-16">
+                            <img class="square-logo__bg" src="image/bg_logo.png">
+                            <div class="square-logo__icon">
+                                <img src="image/logo1/pernod ricard.png" />
+                            </div>
+                        </div>
+                        <div class="square-logo ml-16" name="end-row-1">
+                            <img class="square-logo__bg" src="image/bg_logo.png">
+                            <div class="square-logo__icon">
+                                <img src="image/logo1/nescafe.png" />
+                            </div>
+                        </div>
+                        <!--row2-->
+                        <div class="square-logo ml-8" name="row-2">
+                            <img class="square-logo__bg" src="image/bg_logo.png">
+                            <div class="square-logo__icon">
+                                <img src="image/logo1/creswick.png" />
+                            </div>
+                        </div>
+                        <div class="square-logo">
+                            <img class="square-logo__bg" src="image/bg_logo.png">
+                            <div class="square-logo__icon">
+                                <img src="image/logo1/innova.png" />
+                            </div>
+                        </div>
+                        <div class="square-logo">
+                            <img class="square-logo__bg" src="image/bg_logo.png">
+                            <div class="square-logo__icon">
+                                <img src="image/logo1/vape electronics.png" />
+                            </div>
+                        </div>
+                        <div class="square-logo">
+                            <img class="square-logo__bg" src="image/bg_logo.png">
+                            <div class="square-logo__icon">
+                                <img src="image/logo1/catepillar.png" />
+                            </div>
+                        </div>
+                        <div class="square-logo" name="end-row-2">
+                            <img class="square-logo__bg" src="image/bg_logo.png">
+                            <div class="square-logo__icon">
+                                <img src="image/logo1/sportaways.png" />
+                            </div>
+                        </div>
+                        <!--row3-->
+                        <div class="square-logo ml-32">
+                            <img class="square-logo__bg" src="image/bg_logo.png">
+                            <div class="square-logo__icon">
+                                <img src="image/logo1/BathroomTakeaway-2line-logoSH-2400x1081.png" />
+                            </div>
+                        </div>
+                        <div class="square-logo ml-16" name="end-row-3">
+                            <img class="square-logo__bg" src="image/bg_logo.png">
+                            <div class="square-logo__icon">
+                                <img src="image/logo1/thesewingstudio.png" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        //show main menu
+        $('.scrollup').hide();
+        $(document).ready(function () {
+
+            $('.main-menu__hidden').click(function () {
+                $('.main-header__content').toggleClass('show-menu');
+            });
+            $('.main-header__sub-menu ').click(function () {
+                $(this).siblings().removeClass('action');
+                $(this).toggleClass('action');
+            });
+            $('.scrollup').click(function () {
+                $('body,html').animate({
+                    scrollTop: 0
+                }, 1000)
+            });
+            $(window).scroll(function () {
+                if ($(this).scrollTop() >= 100) {        // If page is scrolled more than 50px
+                    $('.scrollup').fadeIn(200);    // Fade in the arrow
+                } else {
+                    $('.scrollup').fadeOut(200);   // Else fade out the arrow
+                }
+            });
+        });
+        //hide main menu
+        $(document).mouseup(function (e) {
+            var value = $(".main-header__content");
+            if (!$('.main-menu__hidden').is(e.target) && !value.is(e.target) && value.has(e.target).length == 0) {
+                $('.main-header__content').removeClass('show-menu');
+            }
+        })
+
+    </script>
+</body>
+
+</html>
