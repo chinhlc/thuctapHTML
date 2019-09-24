@@ -46,10 +46,9 @@ ul li {
 }
 
 /*default-block la block mac dinh*/
-.default-block {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+.text-bold {
+    font-family: opensans-bold;
+    font-weight: bold;
 }
 
 /*color*/
@@ -169,6 +168,13 @@ ul li {
     width: auto;
 }
 
+@media screen and (min-width: 768px) {
+    .h-md-7 {
+        height: 7rem;
+        width: auto;
+    }
+}
+
 /*margin - m*/
 .m-lr-auto {
     margin-left: auto;
@@ -181,6 +187,10 @@ ul li {
 
 .mt-48 {
     margin-top: 48px;
+}
+
+.mt-6 {
+    margin-top: 3.5rem;
 }
 
 .ml-0 {
@@ -208,41 +218,44 @@ ul li {
 }
 
 /*card*/
-.card-caption__title {
-    font-family: opensans-bold;
+.card__caption__title {
     font-size: 22px;
     color: #555555;
     line-height: 24px;
 }
 
-.card-caption__title--small {
+.card__caption__title--small {
     font-size: 18px;
     line-height: 24px;
 }
-
-.card-caption__sub {
+@media screen and (max-width:768px) {
+    .card__caption__title--small {
+        font-size: 15px !important;
+    }
+}
+.card__caption__description {
     font-size: 16px;
     line-height: 24px;
 }
 
-.card-caption__link {
+.card__caption__link {
     font-family: opensans-bold;
     font-size: 14px;
     color: #26A69A;
     line-height: 24px;
 }
 
-.card-caption__link:hover {
+.card__caption__link:hover {
     text-decoration: none;
 }
 
-.card-caption__link-icon {
+.card__caption__link-icon {
     color: #26A69A;
     font-size: 12px;
     padding-left: 5px;
 }
 
-.card-caption__link-icon:hover {
+.card__caption__link-icon:hover {
     color: #2980b9;
 }
 
@@ -251,34 +264,34 @@ ul li {
     background-color: #1F3246;
 }
 
-.top-header__menu ul {
+.top-header__menu {
     margin: 0;
 }
 
-.top-header ul li {
+.top-header__menu li {
     display: inline;
 }
 
-.top-header__menu {
+.top-header__nav {
     padding-top: 12px;
     padding-bottom: 12px;
     font-size: 13px;
     line-height: 24px;
 }
 
-.top-header__menu a {
+.top-header__nav a {
     color: white;
     margin-left: 40px;
     opacity: 0.6;
 }
 
-.top-header__menu a:hover {
+.top-header__nav a:hover {
     color: #3498db;
     text-decoration: none;
 }
 
 @media only screen and (max-width:420px) {
-    .top-header__menu a {
+    .top-header__nav a {
         margin-left: 15px;
     }
 }
@@ -299,46 +312,53 @@ ul li {
     margin-left: -29px;
 }
 
-.item-intro__title {
-    font-family: opensans-bold;
+.intro__title {
     font-size: 34px;
     color: #333333;
     line-height: 40px;
 }
 
-.item-intro__description {
+.intro__description {
     font-size: 18px;
     color: #777777;
     line-height: 32px;
 }
 
 @media screen and (max-width:992px) {
-    .item-intro__title {
+    .intro__title {
         font-size: 30px;
     }
 
-    .item-intro__description {
+    .intro__description {
+        font-size: 16px;
+        line-height: 25px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .intro__title {
+        font-size: 25px;
+    }
+
+    .intro__description {
         font-size: 16px;
         line-height: 25px;
     }
 }
 
 @media screen and (max-width:576px) {
-    .item-intro__title {
-        font-size: 25px;
+    .intro__title {
+        font-size: 22px;
+        line-height: 28px;
     }
 
-    .item-intro__description {
+    .intro__description {
         font-size: 15px;
     }
 }
 
-@media screen and (max-width:380px) {
-    .item-intro__title {
-        font-size: 20px;
-    }
-
-    .item-intro__description {
+@media screen and (max-width:480px) {
+    .intro__description {
         font-size: 13px;
     }
 }
@@ -406,19 +426,26 @@ ul li {
 /*home-feature*/
 .home-features {
     width: 100%;
-    max-width: 600px;
-    display: inline-block;
+    max-width: 550px;
     position: relative;
     padding-top: 250px;
     padding-bottom: 270px;
 }
 
 .home-features__image {
-    display: inline;
     left: 100%;
     position: absolute;
     top: 0;
 
+}
+
+.card__img {
+    padding: 15px 0;
+}
+
+.card__icon {
+    width: 50px;
+    height: 50px;
 }
 
 @media screen and (max-width:768px) {
@@ -426,11 +453,32 @@ ul li {
         padding-top: 100px;
         padding-bottom: 100px;
     }
+
+    .card__caption__description {
+        font-size: 15px;
+    }
+
+    .card__caption__title {
+        font-size: 20px
+    }
+}
+
+@media screen and (max-width:576px) {
+    .card__caption__description {
+        font-size: 14px;
+    }
+
+    .card__caption__title {
+        font-size: 18px
+    }
 }
 
 @media screen and (max-width:480px) {
-    .home-features .card-caption__sub {
+    .card__caption__description {
         font-size: 13px;
+    }
+    .card__caption__title {
+        font-size: 15px;
     }
 }
 
@@ -484,11 +532,11 @@ ul li {
 }
 
 @media screen and (max-width:992px) {
-    .home-news .card-caption__title {
+    .home-news .card__caption__title {
         font-size: 20px;
     }
 
-    .home-news .card-caption__sub,
+    .home-news .card__caption__description,
     .home-news .news-category__sub {
         font-size: 15px;
     }
@@ -880,12 +928,7 @@ ul li {
 
 }
 
-.slide-banner__content img {
-    margin-left: -10%;
-}
-
 .slide-banner__caption-title {
-    font-family: opensans-bold;
     font-size: 3.25em;
     line-height: 60px;
 }
@@ -923,8 +966,22 @@ ul li {
     background-color: #50af9a;
 }
 
+#slide-quote .dots li.active {
+    background-color: #50af9a;
+    border: none;
+    width: 14px;
+    height: 14px;
+}
+
 #slide-quote .dots--blue li {
     border: 2px solid #50af9a;
+
+}
+
+@media screen and (max-width:1200px) {
+    .slide-banner__content img {
+        margin-left: -10%;
+    }
 }
 
 @media screen and (max-width:992px) {
@@ -1221,6 +1278,7 @@ ul li {
         line-height: 20px;
     }
 }
+
 /*pwa list item*/
 .pwa-list-intro {
     font-size: 16px;
@@ -1249,7 +1307,7 @@ ul li {
         line-height: 27px;
     }
 
-    .pwa-list-intro .item-intro__description {
+    .pwa-list-intro .intro__description {
         line-height: 25px;
     }
 }
@@ -1312,7 +1370,7 @@ ul li {
         height: auto;
     }
 
-    .pwa-list-card .card-caption__sub {
+    .pwa-list-card .card__caption__description {
         font-size: 13px;
     }
 
@@ -1407,10 +1465,6 @@ ul li {
 }
 
 @media screen and (max-width:768px) {
-    .magento-item__content .item-intro__title {
-        font-size: 25px;
-    }
-
     .magento-list-card .card-list--w33 {
         padding-bottom: 30px;
     }
@@ -1418,12 +1472,7 @@ ul li {
 
 }
 
-@media screen and (max-width:420px) {
-    .magento-item__content .item-intro__title {
-        font-size: 20px;
-        line-height: 25px;
-    }
-}
+@media screen and (max-width:420px) {}
 
 /*magento merchants*/
 .square-block {
@@ -1522,16 +1571,12 @@ ul li {
     position: absolute;
     top: 50%;
     left: 50%;
-    margin-top: -12.5px;
+    margin-top: -15.5px;
     margin-left: -9.5px;
 }
 
 .scrollup:hover {
     background-color: #f39c12;
-}
-
-.scrollup:hover .button-scroll__icon {
-    margin-top: -15.5px;
 }
 
 .bg-white {
@@ -1552,21 +1597,6 @@ ul li {
 @media screen and (max-width:380px) {
     .galaxy-img {
         font-size: 11px;
-    }
-
-    .galaxy-img .item-intro__title {
-        line-height: 30px;
-    }
-
-    .list-card .card-caption__title,
-    .list-card .card-caption__title--small {
-        font-size: 18px;
-        line-height: 20px;
-    }
-
-    .list-card .card-caption__sub {
-        font-size: 13px;
-        line-height: 20px;
     }
 }
 
