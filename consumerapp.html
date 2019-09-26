@@ -17,12 +17,12 @@
         <i class="fa fa-angle-up button-scroll__icon"></i>
     </div>
     <!--topmenu -->
-    <header class=" w-100 m-auto text-right top-header bg-midnight">
+    <header class="w-100 m-auto text-right top-header bg-midnight">
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <nav class="top-header__menu ">
-                        <ul class="text-right">
+                    <nav class="top-header__nav">
+                        <ul class="text-right top-header__menu">
                             <li>
                                 <a href="#">Blog</a>
                             </li>
@@ -39,137 +39,142 @@
                     </nav>
                 </div>
             </div>
-
         </div>
     </header>
     <!--mainmenu-->
-    <div class=" sticky-top w-100 ml-auto mr-auto main-header">
+    <div class="sticky-top w-100 ml-auto mr-auto main-header">
         <div class="container">
-            <div class="main-header__box pad15 clearfix pos-relative">
-                <div class="main-header__logo float-left">
-                    <a href="./home1.html">
-                        <img src="image/logo.png" />
-                    </a>
-                </div>
-                <div class="main-menu__hidden">
-                    <i class="fa fa-bars "></i>
-                </div>
-                <nav class="main-header__content float-right">
-                    <ul>
-                        <li class="main-header__sub-menu">
-                            <div class="sub-menu__title">
-                                <a>Why ConnectPOS</a>
-                                <img src="image/icon_arrow_g.png">
-                            </div>
-                            <ul class="sub-menu__box">
-                                <li class="main-header__sub-menu">
-                                    <ul>
-                                        <li class="sub-menu__box-title"><a>benefit</a></li>
-
-                                        <li class="sub-menu__box-des">
-                                            <a href="#">About Us</a>
-                                        </li>
-                                        <li class="sub-menu__box-des">
-                                            <a href="#">24/7 Support</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="main-header__sub-menu">
-                                    <ul>
-                                        <li class="sub-menu__box-title">
-                                            <a>YOUR BUSINESS TYPES</a>
-                                        </li>
-                                        <li class="sub-menu__box-des">
-                                            <a href="#">Fashion & Accessories</a>
-                                        </li>
-                                        <li class="sub-menu__box-des">
-                                            <a href="#">Furniture & Homeware</a>
-                                        </li>
-                                        <li class="sub-menu__box-des">
-                                            <a href="#">All Business Types</a>
-                                        </li>
-                                    </ul>
-
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="main-header__sub-menu">
-                            <div class="sub-menu__title">
-                                <a>Features</a>
-                                <img src="image/icon_arrow_g.png">
-                            </div>
-                            <ul class="sub-menu__box">
-                                <li class="main-header__sub-menu">
-                                    <ul class="sub-menu__box-content">
-                                        <li class="sub-menu__box-title">
-                                            <a>Overview</a>
-                                        </li>
-                                        <li class="sub-menu__box-des">
-                                            <a href="#">Features Overview</a>
-                                        </li>
-                                        <li class="sub-menu__box-des">
-                                            <a href="#">Ominichannel</a>
-                                        </li>
-                                    </ul>
-
-                                </li>
-                                <li class="main-header__sub-menu">
-                                    <ul class="sub-menu__boxcontent">
-                                        <li class="sub-menu__box-title">
-                                            <a>highlight features</a>
-                                        </li>
-                                        <li class="sub-menu__box-des">
-                                            <a href="./consumerapp.html">PWA Consumer App</a>
-                                        </li>
-                                        <li class="sub-menu__box-des">
-                                            <a href="./customerScreen.html">Customer Screen</a>
-                                        </li>
-                                        <li class="sub-menu__box-des">
-                                            <a href="./faciaRecognition.html">Facial Recognition</a>
-                                        </li>
-                                    </ul>
-
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="main-header__sub-menu">
-                            <div class="sub-menu__title">
-                                <a>Integration</a>
-                                <img src="image/icon_arrow_g.png">
-                            </div>
-                            <ul class="sub-menu__box">
-                                <li class="main-header__sub-menu">
-                                    <ul class="sub-menu__box-content">
-                                        <li class="sub-menu__box-title">
-                                            <a>benefit</a>
-                                        </li>
-                                        <li class="sub-menu__box-des">
-                                            <a href="#">About Us</a>
-                                        </li>
-                                        <li class="sub-menu__box-des">
-                                            <a href="#">24/7 Support</a>
-                                        </li>
-                                    </ul>
-
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="main-header__sub-menu">
-                            <div class="sub-menu__title">
-                                <a href="#">Pricing</a>
-                            </div>
-                        </li>
-                        <li class="main-header__sub-menu">
-                            <div class="sub-menu__title">
-                                <a href="#">Case studies</a>
-                            </div>
-                        </li>
-                        <li class="main-header__button">
-                            <button class="button">free trial</button>
-                        </li>
-                    </ul>
-                </nav>
+            <div class="main-header__logo float-left">
+                <a href="./home1.html">
+                    <img src="image/logo.png" />
+                </a>
             </div>
+            <div class="main-menu__hidden">
+                <i class="fa fa-bars "></i>
+            </div>
+            <nav class="main-header__content float-right">
+                <ul class="main-header__menu">
+                    <li>
+                        <div class="main-header__menu-link">
+                            <a>Why ConnectPOS</a>
+                            <img src="image/icon_arrow_g.png">
+                        </div>
+                        <ul class="main-header__sub-menu">
+                            <li class="main-header__menu-link pb-md-2">
+                                <ul>
+                                    <li>
+                                        <a class="main-header__sub-menu__title" href="#">benefit</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="main-header__sub-menu__sub">About Us</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="main-header__sub-menu__sub">24/7 Support</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="main-header__menu-link  pt-md-2">
+                                <ul>
+                                    <li>
+                                        <a class="main-header__sub-menu__title" href="#">YOUR BUSINESS TYPES</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="main-header__sub-menu__sub">Fashion & Accessories</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="main-header__sub-menu__sub">Furniture & Homeware</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="main-header__sub-menu__sub">All Business Types</a>
+                                    </li>
+                                </ul>
+
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="main-header__menu-link">
+                            <a>Features</a>
+                            <img src="image/icon_arrow_g.png">
+                        </div>
+                        <ul class="main-header__sub-menu">
+                            <li class="main-header__menu-link pb-md-2">
+                                <ul>
+                                    <li>
+                                        <a class="main-header__sub-menu__title" href="#">overview</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="main-header__sub-menu__sub">features overview</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="main-header__sub-menu__sub">omnichanel</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="main-header__menu-link  pt-md-2">
+                                <ul>
+                                    <li>
+                                        <a class="main-header__sub-menu__title" href="#">HIGHLIGHT FEATURES</a>
+                                    </li>
+                                    <li>
+                                        <a href="consumerapp.html" class="main-header__sub-menu__sub">PWA Consumer
+                                            App</a>
+                                    </li>
+                                    <li>
+                                        <a href="customerScreen.html" class="main-header__sub-menu__sub">Customer
+                                            Screen</a>
+                                    </li>
+                                    <li>
+                                        <a href="faciaRecognition.html" class="main-header__sub-menu__sub">Facial
+                                            Recognition</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="main-header__menu-link">
+                            <a>Integration</a>
+                            <img src="image/icon_arrow_g.png">
+                        </div>
+                        <ul class="main-header__sub-menu">
+                            <li class="main-header__menu-link pb-md-2">
+                                <ul>
+                                    <li>
+                                        <a href="#" class="main-header__sub-menu__sub">Ecommerce platform</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="main-header__sub-menu__sub">Payment</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="main-header__sub-menu__sub">Inventory & Logistics</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="main-header__sub-menu__sub">Loyalty</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="main-header__sub-menu__sub">Gift cards</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="main-header__menu-link">
+                            <a href="#">Pricing</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="main-header__menu-link">
+                            <a href="#">Case studies</a>
+                        </div>
+                    </li>
+                    <li class="main-header__button">
+                        <button class="button">free trial</button>
+                    </li>
+                </ul>
+            </nav>
+
         </div>
     </div>
     <!--banner consumer-->
@@ -193,8 +198,6 @@
                     <a href="#"><img class="icon-play" src="image/icon_play.png" alt="icon play"></a>
                 </div>
             </div>
-
-
         </div>
     </div>
     <!--article quote-->
@@ -204,21 +207,20 @@
                 "Create seamless shopping experience for your in-store consumers, all via their mobile phones."
             </em>
         </div>
-
     </article>
     <!--list info-->
-    <div class="w-100 m-auto pwa-list-intro bg-deflaut">
-        <div class="container ">
+    <div class="w-100 m-auto bg-deflaut">
+        <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6 col-md-6 order-0 item-intro__img">
                     <img class="w-100" src="image/icon.png">
                 </div>
 
                 <div class="col-lg-6 col-md-6 order-1 item-intro__content">
-                    <h3 class="item-pwa__title m0">
+                    <h3 class="pwa-intro__title m0">
                         Easily access by QR code
                     </h3>
-                    <p class="item-intro__description m0 pt-12">
+                    <p class="intro__description m0 pt-12">
                         Your customers can just walk into stores, scan a QR code, then they can access an app-like
                         interface that enables them to surf the full range of products. No app installation required!
                     </p>
@@ -232,10 +234,10 @@
                 </div>
 
                 <div class="col-lg-6 col-md-6 order-0 item-intro__content order-mr-1">
-                    <h3 class="item-pwa__title m0">
+                    <h3 class="pwa-intro__title m0">
                         Scan bar code for product information
                     </h3>
-                    <p class="item-intro__description m0 pt-12">
+                    <p class="intro__description m0 pt-12">
                         By scanning the bar code, customers can immediately get the product detail information including
                         price, quantity in stock or product variations, and also easily put chosen items into their
                         shopping cart.
@@ -250,10 +252,10 @@
                 </div>
 
                 <div class="col-lg-6 col-md-6 item-intro__content order-1">
-                    <h3 class="item-pwa__title">
+                    <h3 class="pwa-intro__title">
                         Order out-of-stock items
                     </h3>
-                    <p class="item-intro__description">
+                    <p class="intro__description">
                         Don’t let your customers leave the store with disappointment as their favourite items are
                         already sold out! ConnectPOS PWA Consumer app allows customers to order out-of-stock item and
                         choose to either pick it in store or have it delivered to their front door.
@@ -270,10 +272,10 @@
                 </div>
 
                 <div class="col-lg-6 col-md-6 item-intro__content order-0 order-mr-1">
-                    <h3 class="item-pwa__title">
+                    <h3 class="pwa-intro__title">
                         Personalize recommendation
                     </h3>
-                    <p class="item-intro__description">
+                    <p class="intro__description">
                         AI integrated in ConnectPOS PWA Consumer App gives customers personalized recommendations based
                         on items in their shopping cart and purchase history.
                     </p>
@@ -285,10 +287,10 @@
                 </div>
 
                 <div class="col-lg-6 col-md-6 item-intro__content order-1">
-                    <h3 class="item-pwa__title">
+                    <h3 class="pwa-intro__title">
                         Personalize recommendation
                     </h3>
-                    <p class="item-intro__description">
+                    <p class="intro__description">
                         AI integrated in ConnectPOS PWA Consumer App gives customers personalized recommendations based
                         on items in their shopping cart and purchase history.
                     </p>
@@ -301,10 +303,10 @@
                 </div>
 
                 <div class="col-lg-6 col-md-6 item-intro__content order-0 order-mr-1">
-                    <h3 class="item-pwa__title">
+                    <h3 class="pwa-intro__title">
                         Easy self-checkout in seconds
                     </h3>
-                    <p class="item-intro__description">
+                    <p class="intro__description">
                         Customers easily make payment on their mobile devices and receive a barcode. Cashiers then scan
                         the barcode, and the checkout process via PWA is completed.
                         PWA Consumer App supports various payment methods including: cash, gift card, promo code and
@@ -319,12 +321,13 @@
     <!--PWA intro-->
     <div class="bg-deflaut w-100 m-auto pt-100 text-center">
         <div class="container">
-            <h2 class="item-intro__title w-650 ml-auto mr-auto w-100 text-center">PWA - The key technology for future
+            <h2 class="intro__title w-650 ml-auto mr-auto w-100 text-center text-bold">PWA - The key technology for
+                future
                 merchant success</h2>
-            <div class="row align-items-stretch justify-content-center pwa-list-card pt-50">
-                <div class="col-lg-4 col-md-4 col-sm-6 pb-md-3 pt-md-3">
-                    <div class=" bg-white p-md-4">
-                        <div class="paw-card__img">
+            <div class="row align-items-stretch justify-content-center pt-50">
+                <div class="col-lg-4 col-md-4 col-sm-6 pb-md-3 pt-md-3 card-item">
+                    <div class="bg-white p-md-4">
+                        <div class="card-wrapper__img square-logo">
                             <div class="square-logo__bg square-logo__bg--small pos-relative bg-white ">
                                 <div class="square-logo__icon">
                                     <img src="image/icon_1.png" />
@@ -332,7 +335,7 @@
                             </div>
                         </div>
 
-                        <div class="card-caption__sub bg-white h-5">
+                        <div class="card__caption__description bg-white h-5">
                             <p>
                                 Reduce sale-workforce at physical stores
                             </p>
@@ -340,16 +343,16 @@
                     </div>
 
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 pb-md-3 pt-md-3">
+                <div class="col-lg-4 col-md-4 col-sm-6 pb-md-3 pt-md-3 card-item">
                     <div class="bg-white p-md-4">
-                        <div class="paw-card__img">
+                        <div class="card-wrapper__img square-logo">
                             <div class="square-logo__bg square-logo__bg--small pos-relative bg-white ">
                                 <div class="square-logo__icon">
                                     <img src="image/icon_1.png" />
                                 </div>
                             </div>
                         </div>
-                        <div class="card-caption__sub h-5">
+                        <div class="card__caption__description h-5">
                             <p>
                                 Solve the mobile conversion dilemma and deliver highly personalized experiences cross
                                 channels
@@ -358,48 +361,48 @@
                     </div>
 
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 pb-md-3 pt-md-3">
+                <div class="col-lg-4 col-md-4 col-sm-6 pb-md-3 pt-md-3 card-item">
                     <div class="bg-white p-md-4">
-                        <div class="paw-card__img">
+                        <div class="card-wrapper__img square-logo">
                             <div class="square-logo__bg square-logo__bg--small pos-relative bg-white ">
                                 <div class="square-logo__icon">
                                     <img src="image/icon_1.png" />
                                 </div>
                             </div>
                         </div>
-                        <div class="card-caption__sub h-5">
+                        <div class="card__caption__description h-5">
                             <p>
                                 Increase sales and customer satisfaction by selling out-of-stock products
                             </p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 pb-md-3 pt-md-3">
+                <div class="col-lg-4 col-md-4 col-sm-6 pb-md-3 pt-md-3 card-item">
                     <div class="bg-white p-md-4">
-                        <div class="paw-card__img">
+                        <div class="card-wrapper__img square-logo">
                             <div class="square-logo__bg square-logo__bg--small pos-relative bg-white ">
                                 <div class="square-logo__icon">
                                     <img src="image/icon_1.png" />
                                 </div>
                             </div>
                         </div>
-                        <div class="card-caption__sub h-5">
+                        <div class="card__caption__description h-5">
                             <p>
                                 Shorten in-store checkout process
                             </p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 pb-md-3 pt-md-3">
+                <div class="col-lg-4 col-md-4 col-sm-6 pb-md-3 pt-md-3 card-item">
                     <div class="bg-white p-md-4">
-                        <div class="paw-card__img">
+                        <div class="card-wrapper__img square-logo">
                             <div class="square-logo__bg square-logo__bg--small pos-relative bg-white ">
                                 <div class="square-logo__icon">
                                     <img src="image/icon_1.png" />
                                 </div>
                             </div>
                         </div>
-                        <div class="card-caption__sub h-5">
+                        <div class="card__caption__description h-5">
                             <p>
                                 Collect data about in-store behaviors
                             </p>
@@ -407,16 +410,16 @@
                     </div>
 
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 pb-md-3 pt-md-3">
+                <div class="col-lg-4 col-md-4 col-sm-6 pb-md-3 pt-md-3 card-item">
                     <div class="bg-white p-md-4">
-                        <div class="paw-card__img">
+                        <div class="card-wrapper__img square-logo">
                             <div class="square-logo__bg square-logo__bg--small pos-relative bg-white ">
                                 <div class="square-logo__icon">
                                     <img src="image/icon_1.png" />
                                 </div>
                             </div>
                         </div>
-                        <div class="card-caption__sub h-5">
+                        <div class="card__caption__description h-5">
                             <p>
                                 Manage all sales data in a single place
                             </p>
@@ -432,56 +435,46 @@
         </div>
     </div>
     <!--listimage-->
-    <div class="w-100 m-auto pb-100 pt-100">
+    <div class="w-100 ml-auto mr-auto text-center galaxy-img pt-30 pb-100">
         <div class="container">
-
-            <div class="w-100 m-lr-auto text-center ">
-                <h2 class="item-intro__title w-850 m-lr-auto">PWA - The key technology for future merchant success</h2>
-                <button class="button button--bg-green mt-48">book a demo</button>
-            </div>
-            <div class="row align-items-stretch pt-50">
-                <div class="col-lg-3 col-sm-6">
-                    <img class="w-100" src="image/img_payment.png">
-                    <div class=" text-center">
-                        <h3 class="card-caption__title text-bold">
-                            Features Overview
-                        </h3>
-                        <a class="card-caption__link" href="#">
-                            Learn More
-                        </a>
+            <h2 class="intro__title w-850 ml-auto mr-auto text-bold">Power your store with the best POS combined with
+                PWA Consumer App</h2>
+            <button class="button button--bg-green mt-48">book a demo</button>
+            <div class="row align-items-stretch">
+                <div class="col-md-4 card-item">
+                    <div class="card__img">
+                        <img class="w-100" src="image/img_payment.png" alt="Features Overview">
+                    </div>
+                    <div class="card__caption">
+                        <h3 class="card__caption__title m0 text-bold">Features Overview</h3>
+                        <div class="pt-12">
+                            <a class="card__caption__link" href="#"> Learn More</a>
+                            <i class="fa fa-arrow-right card__caption__link-icon"></i>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-sm-6">
-                    <img class="w-100" src="image/img_payment.png">
-                    <div class=" text-center">
-                        <h3 class="card-caption__title text-bold">
-                            Features Overview
-                        </h3>
-                        <a class="card-caption__link" href="#">
-                            Learn More
-                        </a>
+                <div class="col-md-4 card-item">
+                    <div class="card__img">
+                        <img class="w-100" src="image/img_hardware.png" alt="hardware-img">
+                    </div>
+                    <div class="card__caption">
+                        <h3 class="card__caption__title m0 text-bold">Wireless Customer Screen</h3>
+                        <div class="pt-12">
+                            <a class="card__caption__link" href="#"> Learn More</a>
+                            <i class="fa fa-arrow-right card__caption__link-icon"></i>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-sm-6">
-                    <img class="w-100" src="image/img_payment.png">
-                    <div class=" text-center">
-                        <h3 class="card-caption__title text-bold">
-                            Features Overview
-                        </h3>
-                        <a class="card-caption__link" href="#">
-                            Learn More
-                        </a>
+                <div class="col-md-4 card-item">
+                    <div class="card__img">
+                        <img class="w-100" src="image/img_support.png" alt="support-img">
                     </div>
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <img class="w-100" src="image/img_payment.png">
-                    <div class=" text-center">
-                        <h3 class="card-caption__title text-bold">
-                            Features Overview
-                        </h3>
-                        <a class="card-caption__link" href="#">
-                            Learn More
-                        </a>
+                    <div class="card__caption">
+                        <h3 class="card__caption__title m0 text-bold">ConnectPOS Facial Recognition</h3>
+                        <div class="pt-12">
+                            <a class="card__caption__link" href="#"> Learn More</a>
+                            <i class="fa fa-arrow-right card__caption__link-icon"></i>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -491,7 +484,7 @@
     <footer class="footer w-100 ml-auto mr-auto bg-midnight">
         <div class="container">
             <div class="row align-items-stretch pt-100">
-                <div class="col-lg-4 col-md-8" name="connectpos">
+                <div class="col-lg-4 col-md-8">
                     <h3 class="col-footer__title">About connectpos</h3>
                     <div class="col-footer__sub">
                         <p>
@@ -503,7 +496,7 @@
                         <p><img class="right13" src="image/icon_phone.png">(+1) 425 243 4583</p>
                     </div>
                 </div>
-                <div class="col-lg-2 col-md-4 col-sm-6" name="sale">
+                <div class="col-lg-2 col-md-4 col-sm-6">
                     <h3 class="col-footer__title">Point of sale</h3>
                     <div class="col-footer__sub">
                         <ul>
@@ -514,7 +507,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-2 col-md-4 col-sm-6" name="type">
+                <div class="col-lg-2 col-md-4 col-sm-6">
                     <h3 class="col-footer__title">Business types</h3>
                     <div class="col-footer__sub">
                         <ul>
@@ -531,7 +524,7 @@
                 </div>
 
 
-                <div class="col-lg-2 col-md-4 col-sm-6" name="us">
+                <div class="col-lg-2 col-md-4 col-sm-6">
                     <h3 class="col-footer__title">about us</h3>
                     <div class="col-footer__sub">
                         <ul>
@@ -579,10 +572,7 @@
                             </li>
 
                         </ul>
-
-
                     </div>
-
                 </div>
             </div>
         </div>
@@ -598,7 +588,7 @@
             $('.main-menu__hidden').click(function () {
                 $('.main-header__content').toggleClass('show-menu');
             });
-            $('.main-header__sub-menu ').click(function () {
+            $('.main-header__menu li ').click(function () {
                 $(this).siblings().removeClass('action');
                 $(this).toggleClass('action');
             });
@@ -608,7 +598,7 @@
                 }, 1000)
             });
             $(window).scroll(function () {
-                if ($(this).scrollTop() >= 100) {        // If page is scrolled more than 50px
+                if ($(this).scrollTop() >= 100) {        // If page is scrolled more than 100px
                     $('.scrollup').fadeIn(200);    // Fade in the arrow
                 } else {
                     $('.scrollup').fadeOut(200);   // Else fade out the arrow

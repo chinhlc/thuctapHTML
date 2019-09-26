@@ -18,12 +18,12 @@
         <i class="fa fa-angle-up button-scroll__icon"></i>
     </div>
     <!--topmenu -->
-    <header class=" w-100 m-auto text-right top-header bg-midnight">
+    <header class="w-100 m-auto text-right top-header bg-midnight">
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <nav class="top-header__menu ">
-                        <ul class="text-right">
+                    <nav class="top-header__nav">
+                        <ul class="text-right top-header__menu">
                             <li>
                                 <a href="#">Blog</a>
                             </li>
@@ -40,137 +40,142 @@
                     </nav>
                 </div>
             </div>
-
         </div>
     </header>
     <!--mainmenu-->
-    <div class=" sticky-top w-100 ml-auto mr-auto main-header">
+    <div class="sticky-top w-100 ml-auto mr-auto main-header">
         <div class="container">
-            <div class="main-header__box pad15 clearfix pos-relative">
-                <div class="main-header__logo float-left">
-                    <a href="./home1.html">
-                        <img src="image/logo.png" />
-                    </a>
-                </div>
-                <div class="main-menu__hidden">
-                    <i class="fa fa-bars "></i>
-                </div>
-                <nav class="main-header__content float-right">
-                    <ul>
-                        <li class="main-header__sub-menu">
-                            <div class="sub-menu__title">
-                                <a>Why ConnectPOS</a>
-                                <img src="image/icon_arrow_g.png">
-                            </div>
-                            <ul class="sub-menu__box">
-                                <li class="main-header__sub-menu">
-                                    <ul>
-                                        <li class="sub-menu__box-title"><a>benefit</a></li>
-
-                                        <li class="sub-menu__box-des">
-                                            <a href="#">About Us</a>
-                                        </li>
-                                        <li class="sub-menu__box-des">
-                                            <a href="#">24/7 Support</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="main-header__sub-menu">
-                                    <ul>
-                                        <li class="sub-menu__box-title">
-                                            <a>YOUR BUSINESS TYPES</a>
-                                        </li>
-                                        <li class="sub-menu__box-des">
-                                            <a href="#">Fashion & Accessories</a>
-                                        </li>
-                                        <li class="sub-menu__box-des">
-                                            <a href="#">Furniture & Homeware</a>
-                                        </li>
-                                        <li class="sub-menu__box-des">
-                                            <a href="#">All Business Types</a>
-                                        </li>
-                                    </ul>
-
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="main-header__sub-menu">
-                            <div class="sub-menu__title">
-                                <a>Features</a>
-                                <img src="image/icon_arrow_g.png">
-                            </div>
-                            <ul class="sub-menu__box">
-                                <li class="main-header__sub-menu">
-                                    <ul class="sub-menu__box-content">
-                                        <li class="sub-menu__box-title">
-                                            <a>Overview</a>
-                                        </li>
-                                        <li class="sub-menu__box-des">
-                                            <a href="#">Features Overview</a>
-                                        </li>
-                                        <li class="sub-menu__box-des">
-                                            <a href="#">Ominichannel</a>
-                                        </li>
-                                    </ul>
-
-                                </li>
-                                <li class="main-header__sub-menu">
-                                    <ul class="sub-menu__boxcontent">
-                                        <li class="sub-menu__box-title">
-                                            <a>highlight features</a>
-                                        </li>
-                                        <li class="sub-menu__box-des">
-                                            <a href="./consumerapp.html">PWA Consumer App</a>
-                                        </li>
-                                        <li class="sub-menu__box-des">
-                                            <a href="./customerScreen.html">Customer Screen</a>
-                                        </li>
-                                        <li class="sub-menu__box-des">
-                                            <a href="./faciaRecognition.html">Facial Recognition</a>
-                                        </li>
-                                    </ul>
-
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="main-header__sub-menu">
-                            <div class="sub-menu__title">
-                                <a>Integration</a>
-                                <img src="image/icon_arrow_g.png">
-                            </div>
-                            <ul class="sub-menu__box">
-                                <li class="main-header__sub-menu">
-                                    <ul class="sub-menu__box-content">
-                                        <li class="sub-menu__box-title">
-                                            <a>benefit</a>
-                                        </li>
-                                        <li class="sub-menu__box-des">
-                                            <a href="#">About Us</a>
-                                        </li>
-                                        <li class="sub-menu__box-des">
-                                            <a href="#">24/7 Support</a>
-                                        </li>
-                                    </ul>
-
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="main-header__sub-menu">
-                            <div class="sub-menu__title">
-                                <a href="#">Pricing</a>
-                            </div>
-                        </li>
-                        <li class="main-header__sub-menu">
-                            <div class="sub-menu__title">
-                                <a href="#">Case studies</a>
-                            </div>
-                        </li>
-                        <li class="main-header__button">
-                            <button class="button">free trial</button>
-                        </li>
-                    </ul>
-                </nav>
+            <div class="main-header__logo float-left">
+                <a href="./home1.html">
+                    <img src="image/logo.png" />
+                </a>
             </div>
+            <div class="main-menu__hidden">
+                <i class="fa fa-bars "></i>
+            </div>
+            <nav class="main-header__content float-right">
+                <ul class="main-header__menu">
+                    <li>
+                        <div class="main-header__menu-link">
+                            <a>Why ConnectPOS</a>
+                            <img src="image/icon_arrow_g.png">
+                        </div>
+                        <ul class="main-header__sub-menu">
+                            <li class="main-header__menu-link pb-md-2">
+                                <ul>
+                                    <li>
+                                        <a class="main-header__sub-menu__title" href="#">benefit</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="main-header__sub-menu__sub">About Us</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="main-header__sub-menu__sub">24/7 Support</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="main-header__menu-link  pt-md-2">
+                                <ul>
+                                    <li>
+                                        <a class="main-header__sub-menu__title" href="#">YOUR BUSINESS TYPES</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="main-header__sub-menu__sub">Fashion & Accessories</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="main-header__sub-menu__sub">Furniture & Homeware</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="main-header__sub-menu__sub">All Business Types</a>
+                                    </li>
+                                </ul>
+
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="main-header__menu-link">
+                            <a>Features</a>
+                            <img src="image/icon_arrow_g.png">
+                        </div>
+                        <ul class="main-header__sub-menu">
+                            <li class="main-header__menu-link pb-md-2">
+                                <ul>
+                                    <li>
+                                        <a class="main-header__sub-menu__title" href="#">overview</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="main-header__sub-menu__sub">features overview</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="main-header__sub-menu__sub">omnichanel</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="main-header__menu-link pt-md-2">
+                                <ul>
+                                    <li>
+                                        <a class="main-header__sub-menu__title" href="#">HIGHLIGHT FEATURES</a>
+                                    </li>
+                                    <li>
+                                        <a href="consumerapp.html" class="main-header__sub-menu__sub">PWA Consumer
+                                            App</a>
+                                    </li>
+                                    <li>
+                                        <a href="customerScreen.html" class="main-header__sub-menu__sub">Customer
+                                            Screen</a>
+                                    </li>
+                                    <li>
+                                        <a href="faciaRecognition.html" class="main-header__sub-menu__sub">Facial
+                                            Recognition</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="main-header__menu-link">
+                            <a>Integration</a>
+                            <img src="image/icon_arrow_g.png">
+                        </div>
+                        <ul class="main-header__sub-menu">
+                            <li class="main-header__menu-link pb-md-2">
+                                <ul>
+                                    <li>
+                                        <a href="#" class="main-header__sub-menu__sub">Ecommerce platform</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="main-header__sub-menu__sub">Payment</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="main-header__sub-menu__sub">Inventory & Logistics</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="main-header__sub-menu__sub">Loyalty</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="main-header__sub-menu__sub">Gift cards</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="main-header__menu-link">
+                            <a href="#">Pricing</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="main-header__menu-link">
+                            <a href="#">Case studies</a>
+                        </div>
+                    </li>
+                    <li class="main-header__button">
+                        <button class="button">free trial</button>
+                    </li>
+                </ul>
+            </nav>
+
         </div>
     </div>
     <!--banner consumer-->
