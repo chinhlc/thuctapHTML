@@ -5,27 +5,32 @@
 
 @font-face {
     font-family: opensans-bold;
-    src: url("font-open-sans/OpenSans-Bold.ttf")
+    src: url("font-open-sans/OpenSans-Bold.ttf") format('truetype'),
+        url("font-open-sans/OpenSans-Bold.woff") format('woff');
 }
 
 @font-face {
     font-family: opensans-light;
-    src: url("font-open-sans/OpenSans-Light.ttf")
+    src: url("font-open-sans/OpenSans-Light.ttf") format('truetype'),
+        url("font-open-sans/OpenSans-Light.woff") format('woff');
 }
 
 @font-face {
     font-family: opensans-regular;
-    src: url("font-open-sans/OpenSans-Regular.ttf")
+    src: url("font-open-sans/OpenSans-Regular.ttf") format('truetype'),
+        url("font-open-sans/OpenSans-Regular.woff") format('woff');
 }
 
 @font-face {
     font-family: opensans-extra-bold;
-    src: url("font-open-sans/OpenSans-ExtraBold.ttf")
+    src: url("font-open-sans/OpenSans-ExtraBold.ttf") format('truetype'),
+        url("font-open-sans/OpenSans-ExtraBold.woff") format('woff');
 }
 
 @font-face {
     font-family: opensans-italic;
-    src: url("font-open-sans/OpenSans-Italic.ttf")
+    src: url("font-open-sans/OpenSans-Italic.ttf") format('truetype'),
+        url("font-open-sans/OpenSans-Italic.woff") format('woff');
 }
 
 html {
@@ -592,12 +597,13 @@ ul li {
     font-size: 16px;
 }
 
-.artical-teaser {
+.home-intro__wrapper {
     width: 100%;
 }
 
-.artical-teaser__picture,
-.artical-teaser__content {
+.home-story__picture,
+.home-intro__picture,
+.home-intro__content {
     position: relative;
 }
 
@@ -611,33 +617,36 @@ ul li {
     margin-left: -29px;
 }
 
-.artical-teaser__descript {
+.home-story__descript,
+.home-intro__descript {
     font-size: 1.125rem;
     color: #777777;
     line-height: 32px;
 }
 
 @media screen and (max-width:992px) {
-    .artical-teaser__descript {
+
+    .home-story__descript,
+    .home-intro__descript {
         line-height: 25px;
     }
 }
 
 @media screen and (max-width:768px) {
-    .home-intro .artical-teaser__picture {
+
+    .home-intro .home-story__picture,
+    .home-intro .home-intro__picture {
         padding-bottom: 30px;
     }
 
-    #slide-quote .artical-teaser__picture {
+    #slide-quote .home-story__picture {
         padding-bottom: 50px;
     }
 }
 
 @media screen and (max-width:576px) {
 
-    .artical-teaser__descript,
-    .box__descript,
-    .card__descript {
+    p {
         font-size: 13px !important;
     }
 }
@@ -663,21 +672,10 @@ ul li {
     padding-top: 30px;
 }
 
-.box-wrapper {
+.home-solution-inner,
+.home-solution__item {
     padding-top: 1rem;
     padding-bottom: 1rem;
-}
-
-.box__title {
-    font-size: 1.125em;
-    color: #555555;
-    line-height: 24px;
-}
-
-@media screen and (max-width:576px) {
-    .box__title {
-        font-size: 16px;
-    }
 }
 
 .box__icon {
@@ -687,33 +685,43 @@ ul li {
 
 /*end home feature*/
 /*home-galaxy*/
-.home-list-card,
-.home-list-box {
+
+.home-list-box,
+.home-solution-inner {
     padding-top: 50px;
 }
 
-.card-wrapper {
+.home-solution__title {
+    font-size: 1.125rem;
+    line-height: 24px;
+}
+@media screen and (max-width:576px) {
+    .home-solution__title {
+        font-size: 20px;
+    }
+}
+.box__content {
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
 
-.card__picture {
+.box-features__pictures {
     padding: 1rem;
 }
 
-.card__title {
+.box__title {
     font-size: 1.375rem;
     color: #555555;
     line-height: 24px;
 }
 
 @media screen and (max-width:576px) {
-    .card__title {
+    .box__title {
         font-size: 18px;
     }
 }
 
-.card__descript {
+.box__descript {
     font-size: 1rem;
     line-height: 24px;
     color: #777777;
@@ -893,7 +901,7 @@ ul li {
 }
 
 @media screen and (max-width:768px) {
-    .quote-home .artical-teaser__picture {
+    .quote-home .home-story__picture {
         padding-top: 50px;
         padding-bottom: 0;
     }
@@ -919,7 +927,7 @@ ul li {
     padding-top: 50px;
 }
 
-.blog-wrapper {
+.blog-content {
     position: relative;
 }
 
@@ -1411,13 +1419,13 @@ ul li {
         line-height: 27px;
     }
 
-    .pwa-list-intro .artical-teaser__descript {
+    .pwa-list-intro .home-story__descript {
         line-height: 25px;
     }
 }
 
 @media screen and (max-width:768px) {
-    .artical-teaser__content {
+    .home-intro__content {
         padding-top: 30px;
     }
 
@@ -1446,7 +1454,7 @@ ul li {
 /*pwa-feature*/
 
 
-.card-wrapper__img {
+.box__content__img {
     padding: 35px 0;
 }
 
@@ -1478,7 +1486,7 @@ ul li {
         height: auto;
     }
 
-    .card-wrapper__img {
+    .box__content__img {
         padding: 15px 0;
     }
 }
