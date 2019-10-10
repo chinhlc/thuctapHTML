@@ -575,7 +575,7 @@ ul li {
     width: 100%;
 }
 
-.home-story__picture,
+.story-content__picture,
 .home-intro__picture,
 .home-intro__content {
     position: relative;
@@ -591,7 +591,7 @@ ul li {
     margin-left: -29px;
 }
 
-.home-story__descript,
+.story-content__descript,
 .home-intro__descript {
     font-size: 1.125rem;
     color: #777777;
@@ -600,7 +600,7 @@ ul li {
 
 @media screen and (max-width:992px) {
 
-    .home-story__descript,
+    .story-content__descript,
     .home-intro__descript {
         line-height: 25px;
     }
@@ -608,12 +608,12 @@ ul li {
 
 @media screen and (max-width:768px) {
 
-    .home-intro .home-story__picture,
+    .home-intro .story-content__picture,
     .home-intro .home-intro__picture {
         padding-bottom: 30px;
     }
 
-    #slide-quote .home-story__picture {
+    #slide-quote .story-content__picture {
         padding-bottom: 50px;
     }
 }
@@ -634,7 +634,11 @@ ul li {
     padding-top: 250px;
     padding-bottom: 270px;
 }
-
+@media screen and (max-width:576px) {
+    .home-features__button {
+        margin-top:70px;
+    }
+}
 .home-features__image {
     left: 100%;
     position: absolute;
@@ -647,7 +651,7 @@ ul li {
 }
 
 .home-solution-inner,
-.features-box__inner,
+.box-content,
 .solution-item {
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -669,7 +673,7 @@ ul li {
     -ms-transform: scale(1.1);
 }
 
-.features-box__icon {
+.box-content__icon {
     width: 50px;
     height: 50px;
 }
@@ -716,7 +720,7 @@ ul li {
         text-align: center;
     }
 
-    .features-box__icon {
+    .box-content__icon {
         margin: 0 auto;
     }
 }
@@ -745,11 +749,7 @@ ul li {
     padding-top: 100px;
 }
 
-.square-item {
-    width: 100%;
-}
-
-.square__picture {
+.square-picture {
     background-image: url("image/bg_logo.png");
     background-position: center;
     background-repeat: no-repeat;
@@ -759,18 +759,18 @@ ul li {
 }
 
 @media screen and (max-width:576px) {
-    .square__picture {
+    .square-picture {
         margin-top: 0;
     }
 }
 
-.square__picture::after {
+.square-picture::after {
     content: "";
     padding-bottom: 100%;
     display: block;
 }
 
-.square__picture-logo {
+.square-picture__logo {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -865,16 +865,12 @@ ul li {
     .square-offset-7 {
         margin-left: 0;
     }
-
-    .square-item {
-        padding-bottom: 30px;
-    }
 }
 
 /*end client logo*/
 
 /* home story*/
-.home-story-content::before {
+.story-content::before {
     content: url("./image/icon_tes.png");
     display: block;
     position: absolute;
@@ -884,13 +880,13 @@ ul li {
 }
 
 @media screen and (max-width:1200px) {
-    .home-story-content::before {
+    .story-content::before {
         top: 0;
     }
 }
 
 @media screen and (max-width:992px) {
-    .home-story-content::before {
+    .story-content::before {
         display: none;
     }
 }
@@ -928,7 +924,7 @@ ul li {
 }
 
 @media screen and (max-width:768px) {
-    .quote-home .home-story__picture {
+    .quote-home .story-content__picture {
         padding-top: 50px;
         padding-bottom: 0;
     }
@@ -1422,7 +1418,7 @@ ul li {
         line-height: 27px;
     }
 
-    .pwa-list-intro .home-story__descript {
+    .pwa-list-intro .story-content__descript {
         line-height: 25px;
     }
 }
@@ -1716,6 +1712,7 @@ ul li {
 .slick-dots li button::before {
     content: "";
     top: 20px;
+    bottom:20px;
     color: inherit;
     border-radius: 50%;
     border: 2px solid #50af9a;
@@ -1725,4 +1722,7 @@ ul li {
 
 .slick-dots li.slick-active button::before {
     background-color: #19A79A;
+}
+.slide-for-mobile .slick-initialized {
+    display: block;
 }
