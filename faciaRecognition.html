@@ -3,11 +3,13 @@
 
 <head>
     <meta charset="utf-8">
-    <title> Facia Recognition </title>
+    <title>Facial Recognition</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport"
         content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
     <link rel="stylesheet" type="text/css" href="./style.css" />
 </head>
 
@@ -42,90 +44,89 @@
         </div>
     </header>
     <!--mainmenu-->
-    <div class="sticky-top w-100 ml-auto mr-auto main-header">
+    <div class="sticky-top w-100 m-auto main-header clearfix">
         <div class="container">
             <div class="main-header__logo float-left">
                 <a href="./home1.html">
                     <img src="image/logo.png" />
                 </a>
             </div>
-            <div class="main-menu__hidden">
+            <div class="main-menu__toggle">
                 <i class="fa fa-bars "></i>
             </div>
             <nav class="main-header__content float-right">
                 <ul class="main-header__menu">
                     <li>
-                        <div class="main-header__menu-link">
+                        <div class="main-header__menu-parent">
                             <a>Why ConnectPOS</a>
                             <img src="image/icon_arrow_g.png">
                         </div>
                         <ul class="main-header__sub-menu">
-                            <li class="main-header__menu-link pb-md-2">
+                            <li class="main-header__menu-child pb-md-2">
                                 <ul>
                                     <li>
-                                        <a class="sub-menu__title" href="#">benefit</a>
+                                        <a class="main-header__sub-menu-title" href="#">benefit</a>
                                     </li>
                                     <li>
-                                        <a href="#" class="sub-menu__sub">About Us</a>
+                                        <a href="#" class="main-header__sub-menu-link">About Us</a>
                                     </li>
                                     <li>
-                                        <a href="#" class="sub-menu__sub">24/7 Support</a>
+                                        <a href="#" class="main-header__sub-menu-link">24/7 Support</a>
                                     </li>
                                 </ul>
                             </li>
-                            <li class="main-header__menu-link  pt-md-2">
+                            <li class="main-header__menu-child  pt-md-2">
                                 <ul>
                                     <li>
-                                        <a class="sub-menu__title" href="#">YOUR BUSINESS TYPES</a>
+                                        <a class="main-header__sub-menu-title" href="#">YOUR BUSINESS TYPES</a>
                                     </li>
                                     <li>
-                                        <a href="#" class="sub-menu__sub">Fashion & Accessories</a>
+                                        <a href="#" class="main-header__sub-menu-link">Fashion & Accessories</a>
                                     </li>
                                     <li>
-                                        <a href="#" class="sub-menu__sub">Furniture & Homeware</a>
+                                        <a href="#" class="main-header__sub-menu-link">Furniture & Homeware</a>
                                     </li>
                                     <li>
-                                        <a href="#" class="sub-menu__sub">All Business Types</a>
+                                        <a href="#" class="main-header__sub-menu-link">All Business Types</a>
                                     </li>
                                 </ul>
-
                             </li>
                         </ul>
                     </li>
                     <li>
-                        <div class="main-header__menu-link">
+                        <div class="main-header__menu-parent">
                             <a>Features</a>
                             <img src="image/icon_arrow_g.png">
                         </div>
                         <ul class="main-header__sub-menu">
-                            <li class="main-header__menu-link pb-md-2">
+                            <li class="main-header__menu-child pb-md-2">
                                 <ul>
                                     <li>
-                                        <a class="sub-menu__title" href="#">overview</a>
+                                        <a class="main-header__sub-menu-title" href="#">overview</a>
                                     </li>
                                     <li>
-                                        <a href="#" class="sub-menu__sub">features overview</a>
+                                        <a href="#" class="main-header__sub-menu-link">features overview</a>
                                     </li>
                                     <li>
-                                        <a href="#" class="sub-menu__sub">omnichanel</a>
+                                        <a href="#" class="main-header__sub-menu-link">omnichanel</a>
                                     </li>
                                 </ul>
                             </li>
-                            <li class="main-header__menu-link pt-md-2">
+                            <li class="main-header__menu-child pt-md-2">
                                 <ul>
                                     <li>
-                                        <a class="sub-menu__title" href="#">HIGHLIGHT FEATURES</a>
+                                        <a class="main-header__sub-menu-title" href="#">HIGHLIGHT FEATURES</a>
                                     </li>
                                     <li>
-                                        <a href="consumerapp.html" class="sub-menu__sub">PWA Consumer
+                                        <a href="consumerapp.html" class="main-header__sub-menu-link">PWA Consumer
                                             App</a>
                                     </li>
                                     <li>
-                                        <a href="customerScreen.html" class="sub-menu__sub">Customer
+                                        <a href="customerScreen.html" class="main-header__sub-menu-link">Customer
                                             Screen</a>
                                     </li>
                                     <li>
-                                        <a href="faciaRecognition.html" class="sub-menu__sub">Facial
+                                        <a href="faciaRecognition.html" class="main-header__sub-menu-link">Facial
                                             Recognition</a>
                                     </li>
                                 </ul>
@@ -133,44 +134,46 @@
                         </ul>
                     </li>
                     <li>
-                        <div class="main-header__menu-link">
+                        <div class="main-header__menu-parent">
                             <a>Integration</a>
                             <img src="image/icon_arrow_g.png">
                         </div>
                         <ul class="main-header__sub-menu">
-                            <li class="main-header__menu-link pb-md-2">
+                            <li class="main-header__menu-child pb-md-2">
                                 <ul>
                                     <li>
-                                        <a href="#" class="sub-menu__sub">Ecommerce platform</a>
+                                        <a href="#" class="main-header__sub-menu-link">Ecommerce platform</a>
                                     </li>
                                     <li>
-                                        <a href="#" class="sub-menu__sub">Payment</a>
+                                        <a href="#" class="main-header__sub-menu-link">Payment</a>
                                     </li>
                                     <li>
-                                        <a href="#" class="sub-menu__sub">Inventory & Logistics</a>
+                                        <a href="#" class="main-header__sub-menu-link">Inventory & Logistics</a>
                                     </li>
                                     <li>
-                                        <a href="#" class="sub-menu__sub">Loyalty</a>
+                                        <a href="#" class="main-header__sub-menu-link">Loyalty</a>
                                     </li>
                                     <li>
-                                        <a href="#" class="sub-menu__sub">Gift cards</a>
+                                        <a href="#" class="main-header__sub-menu-link">Gift cards</a>
                                     </li>
                                 </ul>
                             </li>
                         </ul>
                     </li>
                     <li>
-                        <div class="main-header__menu-link">
+                        <div class="main-header__menu-parent">
                             <a href="#">Pricing</a>
                         </div>
                     </li>
                     <li>
-                        <div class="main-header__menu-link">
+                        <div class="main-header__menu-parent">
                             <a href="#">Case studies</a>
                         </div>
                     </li>
                     <li class="main-header__button">
-                        <button class="button">free trial</button>
+                        <button class="button">free trial
+                            <i class="fa fa-long-arrow-right text-link__icon text--white"></i>
+                        </button>
                     </li>
                 </ul>
             </nav>
@@ -186,11 +189,12 @@
                         ConnectPOS Facial Recognition
                     </h2>
                     <P class="banner__descript m0 pt-12">
-                        Know your customers better to serve them better! Create the best personalized shopping
-                        experience with the latest technology of ConnectPOS.
+                        A Magento awarded innovation. Create seamless shopping experience for your in-store consumers,
+                        all via their mobile phones.
                     </P>
                     <button class="button button--light">
                         book a demo
+                        <i class="fa fa-long-arrow-right text-link__icon text--white"></i>
                     </button>
                 </div>
                 <div class="col-lg-5 d-lg-block pos-relative slide-banner__img">
@@ -200,173 +204,163 @@
             </div>
         </div>
     </div>
-    <!--article quote-->
-    <article class="quote text-center pos-relative mw-910 m-auto bg--icon-quote facia--bg">
+    <!--quote intro-->
+    <div class="quote-intro text-center pos-relative w-910 m-auto">
         <div class="container">
-            <em class="quote-caption w-100 pad15">
+            <em class="quote-caption w-100 mb-0">
                 "ConnectPOS Facial Recognition enables brick and mortar stores to do what their online counterparts have
                 been doing for years - identify shoppers, link them to purchase history and generate exclusive
                 personalized product recommendations based on the data, all to enhance customer experience and loyalty
-                to the brands"
+                to the brands."
             </em>
-            <p class="item__name c-blue pt-12 m0">
-                CEO of ConnectPOS
-            </p>
-            <p class="item__name text-bold c-night-rider">
-                Hieu Nguyen
-            </p>
+            <p class="text--small text--blue mb-0 pt-12">CEO of ConnectPOS</p>
+            <p class="text--small text-bold text--nightrider">Hieu Nguyen</p>
         </div>
-    </article>
-    <!--list info-->
-    <div class="w-100 m-auto bg-deflaut list-item">
+    </div>
+    <!--list info mobile product-->
+    <div class="w-100 m-auto bg-deflaut list-box">
         <div class="container">
-            <div class="row align-items-center item-wrapper">
-                <div class="col-lg-6 col-md-6 order-0 item__picture">
-                    <img class="w-100" src="image/icon.png">
+            <div class="slide-for-mobile">
+                <div class="row align-items-center box-item__content m-mr-0">
+                    <div class="col-lg-6 col-md-6 order-0 box-item__pictures">
+                        <img class="w-100" src="image/icon.png">
+                    </div>
+                    <div class="col-lg-6 col-md-6 order-1">
+                        <h2 class="text--nightrider pt-3 mb-0">
+                            Identify customers as soon as they walk in
+                        </h2>
+                        <p class="pt-2 mb-0">
+                            ConnectPOS Facial Recognition can ensure 99% accuracy even when customers make some changes
+                            in their outlook.
+                        </p>
+                        <p class="pt-2 mb-0">
+                            The system is also able to recognize multiple faces in crowded scenes.
+                        </p>
+                    </div>
+                </div>
+                <div class="row align-items-center box-item__content m-mr-0">
+                    <div class="col-lg-6 col-md-6 order-1  order-mr-0 box-item__pictures">
+                        <img class="w-100" src="image/icon.png">
+                    </div>
+
+                    <div class="col-lg-6 col-md-6 order-0 order-mr-1">
+                        <h2 class="text--nightrider pt-3 mb-0">
+                            Identify existing customer
+                        </h2>
+                        <p class="pt-2 mb-0">
+                            Notifications sent to sales assistants include customer name, type, visit and purchase
+                            history, and their spending.
+                        </p>
+                        <p class="pt-2 mb-0">
+                            AI is integrated to suggest what the customer is likely to buy
+                        </p>
+                    </div>
+                </div>
+                <div class="row align-items-center box-item__content m-mr-0">
+                    <div class="col-lg-6 col-md-6 order-0 box-item__pictures">
+                        <img class="w-100" src="image/icon.png">
+                    </div>
+
+                    <div class="col-lg-6 col-md-6 order-1">
+                        <h2 class="text--nightrider pt-3 mb-0">
+                            Know your customers better!
+                        </h2>
+                        <p class="pt-2 mb-0">
+                            Customer history at offline store can be linked with their online accounts, to give
+                            retailers a more insightful look into customer behavior across channels & help your sales
+                            assistants deliver a more customized and one-to-one interactive experience.
+                        </p>
+                    </div>
+                </div>
+                <div class="row align-items-center box-item__content m-mr-0">
+                    <div class="col-lg-6 col-md-6 order-1 order-mr-0 box-item__pictures">
+                        <img class="w-100" src="image/icon.png">
+                    </div>
+                    <div class="col-lg-6 col-md-6 order-0 order-mr-1">
+                        <h2 class="text--nightrider pt-3 mb-0">
+                            Identify potential customer
+                        </h2>
+                        <p class="pt-2 mb-0">
+                            ConnectPOS Facial Recognition can identify customers who have visited your store a few times
+                            but still shopped nothing!
+                        </p>
+                        <p class="pt-2 mb-0">
+                            You now know that you have to take better care for them!
+                        </p>
+                    </div>
+                </div>
+                <div class="row align-items-center box-item__content m-mr-0">
+                    <div class="col-lg-6 col-md-6 item__picture order-0 box-item__pictures">
+                        <img class="w-100" src="image/icon.png">
+                    </div>
+                    <div class="col-lg-6 col-md-6 order-1">
+                        <h2 class="text--nightrider pt-3 mb-0">
+                            Identify new customer
+                        </h2>
+                        <p class="pt-2 mb-0">
+                            The system can identify customers who pay their first visit to your store.
+                        </p>
+                        <p class="pt-2 mb-0">
+                            Camera integrated at checkout can scan their faces to create customer accounts for them. You
+                            have now turned a new customer into a loyal customer!
+                        </p>
+                    </div>
                 </div>
 
-                <div class="col-lg-6 col-md-6 order-1 item-caption">
-                    <h3 class="item__title m0">
-                        Easily access by QR code
-                    </h3>
-                    <p class="item__description m0 pt-12">
-                        Your customers can just walk into stores, scan a QR code, then they can access an app-like
-                        interface that enables them to surf the full range of products. No app installation
-                        required!
-                    </p>
-
-                </div>
-            </div>
-            <div class="row align-items-center pt-50 item-wrapper">
-                <div class="col-lg-6 col-md-6 order-1 item__picture order-mr-0">
-                    <img class="w-100" src="image/icon.png">
-                </div>
-
-                <div class="col-lg-6 col-md-6 order-0 item-caption order-mr-1">
-                    <h3 class="item__title m0">
-                        Scan bar code for product information
-                    </h3>
-                    <p class="item__description m0 pt-12">
-                        By scanning the bar code, customers can immediately get the product detail information including
-                        price, quantity in stock or product variations, and also easily put chosen items into their
-                        shopping cart.
-                    </p>
-
-                </div>
-
-            </div>
-            <div class="row align-items-center pt-50 item-wrapper">
-                <div class="col-lg-6 col-md-6 item__picture order-0">
-                    <img class="w-100" src="image/icon.png">
-                </div>
-
-                <div class="col-lg-6 col-md-6 item-caption order-1">
-                    <h3 class="item__title m0">
-                        Order out-of-stock items
-                    </h3>
-                    <p class="item__description m0 pt-12">
-                        Don’t let your customers leave the store with disappointment as their favourite items are
-                        already sold out! ConnectPOS PWA Consumer app allows customers to order out-of-stock item and
-                        choose to either pick it in store or have it delivered to their front door.
-                        If they go for in-store pickup, all what they need to do is to simply have cashier scan their
-                        bar code and then collect the ordered items.
-                    </p>
-
-                </div>
-
-            </div>
-            <div class="row align-items-center pt-50 item-wrapper">
-                <div class="col-lg-6 col-md-6 item__picture order-1 order-mr-0">
-                    <img class="w-100" src="image/icon.png">
-                </div>
-
-                <div class="col-lg-6 col-md-6 item-caption order-0 order-mr-1">
-                    <h3 class="item__title m0">
-                        Personalize recommendation
-                    </h3>
-                    <p class="item__description m0 pt-12">
-                        AI integrated in ConnectPOS PWA Consumer App gives customers personalized recommendations based
-                        on items in their shopping cart and purchase history.
-                    </p>
-                </div>
-            </div>
-            <div class="row align-items-center pt-50 item-wrapper">
-                <div class="col-lg-6 col-md-6 item__picture order-0">
-                    <img class="w-100" src="image/icon.png">
-                </div>
-
-                <div class="col-lg-6 col-md-6 item-caption order-1">
-                    <h3 class="item__title m0">
-                        Personalize recommendation
-                    </h3>
-                    <p class="item__description m0 pt-12">
-                        AI integrated in ConnectPOS PWA Consumer App gives customers personalized recommendations based
-                        on items in their shopping cart and purchase history.
-                    </p>
-                </div>
-            </div>
-
-            <div class="row align-items-center pt-50 item-wrapper">
-                <div class="col-lg-6 col-md-6 item__picture order-1 order-mr-0">
-                    <img class="w-100" src="image/icon.png">
-                </div>
-
-                <div class="col-lg-6 col-md-6 item-caption order-0 order-mr-1">
-                    <h3 class="item__title m0">
-                        Easy self-checkout in seconds
-                    </h3>
-                    <p class="item__description m0 pt-12">
-                        Customers easily make payment on their mobile devices and receive a barcode. Cashiers then scan
-                        the barcode, and the checkout process via PWA is completed.
-                        PWA Consumer App supports various payment methods including: cash, gift card, promo code and
-                        Paypal.
-                    </p>
+                <div class="row align-items-center box-item__content m-mr-0">
+                    <div class="col-lg-6 col-md-6 item__picture order-1 order-mr-0 box-item__pictures">
+                        <img class="w-100" src="image/icon.png">
+                    </div>
+                    <div class="col-lg-6 col-md-6 order-0 order-mr-1">
+                        <h2 class="text--nightrider pt-3 mb-0">
+                            A modern way to improve security
+                        </h2>
+                        <p class="pt-2 mb-0">
+                            Identify shoplifters or banned customers to ensure a higher level of security for your store
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <!--listimage-->
-    <div class="w-100 ml-auto mr-auto text-center galaxy-img pt-30 pb-100">
+
+    <!--solution-->
+    <div class="w-100 ml-auto mr-auto text-center pt-100 pb-100">
         <div class="container">
-            <h2 class="headding__title w-850 ml-auto mr-auto text-bold">Power your store with the best POS combined with
-                PWA Consumer App</h2>
-            <button class="button button--bg-green mt-48">book a demo</button>
-            <div class="row align-items-stretch list-box">
-                <div class="col-md-4 box-item">
-                    <div class="box__picture">
-                        <img class="w-100" src="image/img_payment.png" alt="Features Overview">
+            <h2 class="headding__title w-850 ml-auto mr-auto pb-12 text-bold">Power your store with the best POS
+                combined with PWA Consumer App
+            </h2>
+            <div class="w-100 m-lr-auto text-center mt-48">
+                <button class="button button--bg-green">free try
+                    <i class="fa fa-long-arrow-right text-link__icon text--white"></i>
+                </button>
+            </div>
+            <div class="row align-items-stretch pt-50 slide-for-mobile">
+                <div class="col-md-4 solution-item">
+                    <div class="solution-item__picture">
+                        <img class="w-100" src="image/img_payment.png">
                     </div>
-                    <div class="box-caption">
-                        <h3 class="box__title m0 text-bold">Features Overview</h3>
-                        <div class="pt-12">
-                            <a class="text-link" href="#"> Learn More</a>
-                            <i class="fa fa-arrow-right text-link__icon"></i>
-                        </div>
-                    </div>
+                    <h4 class="solution-item__title mb-0 pt-12 text-bold text--matterhorn">Features Overview</h4>
+                    <a class="text-link" href="#">Learn More</a>
+                    <i class="fa fa-arrow-right text-link__icon"></i>
                 </div>
-                <div class="col-md-4 box-item">
-                    <div class="box__picture">
-                        <img class="w-100" src="image/img_hardware.png" alt="hardware-img">
+                <div class="col-md-4 solution-item">
+                    <div class="solution-item__picture">
+                        <img class="w-100" src="image/img_hardware.png">
                     </div>
-                    <div class="box-caption">
-                        <h3 class="box__title m0 text-bold">Wireless Customer Screen</h3>
-                        <div class="pt-12">
-                            <a class="text-link" href="#"> Learn More</a>
-                            <i class="fa fa-arrow-right text-link__icon"></i>
-                        </div>
-                    </div>
+                    <h4 class="solution-item__title mb-0 pt-12 text-bold text--matterhorn">Wireless Customer
+                        Screen</h4>
+                    <a class="text-link" href="#">Learn More</a>
+                    <i class="fa fa-arrow-right text-link__icon"></i>
                 </div>
-                <div class="col-md-4 box-item">
-                    <div class="box__picture">
-                        <img class="w-100" src="image/img_support.png" alt="support-img">
+                <div class="col-md-4 solution-item">
+                    <div class="solution-item__picture">
+                        <img class="w-100" src="image/img_solution.png">
                     </div>
-                    <div class="box-caption">
-                        <h3 class="box__title m0 text-bold">ConnectPOS Facial Recognition</h3>
-                        <div class="pt-12">
-                            <a class="text-link" href="#"> Learn More</a>
-                            <i class="fa fa-arrow-right text-link__icon"></i>
-                        </div>
-                    </div>
+                    <h4 class="solution-item__title mb-0 pt-12 text-bold text--matterhorn">ConnectPOS Facial
+                        Recognition</h4>
+                    <a class="text-link" href="#">Learn More</a>
+                    <i class="fa fa-arrow-right text-link__icon"></i>
                 </div>
             </div>
         </div>
@@ -374,17 +368,20 @@
     <!--footer-->
     <footer class="footer w-100 ml-auto mr-auto bg-midnight">
         <div class="container">
-            <div class="row align-items-stretch pt-100">
+            <div class="row align-items-stretch pt-100 pb-100">
                 <div class="col-lg-4 col-md-8">
                     <h3 class="col-footer__title">About connectpos</h3>
                     <div class="col-footer__sub">
                         <p>
-                            ConnectPOS is the leading Magento point of sale for omnichannel retailers. Multi-store and
+                            ConnectPOS is the leading Magento point of sale for omnichannel retailers. Multi-store
+                            and
                             multi-warehouse management.
                         </p>
-                        <p><img class="right13" src="image/icon_location.png">105 S Main St, Suit 204 Seattle, WA 98104
+                        <p><img class="right13 pr-2" src="image/icon_location.png">105 S Main St, Suit 204 Seattle,
+                            WA
+                            98104
                         </p>
-                        <p><img class="right13" src="image/icon_phone.png">(+1) 425 243 4583</p>
+                        <p><img class="right13 pr-2" src="image/icon_phone.png">(+1) 425 243 4583</p>
                     </div>
                 </div>
                 <div class="col-lg-2 col-md-4 col-sm-6">
@@ -392,9 +389,9 @@
                     <div class="col-footer__sub">
                         <ul>
                             <li><a href="#">Features Overview</a> </li>
-                            <li><a href="#">PWA Consumer App</a> </li>
-                            <li><a href="#">Customer Screen</a> </li>
-                            <li><a href="#">Facial Recognition</a> </li>
+                            <li><a href="consumerapp.html">PWA Consumer App</a> </li>
+                            <li><a href="customerScreen.html">Customer Screen</a> </li>
+                            <li><a href="faciaRecognition.html">Facial Recognition</a> </li>
                         </ul>
                     </div>
                 </div>
@@ -442,24 +439,22 @@
                     </div>
                 </div>
             </div>
-
-        </div>
         </div>
         <div class="copyright">
             <div class="container">
                 <div class="row">
-                    <p class="copyright__sub-text m0 pl-15 pr-15">
+                    <p class="copyright__sub-text mb-0 p-15">
                         Copyright © 2019 ConnectPOS. All rights reserved.
                     </p>
-                    <div class=" ml-auto text-right footer-menu pl-15 pr-15">
+                    <div class=" ml-auto text-right footer-menu p-15">
                         <ul>
                             <li>
-                                <a class=" copyright__sub-text m0">
+                                <a class=" copyright__sub-text mb-0">
                                     Terms of Use
                                 </a>
                             </li>
                             <li>
-                                <a class=" copyright__sub-text m0">Privacy Policy</a>
+                                <a class=" copyright__sub-text mb-0">Privacy Policy</a>
                             </li>
 
                         </ul>
@@ -467,27 +462,37 @@
                 </div>
             </div>
         </div>
+
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
     <script type="text/javascript">
         //show main menu
         $('.scrollup').hide();
         $(document).ready(function () {
-
-            $('.main-menu__hidden').click(function () {
+            $('.main-menu__toggle').click(function () {
                 $('.main-header__content').toggleClass('show-menu');
             });
+
             $('.main-header__menu li ').click(function () {
                 $(this).siblings().removeClass('action');
                 $(this).toggleClass('action');
             });
+
             $('.scrollup').click(function () {
                 $('body,html').animate({
                     scrollTop: 0
                 }, 1000)
             });
+
+            $('.scrollup').click(function () {
+                $('body,html').animate({
+                    scrollTop: 0
+                }, 1000)
+            });
+
             $(window).scroll(function () {
                 if ($(this).scrollTop() >= 100) {        // If page is scrolled more than 100px
                     $('.scrollup').fadeIn(200);    // Fade in the arrow
@@ -495,11 +500,56 @@
                     $('.scrollup').fadeOut(200);   // Else fade out the arrow
                 }
             });
-        });
+            if ($(window).width() <= 576) {
+                createSlick()
+            }
+
+        })
         //hide main menu
+        $(window).on('resize', function () {
+            createSlick()
+        });
+        function createSlick() {
+            $('.slide-for-mobile').not('.slick-initialized').slick({
+                //dots: true,
+                slidesToShow: 1,
+                slideToScroll: 1,
+                responsive: [
+                    {
+                        breakpoint: 3000,
+                        settings: "unslick"
+                    },
+                    {
+                        breakpoint: 576,
+                        settings: {
+                            dots: true,
+                            infinite: true
+                        }
+                    }
+                ]
+            });
+            $('.key-technology-slide').not('.slick-initialized').slick({
+                //dots: true,
+                slidesToShow: 2,
+                slideToScroll: 1,
+                responsive: [
+                    {
+                        breakpoint: 3000,
+                        settings: "unslick"
+                    },
+                    {
+                        breakpoint: 576,
+                        settings: {
+                            dots: true,
+                            infinite: true
+                        }
+                    }
+                ]
+            });
+        }
         $(document).mouseup(function (e) {
             var value = $(".main-header__content");
-            if (!$('.main-menu__hidden').is(e.target) && !value.is(e.target) && value.has(e.target).length == 0) {
+            if (!$('.main-menu__toggle').is(e.target) && !value.is(e.target) && value.has(e.target).length == 0) {
                 $('.main-header__content').removeClass('show-menu');
             }
         })

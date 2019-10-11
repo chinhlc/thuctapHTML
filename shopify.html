@@ -5,10 +5,11 @@
     <meta charset="utf-8">
     <title>Shopify</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport"
         content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
     <link rel="stylesheet" type="text/css" href="./style.css" />
 </head>
 
@@ -43,90 +44,89 @@
         </div>
     </header>
     <!--mainmenu-->
-    <div class="sticky-top w-100 ml-auto mr-auto main-header">
+    <div class="sticky-top w-100 m-auto main-header clearfix">
         <div class="container">
             <div class="main-header__logo float-left">
                 <a href="./home1.html">
                     <img src="image/logo.png" />
                 </a>
             </div>
-            <div class="main-menu__hidden">
+            <div class="main-menu__toggle">
                 <i class="fa fa-bars "></i>
             </div>
             <nav class="main-header__content float-right">
                 <ul class="main-header__menu">
                     <li>
-                        <div class="main-header__menu-link">
+                        <div class="main-header__menu-parent">
                             <a>Why ConnectPOS</a>
                             <img src="image/icon_arrow_g.png">
                         </div>
                         <ul class="main-header__sub-menu">
-                            <li class="main-header__menu-link pb-md-2">
+                            <li class="main-header__menu-child pb-md-2">
                                 <ul>
                                     <li>
-                                        <a class="sub-menu__title" href="#">benefit</a>
+                                        <a class="main-header__sub-menu-title" href="#">benefit</a>
                                     </li>
                                     <li>
-                                        <a href="#" class="sub-menu__sub">About Us</a>
+                                        <a href="#" class="main-header__sub-menu-link">About Us</a>
                                     </li>
                                     <li>
-                                        <a href="#" class="sub-menu__sub">24/7 Support</a>
+                                        <a href="#" class="main-header__sub-menu-link">24/7 Support</a>
                                     </li>
                                 </ul>
                             </li>
-                            <li class="main-header__menu-link  pt-md-2">
+                            <li class="main-header__menu-child  pt-md-2">
                                 <ul>
                                     <li>
-                                        <a class="sub-menu__title" href="#">YOUR BUSINESS TYPES</a>
+                                        <a class="main-header__sub-menu-title" href="#">YOUR BUSINESS TYPES</a>
                                     </li>
                                     <li>
-                                        <a href="#" class="sub-menu__sub">Fashion & Accessories</a>
+                                        <a href="#" class="main-header__sub-menu-link">Fashion & Accessories</a>
                                     </li>
                                     <li>
-                                        <a href="#" class="sub-menu__sub">Furniture & Homeware</a>
+                                        <a href="#" class="main-header__sub-menu-link">Furniture & Homeware</a>
                                     </li>
                                     <li>
-                                        <a href="#" class="sub-menu__sub">All Business Types</a>
+                                        <a href="#" class="main-header__sub-menu-link">All Business Types</a>
                                     </li>
                                 </ul>
-
                             </li>
                         </ul>
                     </li>
                     <li>
-                        <div class="main-header__menu-link">
+                        <div class="main-header__menu-parent">
                             <a>Features</a>
                             <img src="image/icon_arrow_g.png">
                         </div>
                         <ul class="main-header__sub-menu">
-                            <li class="main-header__menu-link pb-md-2">
+                            <li class="main-header__menu-child pb-md-2">
                                 <ul>
                                     <li>
-                                        <a class="sub-menu__title" href="#">overview</a>
+                                        <a class="main-header__sub-menu-title" href="#">overview</a>
                                     </li>
                                     <li>
-                                        <a href="#" class="sub-menu__sub">features overview</a>
+                                        <a href="#" class="main-header__sub-menu-link">features overview</a>
                                     </li>
                                     <li>
-                                        <a href="#" class="sub-menu__sub">omnichanel</a>
+                                        <a href="#" class="main-header__sub-menu-link">omnichanel</a>
                                     </li>
                                 </ul>
                             </li>
-                            <li class="main-header__menu-link pt-md-2">
+                            <li class="main-header__menu-child pt-md-2">
                                 <ul>
                                     <li>
-                                        <a class="sub-menu__title" href="#">HIGHLIGHT FEATURES</a>
+                                        <a class="main-header__sub-menu-title" href="#">HIGHLIGHT FEATURES</a>
                                     </li>
                                     <li>
-                                        <a href="consumerapp.html" class="sub-menu__sub">PWA Consumer
+                                        <a href="consumerapp.html" class="main-header__sub-menu-link">PWA Consumer
                                             App</a>
                                     </li>
                                     <li>
-                                        <a href="customerScreen.html" class="sub-menu__sub">Customer
+                                        <a href="customerScreen.html" class="main-header__sub-menu-link">Customer
                                             Screen</a>
                                     </li>
                                     <li>
-                                        <a href="faciaRecognition.html" class="sub-menu__sub">Facial
+                                        <a href="faciaRecognition.html" class="main-header__sub-menu-link">Facial
                                             Recognition</a>
                                     </li>
                                 </ul>
@@ -134,44 +134,46 @@
                         </ul>
                     </li>
                     <li>
-                        <div class="main-header__menu-link">
+                        <div class="main-header__menu-parent">
                             <a>Integration</a>
                             <img src="image/icon_arrow_g.png">
                         </div>
                         <ul class="main-header__sub-menu">
-                            <li class="main-header__menu-link pb-md-2">
+                            <li class="main-header__menu-child pb-md-2">
                                 <ul>
                                     <li>
-                                        <a href="#" class="sub-menu__sub">Ecommerce platform</a>
+                                        <a href="#" class="main-header__sub-menu-link">Ecommerce platform</a>
                                     </li>
                                     <li>
-                                        <a href="#" class="sub-menu__sub">Payment</a>
+                                        <a href="#" class="main-header__sub-menu-link">Payment</a>
                                     </li>
                                     <li>
-                                        <a href="#" class="sub-menu__sub">Inventory & Logistics</a>
+                                        <a href="#" class="main-header__sub-menu-link">Inventory & Logistics</a>
                                     </li>
                                     <li>
-                                        <a href="#" class="sub-menu__sub">Loyalty</a>
+                                        <a href="#" class="main-header__sub-menu-link">Loyalty</a>
                                     </li>
                                     <li>
-                                        <a href="#" class="sub-menu__sub">Gift cards</a>
+                                        <a href="#" class="main-header__sub-menu-link">Gift cards</a>
                                     </li>
                                 </ul>
                             </li>
                         </ul>
                     </li>
                     <li>
-                        <div class="main-header__menu-link">
+                        <div class="main-header__menu-parent">
                             <a href="#">Pricing</a>
                         </div>
                     </li>
                     <li>
-                        <div class="main-header__menu-link">
+                        <div class="main-header__menu-parent">
                             <a href="#">Case studies</a>
                         </div>
                     </li>
                     <li class="main-header__button">
-                        <button class="button">free trial</button>
+                        <button class="button">free trial
+                            <i class="fa fa-long-arrow-right text-link__icon text--white"></i>
+                        </button>
                     </li>
                 </ul>
             </nav>
@@ -192,6 +194,7 @@
                     </P>
                     <button class="button button--light">
                         book a demo
+                        <i class="fa fa-long-arrow-right text-link__icon text--white"></i>
                     </button>
                 </div>
                 <div class="col-lg-5 d-lg-block pos-relative slide-banner__img">
@@ -201,298 +204,237 @@
             </div>
         </div>
     </div>
-    <!--magento intro-->
-    <div class="bg-deflaut w-100 m-auto pt-100 text-center key-technology pb-100">
+    <!--key-technology-->
+    <div class="bg-deflaut w-100 m-auto pt-100 text-center key-technology">
         <div class="container">
             <h2 class="headding__title w-650 ml-auto mr-auto w-100 text-center text-bold">Why Shopify retailers choose
                 ConnectPOS</h2>
-            <div class="row align-items-stretch justify-content-center pt-50 list-box">
-                <div class="col-lg-4 col-md-4 col-sm-6 pb-md-3 pt-md-3 box-item">
-                    <div class="bg-white p-md-4">
-                        <div class="card-wrapper__img square-picture">
-                            <div class="square-picture--bg bg--small pos-relative bg-white">
-                                <div class="square-picture__icon">
-                                    <img src="image/icon_1.png" />
-                                </div>
+            <div class="row align-items-stretch justify-content-center pt-50 key-technology-slide">
+                <div class="col-lg-4 col-md-4 col-sm-6 pt-md-3 pb-md-3">
+                    <div class="key-item">
+                        <div class="key-item__picture">
+                            <div class="key-item__picture-icon">
+                                <img src="image/icon_3.png" />
                             </div>
                         </div>
-
-                        <div class="box-caption__description bg-white h-5">
-                            <p>
-                                Reduce sale-workforce at physical stores
-                            </p>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 pb-md-3 pt-md-3 box-item">
-                    <div class="bg-white p-md-4">
-                        <div class="card-wrapper__img square-picture">
-                            <div class="square-picture--bg bg--small pos-relative bg-white ">
-                                <div class="square-picture__icon">
-                                    <img src="image/icon_1.png" />
-                                </div>
-                            </div>
-                        </div>
-                        <div class="box-caption__description h-5">
-                            <p>
-                                Solve the mobile conversion dilemma and deliver highly personalized experiences cross
-                                channels
-                            </p>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 pb-md-3 pt-md-3 box-item">
-                    <div class="bg-white p-md-4">
-                        <div class="card-wrapper__img square-picture">
-                            <div class="square-picture--bg bg--small pos-relative bg-white ">
-                                <div class="square-picture__icon">
-                                    <img src="image/icon_1.png" />
-                                </div>
-                            </div>
-                        </div>
-                        <div class="box-caption__description h-5">
-                            <p>
-                                Increase sales and customer satisfaction by selling out-of-stock products
-                            </p>
+                        <div class="key-item__description">
+                            <p>Magento's strong enterprise solution partner</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 pb-md-3 pt-md-3 box-item">
-                    <div class="bg-white p-md-4">
-                        <div class="card-wrapper__img square-picture">
-                            <div class="square-picture--bg bg--small pos-relative bg-white ">
-                                <div class="square-picture__icon">
-                                    <img src="image/icon_1.png" />
-                                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 pt-md-3 pb-md-3">
+                    <div class="key-item">
+                        <div class="key-item__picture">
+                            <div class="key-item__picture-icon">
+                                <img src="image/icon_3.png" />
                             </div>
                         </div>
-                        <div class="box-caption__description h-5">
-                            <p>
-                                Shorten in-store checkout process
-                            </p>
+                        <div class="key-item__description">
+                            <p>Work with M1 (1.8 and above) and M2 (2.2 and above)</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 pb-md-3 pt-md-3 box-item">
-                    <div class="bg-white p-md-4">
-                        <div class="card-wrapper__img square-picture">
-                            <div class="square-picture--bg bg--small pos-relative bg-white ">
-                                <div class="square-picture__icon">
-                                    <img src="image/icon_1.png" />
-                                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 pt-md-3 pb-md-3">
+                    <div class="key-item">
+                        <div class="key-item__picture">
+                            <div class="key-item__picture-icon">
+                                <img src="image/icon_3.png" />
                             </div>
                         </div>
-                        <div class="box-caption__description h-5">
-                            <p>
-                                Collect data about in-store behaviors
-                            </p>
+                        <div class="key-item__description">
+                            <p>Support multi store management</p>
                         </div>
                     </div>
-
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 pb-md-3 pt-md-3 box-item">
-                    <div class="bg-white p-md-4">
-                        <div class="card-wrapper__img square-picture">
-                            <div class="square-picture--bg bg--small pos-relative bg-white ">
-                                <div class="square-picture__icon">
-                                    <img src="image/icon_1.png" />
-                                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 pt-md-3 pb-md-3">
+                    <div class="key-item">
+                        <div class="key-item__picture">
+                            <div class="key-item__picture-icon">
+                                <img src="image/icon_3.png" />
                             </div>
                         </div>
-                        <div class="box-caption__description h-5">
-                            <p>
-                                Manage all sales data in a single place
-                            </p>
+                        <div class="key-item__description">
+                            <p>Support all types of Magento products, prices, promotions & taxes</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 pt-md-3 pb-md-3">
+                    <div class="key-item">
+                        <div class="key-item__picture">
+                            <div class="key-item__picture-icon">
+                                <img src="image/icon_3.png" />
+                            </div>
+                        </div>
+                        <div class="key-item__description">
+                            <p>Proven to boost sales and ROI</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 pt-md-3 pb-md-3">
+                    <div class="key-item">
+                        <div class="key-item__picture">
+                            <div class="key-item__picture-icon">
+                                <img src="image/icon_3.png" />
+                            </div>
+                        </div>
+                        <div class="key-item__description">
+                            <p>Expert support from our Magento experts</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!--list info-->
-    <div class="w-100 m-auto list-item pt-100">
+    <!--sopify info-->
+    <div class="w-100 m-auto bg-deflaut list-box">
         <div class="container">
-            <div class="text-center w-650 m-auto">
-                <h2 class="w-100 headding__title text-bold">
-                    Shopify + ConnectPOS: a partnership for success
-                </h2>
-            </div>
-            <div class="row align-items-center item-wrapper pt-50">
-                <div class="col-lg-6 col-md-6 order-0 item__picture">
-                    <img class="w-100" src="image/icon.png">
-                </div>
-
-                <div class="col-lg-6 col-md-6 order-1 item-caption">
-                    <h3 class="item__title m0">
-                        Easily access by QR code
-                    </h3>
-                    <p class="item__description m0 pt-12">
-                        Your customers can just walk into stores, scan a QR code, then they can access an app-like
-                        interface that enables them to surf the full range of products. No app installation
-                        required!
-                    </p>
-
-                </div>
-            </div>
-            <div class="row align-items-center pt-50 item-wrapper">
-                <div class="col-lg-6 col-md-6 order-1 item__picture order-mr-0">
-                    <img class="w-100" src="image/icon.png">
-                </div>
-
-                <div class="col-lg-6 col-md-6 order-0 item-caption order-mr-1">
-                    <h3 class="item__title m0">
-                        Scan bar code for product information
-                    </h3>
-                    <p class="item__description m0 pt-12">
-                        By scanning the bar code, customers can immediately get the product detail information including
-                        price, quantity in stock or product variations, and also easily put chosen items into their
-                        shopping cart.
-                    </p>
-
-                </div>
-
-            </div>
-        </div>
-    </div>
-    <!--merchants list magento-->
-    <div class="w-100 m-auto text-center pt-100">
-        <div class="container">
-            <div class="text-center w-650 m-auto">
-                <h2 class="w-100 headding__title text-bold">
-                    Empowering Magento merchants
-                </h2>
-                <p class="w-100 pt-12 item__description">
-                    Grow your retail business with data-driven tools
-                </p>
-            </div>
-            <div class="row align-items-stretch merchant-item pt-50">
-                <div class="col-lg-2 col-md-4 col-sm-6 square-picture">
-                    <div class="square-picture--bg-blue pos-relative">
-                        <div class="square-wrapper">
-                            <p class="square__caption--middle">Connect</p>
-                        </div>
+            <h2 class="headding__title w-650 w-100 text-bold text-center m-auto">Shopify + ConnectPOS: a partnership for
+                success</h2>
+            <div class="slide-for-mobile pt-50">
+                <div class="row align-items-center box-item__content m-mr-0">
+                    <div class="col-lg-6 col-md-6 order-0 box-item__pictures">
+                        <img class="w-100" src="image/icon.png">
                     </div>
-                    <p class="pt-12 pb-12 pos-relative">Sync all customer, order and product data</p>
-                </div>
-                <div class="magento-icon">
-                    <i class="fa fa-long-arrow-right magento-icon--arrow"></i>
-                </div>
-                <div class="col-lg-2 col-md-4 col-sm-6 square-picture">
-                    <div class="square-picture--bg-blue pos-relative">
-                        <div class="square-wrapper">
-                            <p class="square__caption--middle">Manage</p>
-                        </div>
+                    <div class="col-lg-6 col-md-6 order-1">
+                        <p class="pt-2 mb-0">
+                            Built for businesses of all sizes, from small-and-medium to high-volume businesses, Shopify
+                            and Shopify Plus are the Ecommerce platforms that couple speed and reliability with the
+                            scalable foundation you need to grow bigger, faster.
+                        </p>
                     </div>
-                    <p class="pt-12 pb-12 pos-relative">Easily manage sales and inventory from all channels</p>
                 </div>
-                <div class="magento-icon">
-                    <i class="fa fa-long-arrow-right magento-icon--arrow"></i>
-                </div>
-                <div class="col-lg-2 col-md-4 col-sm-6 square-picture">
-                    <div class="square-picture--bg-blue pos-relative">
-                        <div class="square-wrapper">
-                            <p class="square__caption--middle">Insight</p>
-                        </div>
+                <div class="row align-items-center box-item__content m-mr-0">
+                    <div class="col-lg-6 col-md-6 order-1  order-mr-0 box-item__pictures">
+                        <img class="w-100" src="image/icon.png">
                     </div>
-                    <p class="pt-12 pb-12 pos-relative">Learn customer behaviour across channels</p>
-                </div>
-                <div class="magento-icon">
-                    <i class="fa fa-long-arrow-right magento-icon--arrow"></i>
-                </div>
-                <div class="col-lg-2 col-md-4 col-sm-6 square-picture">
-                    <div class="square-picture--bg-blue pos-relative">
-                        <div class="square-wrapper">
-                            <p class="square__caption--middle">Conversion</p>
-                        </div>
+
+                    <div class="col-lg-6 col-md-6 order-0 order-mr-1">
+                        <p class="pt-2 mb-0">
+                            ConnectPOS focus on high-growth enterprises to help you easily manage your multi store
+                            business. We also apply cutting-edge technology (AI, Big Data, Real-time Image
+                            processing...) and move towards the omnichannel model to integrate sales channels, ensure
+                            single database and management process for both online and offline environment.
+                        </p>
                     </div>
-                    <p class="pt-12 pb-12 pos-relative">Enrich customer experience to increase ROI</p>
-                </div>
-                <div class="magento-icon">
-                    <i class="fa fa-long-arrow-right magento-icon--arrow"></i>
-                </div>
-                <div class="col-lg-2 col-md-4 col-sm-6 square-picture square-offset-7">
-                    <div class="square-picture--bg-blue pos-relative">
-                        <div class="square-wrapper">
-                            <p class="square__caption--middle">Innovation</p>
-                        </div>
-                    </div>
-                    <p class="pt-12 pb-12 pos-relative">Leverage latest technology for the future of retail</p>
                 </div>
             </div>
         </div>
     </div>
-    <!--magento rate-->
-    <div class="magento-rate w-100 m-auto">
+    <!--merchants-->
+    <div class="pt-100 pb-100 m-auto w-100 merchants-info">
         <div class="container">
-            <div class="magento-rate-inner">
-                <div class="row align-items-stretch">
-
+            <div class="w-850 m-auto text-center">
+                <h2 class="headding__title mb-0 text-bold">Empowering Magento merchants</h2>
+                <p class="pt-2">Grow your retail business with data-driven tools</p>
+            </div>
+            <div class="row align-items-stretch justify-content-center pt-50 slide-for-mobile">
+                <div class="col-lg-2 col-md-4 col-sm-4">
+                    <div class="square-picture square-picture--blue">
+                        <div class="square-picture__caption">
+                            <p>Connect</p>
+                        </div>
+                    </div>
+                    <p class="square-picture__descript pt-12">Sync all customer, order and product data</p>
+                </div>
+                <div class="square-icon">
+                    <i class="fa fa-long-arrow-right"></i>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-4">
+                    <div class="square-picture square-picture--blue">
+                        <div class="square-picture__caption">
+                            <p>Manage</p>
+                        </div>
+                    </div>
+                    <p class="square-picture__descript pt-12">Learn customer behaviour across channels</p>
+                </div>
+                <div class="square-icon">
+                    <i class="fa fa-long-arrow-right"></i>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-4">
+                    <div class="square-picture square-picture--blue">
+                        <div class="square-picture__caption">
+                            <p>Insight</p>
+                        </div>
+                    </div>
+                    <p class="square-picture__descript pt-12">Easily manage sales and inventory from all channels</p>
+                </div>
+                <div class="square-icon">
+                    <i class="fa fa-long-arrow-right"></i>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-4">
+                    <div class="square-picture square-picture--blue">
+                        <div class="square-picture__caption">
+                            <p>Conversion</p>
+                        </div>
+                    </div>
+                    <p class="square-picture__descript pt-12">Enrich customer experience to increase ROI</p>
+                </div>
+                <div class="square-icon">
+                    <i class="fa fa-long-arrow-right"></i>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-4">
+                    <div class="square-picture square-picture--blue">
+                        <div class="square-picture__caption">
+                            <p>Innovation</p>
+                        </div>
+                    </div>
+                    <p class="square-picture__descript pt-12">Leverage latest technology for the future of retail</p>
                 </div>
             </div>
         </div>
     </div>
-    <!--listimage-->
-    <div class="w-100 ml-auto mr-auto text-center galaxy-img pt-100 pb-100">
+    <div class="shopify-business w-100 m-auto text-center pb-100">
         <div class="container">
-            <h2 class="headding__title w-850 ml-auto mr-auto text-bold">Power your store with the best POS combined with
-                PWA Consumer App</h2>
-            <button class="button button--bg-green mt-48">book a demo</button>
-            <div class="row align-items-stretch list-box">
-                <div class="col-md-4 box-item">
-                    <div class="box__picture">
-                        <img class="w-100" src="image/img_payment.png" alt="Features Overview">
+            <h2 class="headding__title text-bold w-850 w-100 m-auto">
+                ConnectPOS is perfect for high-growth businesses
+            </h2>
+            <div class="row justify-content-center align-items-center list-box slide-for-mobile">
+                <div class="col-md-4 col-sm-6 box-item__content">
+                    <div class="box-item__pictures">
+                        <img class="w-100" src="image/img_payment.png" alt="payment-img">
                     </div>
-                    <div class="box-caption">
-                        <h3 class="box__title m0 text-bold">Features Overview</h3>
-                        <div class="pt-12">
-                            <a class="text-link" href="#"> Learn More</a>
-                            <i class="fa fa-arrow-right text-link__icon"></i>
-                        </div>
-                    </div>
+                    <h3 class="box-item__title mb-0 text-bold">Multi Stores and Multi Warehouses</h3>
+                    <p class="box-item__descript mb-0 pt-12 pb-12">View the stock level at different stores. Manage
+                        multiple stores, channels, staff, customer and inventory all in one system.</p>
                 </div>
-                <div class="col-md-4 box-item">
-                    <div class="box__picture">
+                <div class="col-md-4 col-sm-6 box-item__content">
+                    <div class="box-item__pictures">
                         <img class="w-100" src="image/img_hardware.png" alt="hardware-img">
                     </div>
-                    <div class="box-caption">
-                        <h3 class="box__title m0 text-bold">Wireless Customer Screen</h3>
-                        <div class="pt-12">
-                            <a class="text-link" href="#"> Learn More</a>
-                            <i class="fa fa-arrow-right text-link__icon"></i>
-                        </div>
-                    </div>
+                    <h3 class="box-item__title mb-0 text-bold">Real time sync & easy stock transfer</h3>
+                    <p class="box-item__descript mb-0 pt-12 pb-12">Sync your physical stores in real time with your
+                        online business. Easily transfer stock between stores to meet customers' demand.</p>
                 </div>
-                <div class="col-md-4 box-item">
-                    <div class="box__picture">
+                <div class="col-md-4 col-sm-6 box-item__content">
+                    <div class="box-item__pictures">
                         <img class="w-100" src="image/img_support.png" alt="support-img">
                     </div>
-                    <div class="box-caption">
-                        <h3 class="box__title m0 text-bold">ConnectPOS Facial Recognition</h3>
-                        <div class="pt-12">
-                            <a class="text-link" href="#"> Learn More</a>
-                            <i class="fa fa-arrow-right text-link__icon"></i>
-                        </div>
-                    </div>
+                    <h3 class="box-item__title mb-0 text-bold">Leading integration to give you an all-in-one solution
+                    </h3>
+                    <p class="box-item__descript mb-0 pt-12 pb-12">Integrate with the world's leaders on payment,
+                        inventory & logistics, loyalty, gift cards... to maximize full power of the system</p>
                 </div>
             </div>
+            <button class="button button--bg-green mt-48">book a demo</button>
         </div>
     </div>
     <!--footer-->
     <footer class="footer w-100 ml-auto mr-auto bg-midnight">
         <div class="container">
-            <div class="row align-items-stretch pt-100">
+            <div class="row align-items-stretch pt-100 pb-100">
                 <div class="col-lg-4 col-md-8">
                     <h3 class="col-footer__title">About connectpos</h3>
                     <div class="col-footer__sub">
                         <p>
-                            ConnectPOS is the leading Magento point of sale for omnichannel retailers. Multi-store and
+                            ConnectPOS is the leading Magento point of sale for omnichannel retailers. Multi-store
+                            and
                             multi-warehouse management.
                         </p>
-                        <p><img class="right13" src="image/icon_location.png">105 S Main St, Suit 204 Seattle, WA 98104
+                        <p><img class="right13 pr-2" src="image/icon_location.png">105 S Main St, Suit 204 Seattle,
+                            WA
+                            98104
                         </p>
-                        <p><img class="right13" src="image/icon_phone.png">(+1) 425 243 4583</p>
+                        <p><img class="right13 pr-2" src="image/icon_phone.png">(+1) 425 243 4583</p>
                     </div>
                 </div>
                 <div class="col-lg-2 col-md-4 col-sm-6">
@@ -500,9 +442,9 @@
                     <div class="col-footer__sub">
                         <ul>
                             <li><a href="#">Features Overview</a> </li>
-                            <li><a href="#">PWA Consumer App</a> </li>
-                            <li><a href="#">Customer Screen</a> </li>
-                            <li><a href="#">Facial Recognition</a> </li>
+                            <li><a href="consumerapp.html">PWA Consumer App</a> </li>
+                            <li><a href="customerScreen.html">Customer Screen</a> </li>
+                            <li><a href="faciaRecognition.html">Facial Recognition</a> </li>
                         </ul>
                     </div>
                 </div>
@@ -550,24 +492,22 @@
                     </div>
                 </div>
             </div>
-
-        </div>
         </div>
         <div class="copyright">
             <div class="container">
                 <div class="row">
-                    <p class="copyright__sub-text m0 pl-15 pr-15">
+                    <p class="copyright__sub-text mb-0 p-15">
                         Copyright © 2019 ConnectPOS. All rights reserved.
                     </p>
-                    <div class=" ml-auto text-right footer-menu pl-15 pr-15">
+                    <div class=" ml-auto text-right footer-menu p-15">
                         <ul>
                             <li>
-                                <a class=" copyright__sub-text m0">
+                                <a class=" copyright__sub-text mb-0">
                                     Terms of Use
                                 </a>
                             </li>
                             <li>
-                                <a class=" copyright__sub-text m0">Privacy Policy</a>
+                                <a class=" copyright__sub-text mb-0">Privacy Policy</a>
                             </li>
 
                         </ul>
@@ -575,27 +515,37 @@
                 </div>
             </div>
         </div>
+
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
     <script type="text/javascript">
         //show main menu
         $('.scrollup').hide();
         $(document).ready(function () {
-
-            $('.main-menu__hidden').click(function () {
+            $('.main-menu__toggle').click(function () {
                 $('.main-header__content').toggleClass('show-menu');
             });
+
             $('.main-header__menu li ').click(function () {
                 $(this).siblings().removeClass('action');
                 $(this).toggleClass('action');
             });
+
             $('.scrollup').click(function () {
                 $('body,html').animate({
                     scrollTop: 0
                 }, 1000)
             });
+
+            $('.scrollup').click(function () {
+                $('body,html').animate({
+                    scrollTop: 0
+                }, 1000)
+            });
+
             $(window).scroll(function () {
                 if ($(this).scrollTop() >= 100) {        // If page is scrolled more than 100px
                     $('.scrollup').fadeIn(200);    // Fade in the arrow
@@ -603,11 +553,56 @@
                     $('.scrollup').fadeOut(200);   // Else fade out the arrow
                 }
             });
-        });
+            if ($(window).width() <= 576) {
+                createSlick()
+            }
+
+        })
         //hide main menu
+        $(window).on('resize', function () {
+            createSlick()
+        });
+        function createSlick() {
+            $('.slide-for-mobile').not('.slick-initialized').slick({
+                //dots: true,
+                slidesToShow: 1,
+                slideToScroll: 1,
+                responsive: [
+                    {
+                        breakpoint: 3000,
+                        settings: "unslick"
+                    },
+                    {
+                        breakpoint: 576,
+                        settings: {
+                            dots: true,
+                            infinite: true
+                        }
+                    }
+                ]
+            });
+            $('.key-technology-slide').not('.slick-initialized').slick({
+                //dots: true,
+                slidesToShow: 2,
+                slideToScroll: 1,
+                responsive: [
+                    {
+                        breakpoint: 3000,
+                        settings: "unslick"
+                    },
+                    {
+                        breakpoint: 576,
+                        settings: {
+                            dots: true,
+                            infinite: true
+                        }
+                    }
+                ]
+            });
+        }
         $(document).mouseup(function (e) {
             var value = $(".main-header__content");
-            if (!$('.main-menu__hidden').is(e.target) && !value.is(e.target) && value.has(e.target).length == 0) {
+            if (!$('.main-menu__toggle').is(e.target) && !value.is(e.target) && value.has(e.target).length == 0) {
                 $('.main-header__content').removeClass('show-menu');
             }
         })
