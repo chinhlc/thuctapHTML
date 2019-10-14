@@ -150,16 +150,32 @@ ul li {
 }
 
 /*backgound*/
-.bg-deflaut {
+.background-wrapper {
     background-image: url("image/bg_4.png");
     background-repeat: no-repeat;
     width: 100%;
-    background-position: center bottom;
+    background-position: center top;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
 }
-
+.bg--contain {
+    background-size: contain;
+}
+.background-wrapper::after {
+    content: url("image/bg_4.png");
+    position: absolute;
+    bottom: 10%;
+    left:-30%;
+    width: 100%;
+    z-index: -1;
+}
 @media screen and (max-width: 768px) {
-    .bg-deflaut {
+    .background-wrapper {
         background: none;
+    }
+    .background-wrapper::after {
+        display: none;
     }
 }
 
