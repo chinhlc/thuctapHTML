@@ -1374,10 +1374,12 @@ home-story*/
     text-transform: uppercase;
     background-color: initial;
 }
-
+.button--light:hover i{
+    color: #26A69A;
+}
 .button--light:hover {
     background-color: #FFFFFF;
-    color: black;
+    color: #26A69A;
     border: #FFFFFF;
 }
 
