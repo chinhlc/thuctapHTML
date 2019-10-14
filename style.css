@@ -165,7 +165,7 @@ ul li {
 .background-wrapper::after {
     content: url("image/bg_4.png");
     position: absolute;
-    bottom: 10%;
+    bottom: 12%;
     left:-30%;
     width: 100%;
     z-index: -1;
