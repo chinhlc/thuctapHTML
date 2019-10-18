@@ -156,26 +156,17 @@ ul li {
     width: 100%;
     background-position: center top;
     position: relative;
-    z-index: 1;
-    overflow: hidden;
 }
-.bg--contain {
-    background-size: contain;
+.background-wrapper--top {
+    background-size: 140% 75%;
 }
-.background-wrapper::after {
-    content: url("image/bg_4.png");
-    position: absolute;
-    bottom: 12%;
-    left:-30%;
-    width: 100%;
+.bg-demo {
+    background: inherit;
     z-index: -1;
 }
 @media screen and (max-width: 768px) {
     .background-wrapper {
-        background: none;
-    }
-    .background-wrapper::after {
-        display: none;
+        background:none;
     }
 }
 

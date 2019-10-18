@@ -1,0 +1,4 @@
+thi trac nghiem tren may tinh
+server gom web server ch?c các code web d?ng php, ... 
+co s? d? li?u: các câu truy v?n, các t?ng, truy ván nhanh
+Mô hình 3 l?p, t?ng khách, visit và 
