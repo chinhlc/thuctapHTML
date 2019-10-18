@@ -441,65 +441,38 @@
 
 	</footer>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
-    <script type="text/javascript" src="./js/mainmenu.js"></script>
-    <script type="text/javascript">
-        //show main menu
-        $('.scrollup').hide();
-        $(document).ready(function () {
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
+	<script type="text/javascript" src="./js/mainmenu.js"></script>
+	<script type="text/javascript" src="./js/slick.js"> </script>
+	<script type="text/javascript">
+		//scroll up
+		$('.scrollup').hide();
+		$(document).ready(function () {
 
-            $('.scrollup').click(function () {
-                $('body,html').animate({
-                    scrollTop: 0
-                }, 1000)
-            });
+			$('.scrollup').click(function () {
+				$('body,html').animate({
+					scrollTop: 0
+				}, 1000)
+			});
 
-            $('.scrollup').click(function () {
-                $('body,html').animate({
-                    scrollTop: 0
-                }, 1000)
-            });
+			$('.scrollup').click(function () {
+				$('body,html').animate({
+					scrollTop: 0
+				}, 1000)
+			});
 
-            $(window).scroll(function () {
-                if ($(this).scrollTop() >= 100) {        // If page is scrolled more than 100px
-                    $('.scrollup').fadeIn(200);    // Fade in the arrow
-                } else {
-                    $('.scrollup').fadeOut(200);   // Else fade out the arrow
-                }
-            });
-            if ($(window).width() <= 576) {
-                createSlick()
-            }
+			$(window).scroll(function () {
+				if ($(this).scrollTop() >= 100) {        // If page is scrolled more than 100px
+					$('.scrollup').fadeIn(200);    // Fade in the arrow
+				} else {
+					$('.scrollup').fadeOut(200);   // Else fade out the arrow
+				}
+			});
 
-        })
-        //hide main menu
-        $(window).on('resize', function () {
-            createSlick()
-        });
-        function createSlick() {
-            $('.slide-for-mobile').not('.slick-initialized').slick({
-                //dots: true,
-                slidesToShow: 1,
-                slideToScroll: 1,
-                responsive: [
-                    {
-                        breakpoint: 3000,
-                        settings: "unslick"
-                    },
-                    {
-                        breakpoint: 576,
-                        settings: {
-                            dots: true,
-                            infinite: true
-                        }
-                    }
-                ]
-            });
-        }
-
-    </script>
+		})
+	</script>
 
 </body>
 

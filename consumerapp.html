@@ -566,8 +566,9 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
     <script type="text/javascript" src="./js/mainmenu.js"></script>
+    <script type="text/javascript" src="./js/slick.js"> </script>
     <script type="text/javascript">
-        //show main menu
+        //scroll up
         $('.scrollup').hide();
         $(document).ready(function () {
 
@@ -590,36 +591,8 @@
                     $('.scrollup').fadeOut(200);   // Else fade out the arrow
                 }
             });
-            if ($(window).width() <= 576) {
-                createSlick()
-            }
 
         })
-        //hide main menu
-        $(window).on('resize', function () {
-            createSlick()
-        });
-        function createSlick() {
-            $('.slide-for-mobile').not('.slick-initialized').slick({
-                //dots: true,
-                slidesToShow: 1,
-                slideToScroll: 1,
-                responsive: [
-                    {
-                        breakpoint: 3000,
-                        settings: "unslick"
-                    },
-                    {
-                        breakpoint: 576,
-                        settings: {
-                            dots: true,
-                            infinite: true
-                        }
-                    }
-                ]
-            });
-        }
-
     </script>
 
 </body>

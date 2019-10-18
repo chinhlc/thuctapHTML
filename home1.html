@@ -458,21 +458,22 @@
         </div>
     </div>
     <!--quote-->
-    <div class="w-100 ml-auto mr-auto home-story">
+    <div class="w-100 ml-auto mr-auto home-story pt-100 pb-100">
         <div id="slide-quote" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators dots dots--blue">
                 <li data-target="#slide-quote" data-slide-to="0" class="active"></li>
                 <li data-target="#slide-quote" data-slide-to="1"></li>
                 <li data-target="#slide-quote" data-slide-to="2"></li>
             </ol>
-            <div class="carousel-inner pt-100 bg-deflaut">
+            <div class="carousel-inner pt-100">
                 <div class="carousel-item active">
                     <div class="w-100 ml-auto mr-auto">
                         <div class="container ">
                             <ul class="row align-items-center story-content">
                                 <li class="col-lg-6 col-md-7 pos-relative order-mr-1">
                                     <h3 class="headding__title text--bold mb-0">Hear our customer stories</h3>
-                                    <p class="story-content__descript mb-0 pt-12">Whether in the demo, during the free
+                                    <p class="story-content__descript mb-0 pt-12">Whether in the demo, during the
+                                        free
                                         trial or in
                                         practice by Dampfi now, ConnectPOS proves to be stable and reliable, which
                                         is ultimately the most important factor</p>
@@ -496,7 +497,8 @@
                                 <li class="col-lg-6 col-md-7 pos-relative order-mr-1">
 
                                     <h3 class="headding__title text--bold mb-0">Hear our customer stories</h3>
-                                    <p class="story-content__descript mb-0 pt-12">Whether in the demo, during the free
+                                    <p class="story-content__descript mb-0 pt-12">Whether in the demo, during the
+                                        free
                                         trial or in
                                         practice by Dampfi now, ConnectPOS proves to be stable and reliable, which
                                         is ultimately the most important factor</p>
@@ -522,7 +524,8 @@
                                 <li class="col-lg-6 col-md-7 pos-relative order-mr-1">
 
                                     <h3 class="headding__title text--bold mb-0">Hear our customer stories</h3>
-                                    <p class="story-content__descript mb-0 pt-12">Whether in the demo, during the free
+                                    <p class="story-content__descript mb-0 pt-12">Whether in the demo, during the
+                                        free
                                         trial or in
                                         practice by Dampfi now, ConnectPOS proves to be stable and reliable, which
                                         is ultimately the most important factor</p>
@@ -545,6 +548,7 @@
             </div>
         </div>
     </div>
+
     <!--list solution-->
     <div class="w-100 ml-auto mr-auto text-center home-solution pt-100">
         <div class="container">
@@ -854,8 +858,9 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
     <script type="text/javascript" src="./js/mainmenu.js"></script>
+    <script type="text/javascript" src="./js/slick.js"> </script>
     <script type="text/javascript">
-        //show main menu
+        //scroll up
         $('.scrollup').hide();
         $(document).ready(function () {
 
@@ -878,34 +883,8 @@
                     $('.scrollup').fadeOut(200);   // Else fade out the arrow
                 }
             });
-            if ($(window).width() <= 576) {
-                createSlick()
-            }
 
         })
-        $(window).on('resize', function () {
-            createSlick()
-        });
-        function createSlick() {
-            $('.slide-for-mobile').not('.slick-initialized').slick({
-                //dots: true,
-                slidesToShow: 1,
-                slideToScroll: 1,
-                responsive: [
-                    {
-                        breakpoint: 3000,
-                        settings: "unslick"
-                    },
-                    {
-                        breakpoint: 576,
-                        settings: {
-                            dots: true,
-                            infinite: true
-                        }
-                    }
-                ]
-            });
-        }
     </script>
 </body>
 
