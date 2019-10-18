@@ -1570,6 +1570,7 @@ home-story*/
     font-size: 16px;
     display: inline-block;
 }
+
 .icon__line {
     color: #777777;
     margin: 0;
@@ -1577,25 +1578,30 @@ home-story*/
     border-top: solid 1px;
     vertical-align: middle;
 }
+
 .icon__round-active {
     color: #26A69A;
     border-color: #26A69A;
     padding: 11px 18px;
 }
+
 .type-business {
-    padding-top:50px;
+    padding-top: 50px;
 }
+
 .type-item {
     border: solid 1px #26A69A;
     position: relative;
 }
+
 .type-item__check-icon {
     color: #333333;
     position: absolute;
-    right:0;
+    right: 0;
     margin-right: 10px;
     font-size: 15px;
 }
+
 .type-item__user-icon {
     padding: 30px 0;
     font-size: 50px;
