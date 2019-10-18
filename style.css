@@ -160,7 +160,9 @@ ul li {
 .background-wrapper--top {
     background-size: 140% 75%;
 }
-
+.background-wrapper--down {
+    background-position: center bottom;
+}
 @media screen and (max-width: 768px) {
     .background-wrapper {
         background: none;
