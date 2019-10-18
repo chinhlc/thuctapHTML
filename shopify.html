@@ -531,18 +531,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
+    <script type="text/javascript" src="./js/mainmenu.js"></script>
     <script type="text/javascript">
         //show main menu
         $('.scrollup').hide();
         $(document).ready(function () {
-            $('.main-menu__toggle').click(function () {
-                $('.main-header__content').toggleClass('show-menu');
-            });
-
-            $('.main-header__menu li ').click(function () {
-                $(this).siblings().removeClass('action');
-                $(this).toggleClass('action');
-            });
 
             $('.scrollup').click(function () {
                 $('body,html').animate({
@@ -566,6 +559,7 @@
             if ($(window).width() <= 576) {
                 createSlick()
             }
+
         })
         //hide main menu
         $(window).on('resize', function () {
@@ -590,31 +584,7 @@
                     }
                 ]
             });
-            $('.key-technology-slide').not('.slick-initialized').slick({
-                //dots: true,
-                slidesToShow: 2,
-                slideToScroll: 1,
-                responsive: [
-                    {
-                        breakpoint: 3000,
-                        settings: "unslick"
-                    },
-                    {
-                        breakpoint: 576,
-                        settings: {
-                            dots: true,
-                            infinite: true
-                        }
-                    }
-                ]
-            });
         }
-        $(document).mouseup(function (e) {
-            var value = $(".main-header__content");
-            if (!$('.main-menu__toggle').is(e.target) && !value.is(e.target) && value.has(e.target).length == 0) {
-                $('.main-header__content').removeClass('show-menu');
-            }
-        })
 
     </script>
 
