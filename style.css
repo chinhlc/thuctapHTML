@@ -432,7 +432,10 @@ ul li {
 .main-header__content .main-header__button {
     padding: 0;
 }
-
+.main-header__content .main-header__button a {
+    color:#ffffff;
+    opacity: 1;
+}
 @media screen and (max-width:1200px) {
     .main-header__menu-parent {
         font-size: 12px;
@@ -1584,7 +1587,7 @@ home-story*/
     padding-top: 50px;
 }
 
-.type-item {
+.type-item__content {
     border: solid 1px #26A69A;
     border-radius: 5px;
     position: relative;
@@ -1610,7 +1613,8 @@ home-story*/
     color: #333333;
 }
 
-.type-item:hover {
+.type-item__content:hover,
+.type-item-click {
     background-color: #333333;
     transition: 0.5s;
     -o-transition: 0.5s;
@@ -1618,8 +1622,10 @@ home-story*/
     -webkit-transition: 0.5s;
 }
 
-.type-item:hover p,
-.type-item:hover i {
+.type-item__content:hover p,
+.type-item__content:hover i,
+.type-item-click p,
+.type-item-click i {
     color: #26A69A;
 }
 

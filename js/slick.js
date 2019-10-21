@@ -26,4 +26,22 @@ function createSlick() {
             }
         ]
     });
+    $('.key-technology-slide').not('.slick-initialized').slick({
+        //dots: true,
+        slidesToShow: 2,
+        slideToScroll: 2,
+        responsive: [
+            {
+                breakpoint: 3000,
+                settings: "unslick"
+            },
+            {
+                breakpoint: 576,
+                settings: {
+                    dots: true,
+                    infinite: true
+                }
+            }
+        ]
+    })
 }

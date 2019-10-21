@@ -6,6 +6,7 @@ $(document).ready(function () {
         smoothScroll('.free-trial__step-two'); // scroll to top step 2
         var type = (this).getAttribute('data-type');
         document.getElementById("business-type").value = type;
+        styleClick(this, '.type-item__content') // change style when click
     });
 
     //show step 3
@@ -16,6 +17,7 @@ $(document).ready(function () {
         var number = (this).getAttribute('data-number');
         document.getElementById("num-store").value = number;
         //alert(number);
+        styleClick(this, '.type-item__content')
     });
 
 })
@@ -27,4 +29,8 @@ function smoothScroll(e) {
     $('html, body').animate({
         scrollTop: $(e).offset().top
     }, 800);
+}
+function styleClick(e, path) {
+    $(e).siblings().find(path).removeClass('type-item-click');
+    $(e).find($(path)).addClass('type-item-click');
 }
