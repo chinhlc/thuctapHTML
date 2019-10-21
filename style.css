@@ -1549,14 +1549,17 @@ home-story*/
     border-radius: 50%;
     margin: 0;
 }
+
 .icon__round--green {
     background-color: #26A69A;
     border: solid 1px #26A69A;
 }
+
 .icon__round i {
-    color:#ffffff;
+    color: #ffffff;
     font-size: 16px;
 }
+
 .free-trial__icon .icon__round,
 .free-trial__icon .icon__line {
     font-size: 16px;
@@ -1583,6 +1586,7 @@ home-story*/
 
 .type-item {
     border: solid 1px #26A69A;
+    border-radius: 5px;
     position: relative;
 }
 
@@ -1600,10 +1604,12 @@ home-story*/
     font-size: 50px;
     color: #333333;
 }
+
 .type-item__caption {
     font-size: 22px;
     color: #333333;
 }
+
 .type-item:hover {
     background-color: #333333;
     transition: 0.5s;
@@ -1611,11 +1617,12 @@ home-story*/
     -moz-transition: 0.5s;
     -webkit-transition: 0.5s;
 }
-.type-item:hover .type-item__check-icon,
-.type-item:hover .type-item__main-icon,
-.type-item:hover .type-item__caption {
+
+.type-item:hover p,
+.type-item:hover i {
     color: #26A69A;
 }
+
 input,
 select {
     width: 100%;
@@ -1623,18 +1630,26 @@ select {
     border: 1px solid #777777;
     border-radius: 5px;
 }
+
 select option {
     color: #777777;
 }
+
 .country-form__caption span {
     padding: 0 2px;
-    margin:0;
+    margin: 0;
 }
+
 input:focus {
     border: solid 1px #26A69A;
     border-radius: 5px;
     box-shadow: 0px 2px 5px #70a1ff;
 }
+
+input[type="text"] {
+    background-color: #ffffff;
+}
+
 .free-trial__step-two,
 .free-trial__step-three {
     display: none;
