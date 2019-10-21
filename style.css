@@ -1606,6 +1606,10 @@ home-story*/
 }
 .type-item:hover {
     background-color: #333333;
+    transition: 0.5s;
+    -o-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
 }
 .type-item:hover .type-item__check-icon,
 .type-item:hover .type-item__main-icon,
