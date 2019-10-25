@@ -37,16 +37,9 @@ $(document).ready(function () {
         var scrollPos = $(this).scrollTop();
         //console.log(scrollPos)
         scrollLink.each(function () {
-            scrollPos = scrollPos+50;
+            scrollPos = scrollPos + 50;
             var currentPos = $(this.hash).offset().top;
-            //console.log(currentPos);
-            //$(this).parent().siblings().removeClass('change-page');
-            //$(this).parent().addClass('change-page');
-            //$(this).parent().siblings().removeClass('change-page');
             if (currentPos < scrollPos) {
-                /*$(this).css(
-                    "color", "red"
-                )*/
                 $(this).parent().siblings().removeClass('change-page');
                 $(this).parent().addClass('change-page');
             }

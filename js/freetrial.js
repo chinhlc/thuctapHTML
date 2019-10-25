@@ -25,11 +25,7 @@ $(document).ready(function () {
 function showStep(e) {
     $(e).show();
 }
-function smoothScroll(e, number) {
-    $('html, body').animate({
-        scrollTop: $(e).offset().top-number
-    }, 800);
-}
+
 function styleClick(e, path) {
     $(e).siblings().find(path).removeClass('type-item-click');
     $(e).find($(path)).addClass('type-item-click');
