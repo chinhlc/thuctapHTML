@@ -198,10 +198,13 @@
     <!--request-demo-->
     <div class="request-demo w-100 m-auto text-center">
         <div class="container">
-            <div class="request-demo__content">
+            <div class="request-demo__content w-100 w-850 m-auto pos-relative">
+                <div class="icon-close">
+                    <i class="fa fa-window-close"></i>
+                </div>
                 <h2 class="headding__title"> Request a Personalized Demo </h2>
                 <p>Let's introduce yourself a bit so we can consult the best-fit solution & save your time</p>
-                <div class="row justify-content-left align-items-center w-650 m-auto text-left pt-50">
+                <div class="row justify-content-left align-items-center text-left request-demo__content-form">
                     <div class="col-lg-6 col-md-6 pt-2 pb-2">
                         <form>
                             <input id="work-email" type="text" size="40" placeholder="Work email *">
@@ -213,7 +216,7 @@
                         </form>
                     </div>
                 </div>
-                <div class="row justify-content-left align-items-center w-650 m-auto text-left pt-50">
+                <div class="row justify-content-left align-items-center text-left request-demo__content-form">
                     <div class="col-lg-6 col-md-6 pt-2 pb-2">
                         <form>
                             <input id="your-name" type="text" size="40" placeholder="Your name *">
@@ -225,7 +228,7 @@
                         </form>
                     </div>
                 </div>
-                <div class="row justify-content-left align-items-center w-650 m-auto text-left pt-50">
+                <div class="row justify-content-left align-items-center text-left request-demo__content-form">
                     <div class="col-lg-6 col-md-6 pt-2 pb-2">
                         <form>
                             <input id="off-store" type="text" size="40" placeholder="No. of offline store *">
@@ -237,7 +240,7 @@
                         </form>
                     </div>
                 </div>
-                <div class="row justify-content-left align-items-center w-650 m-auto text-left pt-50">
+                <div class="row justify-content-left align-items-center text-left request-demo__content-form">
                     <div class="col-lg-6 col-md-6 pt-2 pb-2">
                         <select>
                             <option value="E-cigarettes" selected>E-cigarettes</option>
@@ -270,7 +273,7 @@
                         </select>
                     </div>
                 </div>
-                <div class="request-demo__radio w-650 m-auto pl-3">
+                <div class="request-demo__radio pl-3">
                     <input type="radio" value="agree">I agree to Connectpos Terms of us </br>
                     <input type="radio" value="agree">I want to receive updates, tips & offers from ConnectPos
                 </div>
@@ -291,12 +294,12 @@
                 <div class="col-lg-3 cpos-offset-1">
                     <nav class="cpos-info__menu">
                         <ul class="cpos-info__menu-parent">
-                            <li class="menu-parent__link" data-number="1"><a href="#product">Product</a></li>
-                            <li class="menu-parent__link" data-number="2"><a href="#checkout">Ckeckout</a></li>
-                            <li class="menu-parent__link" data-number="3"><a href="#payment">Payments</a></li>
-                            <li class="menu-parent__link" data-number="4"><a href="#customer">Customer</a></li>
-                            <li class="menu-parent__link" data-number="5"><a href="#report">Report System</a></li>
-                            <li class="menu-parent__link" data-number="6"><a href="#store">Multi-store Management</a>
+                            <li class="menu-parent__link" data-number="1"><a href="#product" class="scroll">Product</a></li>
+                            <li class="menu-parent__link" data-number="2"><a href="#checkout" class="scroll">Ckeckout</a></li>
+                            <li class="menu-parent__link" data-number="3"><a href="#payment" class="scroll">Payments</a></li>
+                            <li class="menu-parent__link" data-number="4"><a href="#customer" class="scroll">Customer</a></li>
+                            <li class="menu-parent__link" data-number="5"><a href="#report" class="scroll">Report System</a></li>
+                            <li class="menu-parent__link" data-number="6"><a href="#store" class="scroll">Multi-store Management</a>
                             </li>
                         </ul>
                     </nav>
@@ -740,9 +743,6 @@
                     $('.scrollup').fadeOut(200);   // Else fade out the arrow
                 }
             });
-            $('.cpos-banner__button').click(function(){
-                
-            })
         })
 
     </script>

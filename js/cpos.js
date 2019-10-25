@@ -1,34 +1,55 @@
 
 $(document).ready(function () {
+    var scrollLink = $('.scroll');
+    //console.log(scrollLink);
+    //if click nav call function to scroll
     $('.menu-parent__link').click(function () {
-        //console.log('true');
         var number = (this).getAttribute('data-number');
-        //console.log(number);
-        switch(number) {
+        switch (number) {
             case "1": smoothScroll('#product', 130);
-            break;
+                break;
             case "2": smoothScroll('#checkout', 50);
-            break;
+                break;
             case "3": smoothScroll('#payment', 50);
-            break;
+                break;
             case "4": smoothScroll('#customer', 50);
-            break;
+                break;
             case "5": smoothScroll('#report', 50);
-            break;
+                break;
             case "6": smoothScroll('#store', 50);
-            break;
+                break;
         }
-        //changePage(this, '.change-page')
-        //smoothScroll('#product')
+        //change css if click 
         $(this).siblings().removeClass('change-page');
         $(this).addClass('change-page');
-        //styleClick(this,'.change-page')
     })
-    //var pos = $('#checkout').position();
-    //console.log(pos.top);
+    // show form
+    $('.cpos-banner__button').click(function () {
+        $(".request-demo").fadeIn(500);
+    })
+    //hide form
+    $('.icon-close').click(function () {
+        $(".request-demo").fadeOut("fast");
+        //console.log("true");
+    })
+    $(window).scroll(function () {
+        //console.log("true");
+        var scrollPos = $(this).scrollTop();
+        //console.log(scrollPos)
+        scrollLink.each(function () {
+            var currentPos = $(this.hash).offset().top - 50;
+            //console.log(currentPos);
+            //$(this).parent().siblings().removeClass('change-page');
+            //$(this).parent().addClass('change-page');
+            //$(this).parent().siblings().removeClass('change-page');
+            if (currentPos < scrollPos) {
+                /*$(this).css(
+                    "color", "red"
+                )*/
+                $(this).parent().siblings().removeClass('change-page');
+                $(this).parent().addClass('change-page');
+            }
+
+        })
+    })
 })
-/*function smoothScrollFirst(e) {
-    $('html, body').animate({
-        scrollTop: $(e).offset().top-130
-    }, 1000);
-}*/
