@@ -1584,7 +1584,7 @@ home-story*/
 
 .icon__circle {
     border: solid 1px #777777;
-    padding: 5px 11px;
+    padding: 4px 12px;
     border-radius: 50%;
     margin: 0;
 }
@@ -1844,13 +1844,13 @@ input[type="text"] {
     padding-bottom: 50px;
 }
 
-.request-demo__radio input[type="radio"] {
+.request-demo__checkbox input[type="checkbox"] {
     width: auto !important;
     margin-right: 10px;
     border-radius: 0;
 }
 
-.request-demo__radio {
+.request-demo__checkbox {
     text-align: left;
     padding-top: 50px;
 }
@@ -1876,4 +1876,199 @@ input[type="text"] {
     }
 }
 
-/*pricing*/
+/*pricing__bill-plans*/
+
+.pricing-table__check div {
+    display: inline-block;
+    padding: 0 5px;
+}
+
+.check-box {
+    position: relative;
+    width: 80px;
+    height: 40px;
+    border: 2px solid #19A79A;
+    border-radius: 20px;
+    vertical-align: middle;
+}
+
+.check-box__circle {
+    position: absolute;
+    top: 50%;
+    margin-top: -14px;
+    margin-left: 4px;
+    left: 0;
+    width: 40%;
+    height: 80%;
+    border-radius: 50%;
+    background-color: #19A79A;
+    transition: 0.5s;
+}
+
+.check-box__circle--right {
+    left: 50%;
+}
+
+.pricing-table__check {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.pricing-table__plans {
+    padding-top: 50px;
+}
+
+.plan-item {
+    border: 1px solid #EEEEEE;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.plan-item:nth-child(2) .plan-item__box {
+    margin-top: -15px;
+}
+
+.plan-item:nth-child(2) .plan-item__box .box-price {
+    padding-top: 21px;
+}
+
+.plan-item:nth-child(2) {
+    margin-bottom: -15px;
+}
+
+.plan-item__content {
+    height: 100%;
+}
+
+.plan-item__box {
+    background-color: #777777;
+}
+
+.plan-item__box--green {
+    background-color: #49c2b9;
+}
+
+.box-price {
+    background-color: #1f3246;
+    padding: 30px 0;
+    color: #ffffff;
+}
+
+.box-price__type {
+    font-size: 37px;
+    font-weight: bold;
+}
+
+.box-price__monney {
+    font-size: 55px;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.box-price__currency {
+    font-size: 18px;
+    vertical-align: top;
+    padding-top: 70px;
+}
+
+.plan-item__feature li {
+    text-align: left;
+}
+
+.plan-item__feature i {
+    padding-right: 15px;
+}
+
+.label-left {
+    color: #bdc3c7;
+}
+
+.text--grey {
+    color: #777777;
+}
+
+@media screen and (max-width: 1200px) {
+    .plan-item:nth-child(2) .plan-item__box .box-price {
+        padding-top: 45px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .plan-item:nth-child(2) .plan-item__box {
+        margin-top: 0;
+    }
+
+    .plan-item:nth-child(2) .plan-item__box .box-price {
+        padding-top: 30px;
+    }
+
+    .plan-item:nth-child(2) {
+        margin-bottom: 0px;
+    }
+}
+
+/*table */
+.compare-plan__table {
+    border-collapse: collapse;
+    color: #333333;
+}
+
+.compare-plan__table td:first-child,
+.compare-plan__table th:first-child {
+    text-align: left;
+    padding-left: 15px;
+}
+
+.compare-plan__table th,
+.compare-plan__table td {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/*question*/
+.border-bottom-none {
+    border-bottom: none;
+}
+.card-question {
+    margin:0;
+}
+
+.card-question__number {
+    color: #333333;
+    padding:0.375rem 0.5rem;
+    font-size: 1.25rem;
+}
+.card-question__content {
+    font-size: 1.25rem;
+    color:#555555;
+    padding:1rem 0.5rem;
+    text-decoration: none !important;
+}
+.card-question__icon {
+    position: absolute;
+    top:0;
+    padding-top:1.5rem;
+    right: 5%;
+    font-size: 15px;
+}
+@media screen and (max-width:420px) {
+    .card-question__icon {
+        display: none;
+    }
+}
+.card-question__content:hover {
+    text-decoration: none;
+    color: #333333;
+}
+.card-body:hover .card-question__content {
+    text-decoration: none;
+}
+.question-shadow {
+    box-shadow: 0px -3px 1px #19A79A;
+}
+.question-shadow .card-question__number {
+    color:#19A79A;
+}
+.question-shadow .card-question__content {
+    color:#333333;
+}
