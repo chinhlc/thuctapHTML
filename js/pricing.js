@@ -11,7 +11,7 @@ $(document).ready(function () {
         })
     })
     $('.card').click(function () {
-        $(this).toggleClass('question-shadow');
         $(this).siblings().removeClass('question-shadow');
+        $(this).toggleClass('question-shadow');
     })
 })

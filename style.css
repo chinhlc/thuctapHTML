@@ -2084,7 +2084,9 @@ input[type="text"] {
 .card-body:hover .card-question__content {
     text-decoration: none;
 }
-
+.card-body {
+    cursor: auto;
+}
 .question-shadow {
     box-shadow: 0px -3px 1px #19A79A;
 }
