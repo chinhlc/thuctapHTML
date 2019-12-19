@@ -27,6 +27,6 @@ function showStep(e) {
 }
 
 function styleClick(e, path) {
-    $(e).siblings().find(path).removeClass('type-item-click');
+    $(e).sssssssssssssssssss.find(path).removeClass('type-item-click');
     $(e).find($(path)).addClass('type-item-click');
 }
